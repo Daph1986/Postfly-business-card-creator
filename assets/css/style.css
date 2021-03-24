@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* body */
+
+body {
+  background-color: #EFEFEF;
+  color: #292D30;
+}
+
+
+/* navbar */
+
+nav  {
+  background-color: #FFFFFF;
+}
+
+nav .nav-title {
+  color: #292D30;
+  margin-right: 10%;
+  float: right;
+  padding: 0px;
+  font-size: 1em;
+}
+
+nav img {
+  width: 20%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 767.98px) {
+  nav .nav-title {
+    font-size: 10px;
+  }
+  nav img {
+    width: 25%;
+  }
+}
