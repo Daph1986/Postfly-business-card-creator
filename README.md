@@ -1,15 +1,15 @@
-Business card creator
+POSTFLY Business card creator
 ======
 **[Code Institute](https://codeinstitute.net/)  Milestone Project 2: Interactive  Frontend Development**
 
-<!-- <img src="assets/images/hero_image.png" alt="Hero Image" width="65%" height="65%"> -->
+<img src="assets/images/readme_images/hero_image.png" alt="Hero Image" width="65%" height="65%">
 
 POSTFLY Business card creator is a site where it is possible to design your own business cards. The focus with this site is to combine knowledge about what it takes to design a business card with what was learned this far about HTML, CSS and JavaScript. The site’s goal is to design your own business card which you can download and request a quotation for.
 
 Demo
 ======
 
-<!-- By clicking this [link]() a live demo version will be visible. -->
+By clicking this [link](https://daph1986.github.io/Postfly-business-card-creator/) a live demo version will be visible.
 
 <!-- ![Mock-up]() -->
 
@@ -54,29 +54,24 @@ This site is structured as clear as possible, it is easy to see what can be done
 
 **Skeleton**
 
-<!-- Desktop wireframes <br>
+Desktop wireframes <br>
 
-<img src="assets/images/Desktop/desktop_overview_1.png" alt="Desktop Overview 1" width="85%" height="85%">
-
-<img src="assets/images/Desktop/desktop_overview_2.png" alt="Desktop Overview 2" width="85%" height="85%">
+<img src="assets/images/readme_images/desktop_overview.png" alt="Desktop Overview 1" width="85%" height="85%">
 
 Tablet wireframes <br>
 
-<img src="assets/images/Tablet/tablet_overview_1.png" alt="Tablet Overview 1" width="85%" height="85%">
-
-<img src="assets/images/Tablet/tablet_overview_2.png" alt="Tablet Overview 2" width="85%" height="85%">
+<img src="assets/images/readme_images/tablet_overview.png" alt="Tablet Overview 1" width="85%" height="85%">
 
 Mobile wireframes<br>
 
-<img src="assets/images/Mobile/mobile_overview_1.png" alt="Mobile Overview 1" width="85%" height="85%">
+<img src="assets/images/readme_images/mobile_overview.png" alt="Mobile Overview 1" width="85%" height="85%">
 
-<img src="assets/images/Mobile/mobile_overview_2.png" alt="Mobile Overview 2" width="85%" height="85%"> -->
 
 **Surface**
 
-<!-- The colors that were used are the existing corporate identity colors, white and an off-white color, which are:
+The colors that were used are the existing corporate identity colors, white and an off-white color, which are:
 
-<img src="assets/images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/off_white.png" alt="Off White"  width="25%" height="25%"> -->
+<img src="assets/images/readme_images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/readme_images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/readme_images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/readme_images/off_white.png" alt="Off White"  width="25%" height="25%">
 
 
 <!-- During development the site's layout was restructured a little bit, because this seemed visually better.
@@ -119,13 +114,13 @@ Technologies
 + JavaScript
 + -->
 
-**Wireframe**
-<!-- + Adobe XD -->
+**Wireframes**
++ Adobe XD
 
 **Others**
 <!-- + Adobe Photoshop:  -->
-<!-- + Adobe Illustrator: to adjust the business cards templates.
-+ Adobe InDesign to make a favicon -->
++ Adobe Illustrator: to adjust the business cards templates.
+<!-- + Adobe InDesign to make a favicon -->
 <!-- + VSCode: to write the code in. -->
 
 Testing & Bugs
@@ -164,16 +159,16 @@ git clone https://github.com/Daph1986/Follow-the-moon.git
 Credits
 ======
 ### Content
-<!-- All content has been written by myself -->
+All content has been written by myself
 
 ### Media 
 #### Images:
-<!-- 1. [POSTFLY](http://www.postfly.nl/) 
+1. [POSTFLY](http://www.postfly.nl/) 
 * the POSTFLY logo provided by my collegue Filip Matthys
 * the POSTFLY business cards templates provided by my collegue Filip Matthys, edited by myself
 2. [Rawpixel](https://www.rawpixel.com/image/2024655/woman-holding-business-card-png#eyJkYXRhIjp7ImtleXMiOiJidXNpbmVzcyUyMGNhcmRzIiwicGFnZSI6Miwic29ydCI6ImN1cmF0ZWQiLCJjdXJyZW50X3VybCI6Ii9zZWFyY2gvYnVzaW5lc3MlMjBjYXJkcz9zb3J0PWN1cmF0ZWQmcGFnZT0xIiwic2FmZV9zZWFyY2giOjEsInBhZ2VzaXplIjoxMDAsInByZW1pdW0iOiJmcmVlIiwiZnJlZWNjMCI6MCwic2hvd2Nhc2UiOjAsInNvcnRlZEtleXMiOiJidXNpbmVzcyBjYXJkIn0sInBvcyI6MjB9) 
 * the hero image that was used on the landing page
-  - id-2024655 by cuz.gallery -->
+  - id-2024655 by cuz.gallery
 
 #### Code:
 <!-- 1. [W3schools](https://www.w3schools.com/html/html_youtube.asp) to help embed the YouTube videos in the code.
