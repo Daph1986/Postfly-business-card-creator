@@ -7,7 +7,7 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-/* navbar */
+/* ------------- navbar ------------- */
 
 nav  {
   background-color: #FFFFFF;
@@ -27,9 +27,6 @@ nav .nav-title {
 }
 
 @media screen and (max-width: 1024px) {
-  nav .nav-title {
-    font-size: 10px;
-  }
   #logo {
     height: 17.5%;
   }
@@ -40,18 +37,12 @@ nav .nav-title {
   #logo {
     height: 12.5%;
   }
+  nav .nav-title {
+    font-size: 10px;
+  }
 } */
 
-/* hero image */
-
-/* .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-/* landing page content */
+/* ------------- landing page content ------------- */
 
 .red-header {
   text-transform: uppercase;
@@ -61,4 +52,20 @@ nav .nav-title {
 
 .grey-header {
   text-align: center;
+}
+
+.contact-icons i {
+  color: #E73B3B;
+  font-size: 25px;
+  padding: 10px;
+}
+
+/* ------------- buttons ------------- */
+
+.btn-postfly {
+ background-color: #E73B3B;
+}
+
+.btn-large:hover {
+  background-color: #E73B3B;
 }
