@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSTFLY Business card creator</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="32x32">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
@@ -32,18 +32,19 @@
   <!-- Landing page content -->
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col s12">
         <h5 class="red-header flow-text">Welcome on the Postfly business card creator site</h5>
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col s12">
         <h6 class="grey-header flow-text"><strong>On this site you can you design your own business card step by step.
+            <br>
             It works as follows:</strong></h6>
       </div>
     </div>
     <div class="row">
-      <div class="col s10">
+      <div class="col s12">
         <ol>
           <li>Choose 1 out of 3 available business card sizes.</li>
           <li>Choose your printing method, 4/0 CMYK means printed on just one side, 4/4 CMYK means printed double sided.
@@ -51,21 +52,111 @@
           <li>Choose 1 of the available background colors.</li>
           <li>Select your paper type, if you are not familiar with our paper types or you want to physically see the
             paper types, please request the sample kit by clicking the button below.</li>
+          <p class="center-align">
+            <a class="waves-effect waves-light btn-large btn-postfly">Sample kit</a>
+          </p>
           <li>Select the quantity you would like.</li>
           <li>With the remaining steps you are able to personalise your card, you can:</li>
           <ul>
-            <li>•	Upload your own photo or logo.</li>
-            <li>•	You can add one or more text fields for your name / address / email / website / phone number, etc.</li>
+            <li>• Upload your own photo or logo.</li>
+            <li>• You can add one or more text fields for your name / address / email / website / phone number, etc.
+            </li>
           </ul>
         </ol>
+        <p>
+          You will always see a preview of your design.
+          If you are happy with your design, then please fill in your name and email address and hit the request
+          quotation button. You are also able to download the preview of your design or start over by clicking the reset
+          button. <br>
+          Would you like to start your design journey? Then please click the start designing button. <br>
+          If you have any questions or want to contact us, please use one of the icons below to contact us.
+        </p>
+        <p class="center-align">
+          <a class="waves-effect waves-light btn-large btn-postfly">Start designing!</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center-align contact-icons">
+        <a target="_blank" href="https://www.facebook.com/Postfly.nl" rel="noreferrer">
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/postfly.be/" rel="noreferrer">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC6vgM7eiDYEf36768NPvxjQ/featured" rel="noreferrer">
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+          <span class="sr-only">YouTube</span>
+        </a>
+        <a target="_blank" href="https://twitter.com/postfly_be" rel="noreferrer">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+          <span class="sr-only">Twitter</span>
+        </a>
+
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <a target="_blank" href="#" rel="noreferrer">
+          <i class="fas fa-phone" aria-hidden="true"></i>
+          <span class="sr-only">Phone</span>
+        </a>
+        <a target="_blank" href="mailto:info@postfly.nl" data-toggle="tooltip" data-placement="top"
+          title="info@postfly.nl" rel="noreferrer">
+          <i class="far fa-paper-plane" aria-hidden="true"></i>
+          <span class="sr-only">Email</span>
+        </a>
+        <a target="_blank" href="http://www.postfly.nl/" rel="noreferrer">
+          <i class="fas fa-globe" aria-hidden="true"></i>
+          <span class="sr-only">POSTFLY website</span>
+        </a>
       </div>
     </div>
   </div>
   <!-- Landing page content end -->
 
-  <!-- Materialize JavaScript -->
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- Modal Structure end -->
+
+  <!-- Footer -->
+  <!-- <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © Copyright 2021 - POSTFLY
+      </div>
+    </div>
+  </footer> -->
+  <!-- Footer end -->
+
+  <!-- JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- Materialize JavaScript end -->
+  <!-- JavaScript end -->
 
 </body>
 
