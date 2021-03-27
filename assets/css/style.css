@@ -1,71 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 body,
 html {
-  background-color: #EFEFEF;
-  color: #292D30;
-  font-family: 'Roboto', sans-serif;
+    background-color: #EFEFEF;
+    color: #292D30;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 /* ------------- navbar ------------- */
 
-nav  {
-  background-color: #FFFFFF;
+nav {
+    background-color: #FFFFFF;
 }
 
 nav .nav-title {
-  color: #292D30;
-  margin-right: 10%;
-  float: right;
-  padding: 0px;
-  font-size: 1em;
+    color: #292D30;
+    margin-right: 10%;
+    float: right;
+    padding: 0px;
+    font-size: 1em;
 }
 
 #logo {
-  height: 25%;
-  margin-left: 10%;
+    height: 25%;
+    margin-left: 10%;
 }
 
 @media screen and (max-width: 1024px) {
-  #logo {
-    height: 17.5%;
-  }
+    #logo {
+        height: 17.5%;
+    }
 }
 
-/* Leave it in or not? Only for verry small devices a problem
+
+/* Leave it in or not? Only for verry small devices a problem */
+
 @media screen and (max-width: 338px) {
-  #logo {
-    height: 12.5%;
-  }
-  nav .nav-title {
-    font-size: 10px;
-  }
-} */
+    #logo {
+        height: 12.5%;
+    }
+    nav .nav-title {
+        font-size: 10px;
+    }
+}
+
+
+/* ------------- hero image ------------- */
+
+
+/* have to adjust hero image in size in photoshop to make it look good on all sizes!!*/
+
+.hero-image {
+    background-image: url("..//images/hero_image.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* ------------- landing page content ------------- */
 
 .red-header {
-  text-transform: uppercase;
-  color: #E73B3B;
-  text-align: center;
+    text-transform: uppercase;
+    color: #E73B3B;
+    text-align: center;
 }
 
 .grey-header {
-  text-align: center;
+    text-align: center;
 }
 
 .contact-icons i {
-  color: #E73B3B;
-  font-size: 25px;
-  padding: 10px;
+    color: #E73B3B;
+    font-size: 25px;
+    padding: 10px;
 }
+
 
 /* ------------- buttons ------------- */
 
 .btn-postfly {
- background-color: #E73B3B;
+    background-color: #E73B3B;
 }
 
 .btn-large:hover {
-  background-color: #E73B3B;
+    background-color: #E73B3B;
+}
+
+
+/* ------------- footer ------------- */
+
+.footer-copyright {
+    background-color: #FFFFFF;
+    color: #292D30;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+}
+
+
+/* ------------- modal ------------- */
+
+.modal .modal-footer {
+    text-align: center;
+}
+
+.modal-content h4 {
+    color: #E73B3B;
+}
+
+a.modal-close {
+    color: #E73B3B;
+    font-size: 16px;
 }
