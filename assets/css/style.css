@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-body,
-html {
+
+body, html {
     background-color: #EFEFEF;
     color: #292D30;
     font-family: 'Roboto', sans-serif;
 }
-
 
 /* ------------- navbar ------------- */
 
@@ -32,7 +31,6 @@ nav .nav-title {
     }
 }
 
-
 /* Leave it in or not? Only for verry small devices a problem */
 
 @media screen and (max-width: 338px) {
@@ -44,21 +42,30 @@ nav .nav-title {
     }
 }
 
-
 /* ------------- hero image ------------- */
 
-
-/* have to adjust hero image in size in photoshop to make it look good on all sizes!!*/
+/* See if there is another way to fix parallax on on different sizes*/
 
 .hero-image {
     background-image: url("..//images/hero_image.png");
     min-height: 500px;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* @media screen and (max-width: 767.99px) {
+    .hero-image {
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 1023.99px) {
+    .hero-image {
+        min-height: 800px;
+    }
+} */
 
 /* ------------- landing page content ------------- */
 
@@ -66,6 +73,7 @@ nav .nav-title {
     text-transform: uppercase;
     color: #E73B3B;
     text-align: center;
+    margin-top: 35px;
 }
 
 .grey-header {
@@ -76,8 +84,8 @@ nav .nav-title {
     color: #E73B3B;
     font-size: 25px;
     padding: 10px;
+    margin-bottom: 33px;
 }
-
 
 /* ------------- buttons ------------- */
 
@@ -89,7 +97,6 @@ nav .nav-title {
     background-color: #E73B3B;
 }
 
-
 /* ------------- footer ------------- */
 
 .footer-copyright {
@@ -99,7 +106,6 @@ nav .nav-title {
     height: 64px;
     line-height: 64px;
 }
-
 
 /* ------------- modal ------------- */
 
