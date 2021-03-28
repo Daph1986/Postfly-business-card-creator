@@ -1,45 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body, html {
-    background-color: #EFEFEF;
-    color: #292D30;
-    font-family: 'Roboto', sans-serif;
+  background-color: #EFEFEF;
+  color: #292D30;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 /* ------------- navbar ------------- */
 
 nav {
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 nav .nav-title {
-    color: #292D30;
-    margin-right: 10%;
-    float: right;
-    padding: 0px;
-    font-size: 1em;
+  color: #292D30;
+  margin-right: 10%;
+  float: right;
+  padding: 0px;
+  font-size: 1em;
 }
 
 #logo {
-    height: 25%;
-    margin-left: 10%;
+  height: 25%;
+  margin-left: 10%;
 }
 
 @media screen and (max-width: 1024px) {
-    #logo {
-        height: 17.5%;
-    }
+  #logo {
+    height: 17.5%;
+  }
 }
 
 /* Leave it in or not? Only for verry small devices a problem */
 
 @media screen and (max-width: 338px) {
-    #logo {
-        height: 12.5%;
-    }
-    nav .nav-title {
-        font-size: 10px;
-    }
+  #logo {
+    height: 12.5%;
+  }
+  nav .nav-title {
+    font-size: 10px;
+  }
 }
 
 /* ------------- hero image ------------- */
@@ -47,12 +54,12 @@ nav .nav-title {
 /* See if there is another way to fix parallax on on different sizes*/
 
 .hero-image {
-    background-image: url("..//images/hero_image.png");
-    min-height: 500px;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("..//images/hero_image.png");
+  min-height: 500px;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* @media screen and (max-width: 767.99px) {
@@ -70,54 +77,97 @@ nav .nav-title {
 /* ------------- landing page content ------------- */
 
 .red-header {
-    text-transform: uppercase;
-    color: #E73B3B;
-    text-align: center;
-    margin-top: 35px;
+  text-transform: uppercase;
+  color: #E73B3B;
+  text-align: center;
+  margin-top: 35px;
 }
 
 .grey-header {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-icons i {
-    color: #E73B3B;
-    font-size: 25px;
-    padding: 10px;
-    margin-bottom: 33px;
+  color: #E73B3B;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 33px;
+}
+
+/* ------------- sample kit form ------------- */
+
+.sample-kit {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.required {
+  color: #E73B3B;
+  font-size: 9px;
+  padding-left: 2px;
+}
+
+/* For some reason materialize form colors are very hard to overwrite, 
+after inspection all of the below must be named to have the wanted color change effect */
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #E73B3B;
+  box-shadow: 0 1px 0 0 #e73b3b;
+}
+
+input:not([type]):focus:not([readonly])+label, 
+input[type=text]:not(.browser-default):focus:not([readonly])+label, 
+input[type=password]:not(.browser-default):focus:not([readonly])+label, 
+input[type=email]:not(.browser-default):focus:not([readonly])+label, 
+input[type=url]:not(.browser-default):focus:not([readonly])+label, 
+input[type=time]:not(.browser-default):focus:not([readonly])+label, 
+input[type=date]:not(.browser-default):focus:not([readonly])+label, 
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label, 
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, 
+input[type=tel]:not(.browser-default):focus:not([readonly])+label, 
+input[type=number]:not(.browser-default):focus:not([readonly])+label, 
+input[type=search]:not(.browser-default):focus:not([readonly])+label, 
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #E73B3B;
+}
+
+.input-field>label:not(.label-icon).active {
+  color: #292d31ab;
 }
 
 /* ------------- buttons ------------- */
 
 .btn-postfly {
-    background-color: #E73B3B;
+  background-color: #E73B3B;
 }
 
 .btn-large:hover {
-    background-color: #E73B3B;
+  background-color: #E73B3B;
 }
 
 /* ------------- footer ------------- */
 
 .footer-copyright {
-    background-color: #FFFFFF;
-    color: #292D30;
-    text-align: center;
-    height: 64px;
-    line-height: 64px;
+  background-color: #FFFFFF;
+  color: #292D30;
+  text-align: center;
+  height: 64px;
+  line-height: 64px;
 }
 
 /* ------------- modal ------------- */
 
 .modal .modal-footer {
-    text-align: center;
+  text-align: center;
 }
 
 .modal-content h4 {
-    color: #E73B3B;
+  color: #E73B3B;
 }
 
 a.modal-close {
-    color: #E73B3B;
-    font-size: 16px;
+  color: #E73B3B;
+  font-size: 16px;
 }
