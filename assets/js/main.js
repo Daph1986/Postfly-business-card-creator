@@ -26,3 +26,27 @@ $(document).ready(function () {
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
 })
+
+// -- -- -- -- -- -- - sample kit request form -- -- -- -- -- -- -
+
+function sendRequestMail(requestForm) {
+    emailjs.send("service_re41zx8", "sample kit request", {
+        "from_fname": requestForm.fname.value,
+        "from_lname": requestForm.lname.value,
+        "from_address01": requestForm.address01.value,
+        "from_address02": requestForm.address02.value,
+        "from_address03": requestForm.address03.value,
+        "from_address04": requestForm.address04.value,
+        "from_email": requestForm.email.value,
+    })
+    .then(
+        function(response) {
+            console.log("SUCCESS", response);
+            location.reload();
+        },
+        function(error) {
+            console.log("FAILED", error);
+        }
+    );
+    return false;  // To block from loading a new page
+  }
