@@ -51,28 +51,15 @@ nav .nav-title {
 
 /* ------------- hero image ------------- */
 
-/* See if there is another way to fix parallax on on different sizes*/
-
 .hero-image {
   background-image: url("..//images/hero_image.png");
-  min-height: 500px;
+  min-height: 400px;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* @media screen and (max-width: 767.99px) {
-    .hero-image {
-        min-height: 600px;
-    }
-}
-
-@media screen and (max-width: 1023.99px) {
-    .hero-image {
-        min-height: 800px;
-    }
-} */
 
 /* ------------- landing page content ------------- */
 
@@ -91,6 +78,7 @@ nav .nav-title {
   color: #E73B3B;
   font-size: 25px;
   padding: 10px;
+  margin-top: 25px;
   margin-bottom: 33px;
 }
 
@@ -112,7 +100,8 @@ nav .nav-title {
 /* For some reason materialize form colors are very hard to overwrite, 
 after inspection all of the below must be named to have the wanted color change effect */
 
-input[type=text]:not(.browser-default):focus:not([readonly]) {
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #E73B3B;
   box-shadow: 0 1px 0 0 #e73b3b;
 }
@@ -145,6 +134,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 .btn-large:hover {
   background-color: #E73B3B;
+}
+
+#design-button {
+  margin-top: 33px;
 }
 
 /* ------------- footer ------------- */
