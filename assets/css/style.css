@@ -126,6 +126,12 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   color: #292d31ab;
 }
 
+[type="checkbox"]:checked+span:not(.lever):before {
+  border-right: 2px solid #E73B3B;
+  border-bottom: 2px solid #E73B3B;
+}
+
+
 /* ------------- buttons ------------- */
 
 .btn-postfly {
