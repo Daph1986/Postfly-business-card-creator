@@ -1,151 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POSTFLY Business card creator</title>
-    <link rel="icon" href="assets/images/favicon.png" type="image/png"
-      sizes="32x32">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSTFLY Business card creator</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <!-- Validation for EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function(){
-        emailjs.init("user_341YHLcR0K48KFIHl0TNg");
-      })();
-    </script> 
-    <!-- Validation for EmailJS end -->
-  </head>
+  <!-- Validation for EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_341YHLcR0K48KFIHl0TNg");
+    })();
+  </script>
+  <!-- Validation for EmailJS end -->
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="index.html"><img id="logo"
-              src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
-          <span class="nav-title"><strong>Business card creator</strong></span>
-        </div>
-      </nav>
-    </div>
-    <!-- Navbar end -->
-
-    <!-- Sample kit form -->
-    <header>
-      <div class="row">
-        <div class="col s12">
-          <h5 class="red-header flow-text">Request your free sample kit!</h5>
-        </div>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html"><img id="logo" src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
+        <span class="nav-title"><strong>Business card creator</strong></span>
       </div>
-      <div class="row">
-        <div class="col s12">
-          <h6 class="grey-header flow-text"><strong>Please fill in the form and
-              click the send button in order to receive your free sample kit.</strong></h6>
-        </div>
-      </div>
-    </header>
+    </nav>
+  </div>
+  <!-- Navbar end -->
 
-    <main>
-      <div class="row sample-kit">
-        <form class="col s12" onsubmit="return sendRequestMail(this);">
-          <div class="row">
-            <div class="input-field col l6 s12">
-              <input placeholder="Company Name" name="cname" id="company_name" type="text">
-              <label for="company_name">Company Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col l6 s12">
-              <input placeholder="First Name" name="fname" id="fname" type="text"
-                required="" aria-required="true">
-              <label for="first_name">Name<i class="fas fa-asterisk required"></i></label>
-            </div>
-            <div class="input-field col l6 s12">
-              <input placeholder="Last Name" name="lname" id="lname" type="text"
-              required="" aria-required="true">
-            </div>
-          </div>
-          <div class="row required">
-            <div class="input-field col l6 s12">
-              <input placeholder="Street Name + House Number" name="address01" id="address"
-                type="text" required="" aria-required="true">
-              <label for="address">Address<i class="fas fa-asterisk required"></i></label>
-            </div>
-            <div class="input-field col l6 s12">
-              <input placeholder="Zip Code" name="address02" id="address" type="text" required="" aria-required="true">
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col l6 s12">
-              <input placeholder="City" name="address03" id="address" type="text" required="" aria-required="true">
-            </div>
-            <div class="input-field col l6 s12">
-              <input placeholder="Country" name="address04" d="address" type="text" required="" aria-required="true">
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col l6 s12">
-              <input placeholder="Phone Number" name="phone" id="phone_number" type="text">
-              <label for="phone_number">Phone Number</label>
-            </div>
-          </div>
-          <div class="row required">
-            <div class="input-field col l6 s12">
-              <input placeholder="Email Address" name="email" id="email" type="email" required="" aria-required="true" class="validate">
-              <label for="email">Email Address<i class="fas fa-asterisk required"></i></label>
-              <span class="helper-text" data-error="wrong" data-success="right">Please
-                use a valid email address</span>
-            </div>
-          </div>
-          <p>
-            <label>
-              <input type="checkbox" required="" aria-required="true"/>
-              <span>I'm not a robot!</span>
-            </label>
-          </p>
-          <div class="input-field center-align">
-            <button class="waves-effect btn-large btn-postfly" type="submit" name="action">Send</button>
-          </div>
-        </form>
-      </div>
-    </main>
-    <!-- Sample kit form end -->
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-copyright">
-        <span>© Copyright 2021 - POSTFLY</span>
-      </div>
-    </footer>
-    <!-- Footer end -->
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal modal-background">
-      <div class="modal-content center-align">
-        <h4>Call us!</h4>
-        <h5>+31 (0)20 365 22 93</h5>
-      </div>
-      <div class="modal-footer modal-background">
-        <a href="#!" class="modal-close">
-          <strong>Close</strong></a>
+  <!-- Sample kit form -->
+  <header>
+    <div class="row">
+      <div class="col s12">
+        <h5 class="red-header flow-text">Request your free sample kit!</h5>
       </div>
     </div>
-    <!-- Modal Structure end -->
+    <div class="row">
+      <div class="col s12">
+        <h6 class="grey-header flow-text"><strong>Please fill in the form and
+            click the send button in order to receive your free sample kit.</strong></h6>
+      </div>
+    </div>
+  </header>
 
-    <!-- JavaScript -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <!-- JavaScript end -->
-  </body>
+  <main>
+    <div class="row sample-kit">
+      <form class="col s12" onsubmit="return sendRequestMail(this);">
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <input placeholder="Company Name" name="cname" id="company_name" type="text">
+            <label for="company_name">Company Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <input placeholder="First Name" name="fname" id="fname" type="text" required="" aria-required="true">
+            <label for="first_name">Name<i class="fas fa-asterisk required"></i></label>
+          </div>
+          <div class="input-field col l6 s12">
+            <input placeholder="Last Name" name="lname" id="lname" type="text" required="" aria-required="true">
+          </div>
+        </div>
+        <div class="row required">
+          <div class="input-field col l6 s12">
+            <input placeholder="Street Name + House Number" name="address01" id="address" type="text" required=""
+              aria-required="true">
+            <label for="address">Address<i class="fas fa-asterisk required"></i></label>
+          </div>
+          <div class="input-field col l6 s12">
+            <input placeholder="Zip Code" name="address02" id="address" type="text" required="" aria-required="true">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <input placeholder="City" name="address03" id="address" type="text" required="" aria-required="true">
+          </div>
+          <div class="input-field col l6 s12">
+            <input placeholder="Country" name="address04" d="address" type="text" required="" aria-required="true">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <input placeholder="Phone Number" name="phone" id="phone_number" type="text">
+            <label for="phone_number">Phone Number</label>
+          </div>
+        </div>
+        <div class="row required">
+          <div class="input-field col l6 s12">
+            <input placeholder="Email Address" name="email" id="email" type="email" required="" aria-required="true"
+              class="validate">
+            <label for="email">Email Address<i class="fas fa-asterisk required"></i></label>
+            <span class="helper-text" data-error="wrong" data-success="right">Please
+              use a valid email address</span>
+          </div>
+        </div>
+        <p>
+          <label>
+            <input type="checkbox" required="" aria-required="true" />
+            <span>I'm not a robot!</span>
+          </label>
+        </p>
+        <div class="input-field center-align">
+          <button class="waves-effect btn-large btn-postfly" type="submit" name="action">Send</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <!-- Sample kit form end -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-copyright">
+      <span>© Copyright 2021 - POSTFLY</span>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-background">
+    <div class="modal-content center-align">
+      <h4>Call us!</h4>
+      <h5>+31 (0)20 365 22 93</h5>
+    </div>
+    <div class="modal-footer modal-background">
+      <a href="#!" class="modal-close">
+        <strong>Close</strong></a>
+    </div>
+  </div>
+  <!-- Modal Structure end -->
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- JavaScript end -->
+</body>
 
 </html>
