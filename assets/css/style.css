@@ -13,7 +13,7 @@ main {
   flex: 1 0 auto;
 }
 
-/* ------------- navbar ------------- */
+/* ------------- Navbar ------------- */
 
 nav {
   background-color: #FFFFFF;
@@ -38,8 +38,6 @@ nav .nav-title {
   }
 }
 
-/* Leave it in or not? Only for verry small devices a problem */
-
 @media screen and (max-width: 338px) {
   #logo {
     height: 12.5%;
@@ -49,10 +47,10 @@ nav .nav-title {
   }
 }
 
-/* ------------- hero image ------------- */
+/* ------------- Hero image ------------- */
 
 .hero-image {
-  background-image: url("..//images/hero_image.png");
+  background-image: url("..//images/hero_image.jpg");
   min-height: 400px;
   background-attachment: scroll;
   background-position: center;
@@ -60,12 +58,11 @@ nav .nav-title {
   background-size: cover;
 }
 
-
-/* ------------- landing page content ------------- */
+/* ------------- Landing page content ------------- */
 
 .red-header {
   text-transform: uppercase;
-  color: #E73B3B;
+  color: #e72f4c;
   text-align: center;
   margin-top: 35px;
 }
@@ -75,14 +72,20 @@ nav .nav-title {
 }
 
 .contact-icons i {
-  color: #E73B3B;
-  font-size: 25px;
+  color: #e02a51;
+  font-size: 20px;
   padding: 10px;
   margin-top: 25px;
   margin-bottom: 33px;
 }
 
-/* ------------- sample kit form ------------- */
+@media screen and (max-width: 319.99px) {
+  .contact-icons i {
+    font-size: 15px;
+  }
+}
+
+/* ------------- Sample kit form ------------- */
 
 .sample-kit {
   padding-left: 50px;
@@ -92,7 +95,7 @@ nav .nav-title {
 }
 
 .required {
-  color: #E73B3B;
+  color: #e02a51;
   font-size: 9px;
   padding-left: 2px;
 }
@@ -100,53 +103,47 @@ nav .nav-title {
 /* For some reason materialize form colors are very hard to overwrite, 
 after inspection all of the below must be named to have the wanted color change effect */
 
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #E73B3B;
-  box-shadow: 0 1px 0 0 #e73b3b;
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #e02a51;
+  box-shadow: 0 1px 0 0 #e02a51;
 }
 
-input:not([type]):focus:not([readonly])+label, 
-input[type=text]:not(.browser-default):focus:not([readonly])+label, 
-input[type=password]:not(.browser-default):focus:not([readonly])+label, 
-input[type=email]:not(.browser-default):focus:not([readonly])+label, 
-input[type=url]:not(.browser-default):focus:not([readonly])+label, 
-input[type=time]:not(.browser-default):focus:not([readonly])+label, 
-input[type=date]:not(.browser-default):focus:not([readonly])+label, 
-input[type=datetime]:not(.browser-default):focus:not([readonly])+label, 
-input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, 
-input[type=tel]:not(.browser-default):focus:not([readonly])+label, 
-input[type=number]:not(.browser-default):focus:not([readonly])+label, 
-input[type=search]:not(.browser-default):focus:not([readonly])+label, 
-textarea.materialize-textarea:focus:not([readonly])+label {
-  color: #E73B3B;
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #e02a51;
 }
 
 .input-field>label:not(.label-icon).active {
   color: #292d31ab;
 }
 
-[type="checkbox"]:checked+span:not(.lever):before {
-  border-right: 2px solid #E73B3B;
-  border-bottom: 2px solid #E73B3B;
+.input-field .helper-text {
+  color: #0000008c;
 }
 
+label {
+  color: #676b6f;
+}
 
-/* ------------- buttons ------------- */
+[type="checkbox"]:checked+span:not(.lever):before {
+  border-right: 2px solid #e02a51;
+  border-bottom: 2px solid #e02a51;
+}
+
+/* ------------- Buttons ------------- */
 
 .btn-postfly {
-  background-color: #E73B3B;
+  background-color: #e02a51;
 }
 
 .btn-large:hover {
-  background-color: #E73B3B;
+  background-color: #e02a51;
 }
 
 #design-button {
   margin-top: 33px;
 }
 
-/* ------------- footer ------------- */
+/* ------------- Footer ------------- */
 
 .footer-copyright {
   background-color: #FFFFFF;
@@ -156,17 +153,17 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   line-height: 64px;
 }
 
-/* ------------- modal ------------- */
+/* ------------- Modal ------------- */
 
 .modal .modal-footer {
   text-align: center;
 }
 
 .modal-content h4 {
-  color: #E73B3B;
+  color: #e02a51;
 }
 
 a.modal-close {
-  color: #E73B3B;
+  color: #e02a51;
   font-size: 16px;
 }
