@@ -41,12 +41,12 @@ function sendRequestMail(requestForm) {
     })
     .then(
         function(response) {
-            console.log("SUCCESS", response);
-            location.reload();
+            alert("Thank you, your request has been sent successfully, you will return to the homepage!!", response);
+            location.replace("index.html");
         },
         function(error) {
-            console.log("FAILED", error);
+            alert("FAILED", error);
         }
     );
-    return false;  // To block from loading a new page
+    return false;  // To replace location instead of reload the page
   }
