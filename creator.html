@@ -1,61 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POSTFLY Business card creator</title>
-    <link rel="icon" href="assets/images/favicon.png" type="image/png"
-      sizes="32x32">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSTFLY Business card creator</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="index.html"><img id="logo"
-              src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
-          <span class="nav-title"><strong>Business card creator</strong></span>
-        </div>
-      </nav>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html"><img id="logo" src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
+        <span class="nav-title"><strong>Business card creator</strong></span>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar end -->
+
+  <!-- Creator content -->
+  <header>
+    <div class="row">
+      <div class="col s12">
+        <h5 class="red-header flow-text">Start desiging your own business card</h5>
+      </div>
     </div>
-    <!-- Navbar end -->
-
-    <!-- Creator content -->
-    <header>
+  </header>
+  <main>
+    <!-- Selectors for card creator -->
+    <div class="container">
       <div class="row">
-        <div class="col s12">
-          <h5 class="red-header flow-text">Start desiging your own business card</h5>
+        <div class="col l6 s12">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">photo_size_select_small</i>Select Size</div>
+              <div class="collapsible-body">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input class="with-gap" name="size" type="radio" />
+                      <span><strong>Business card</strong> (85x55mm)</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="size" type="radio" />
+                      <span><strong>Business card doubble portrait</strong> (110x85mm)</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="size" type="radio" />
+                      <span><strong>Business card doubble landscape</strong> (170x55mm)</span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col l6 s12">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">print</i>Select Printing Method</div>
+              <div class="collapsible-body">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input class="with-gap" name="method" type="radio" />
+                      <span><strong>4/0 CMYK</strong> (Printed one-sided)</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="method" type="radio" />
+                      <span><strong>4/4 CMYK</strong> (Printed double-sided)</span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <main>
-
-    </main>
-    <!-- Creator content end -->
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-copyright">
-        <span>© Copyright 2021 - POSTFLY</span>
+      <div class="row">
+        <div class="col l6 s12">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">format_color_fill</i>Select Background Color
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Blue</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Green</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Red</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Yellow</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Orange</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Black</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>Grey</strong></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="color" type="radio" />
+                    <span><strong>White</strong> Paper color</span>
+                  </label>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col l6 s12">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">note</i>Select Paper Type</div>
+              <div class="collapsible-body">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input class="with-gap" name="paper" type="radio" />
+                      <span><strong>300 gr</strong> Eco Offset</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="paper" type="radio" />
+                      <span><strong>400 gr</strong> Mat Varnish</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="paper" type="radio" />
+                      <span><strong>400 gr</strong> Mat Lamination</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="paper" type="radio" />
+                      <span><strong>400 gr</strong> Gloss Lamination</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="paper" type="radio" />
+                      <span><strong>400 gr</strong> Mat Lamination + SpotUV</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="paper" type="radio" />
+                      <span><strong>350 gr</strong> Mat + one-sided Cold Foil</span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
-    <!-- Footer end -->
+      <div class="row">
+        <div class="col l6 s12">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Select Quanity</div>
+              <div class="collapsible-body">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>250 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>500 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>1.000 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>1.500 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>2.000 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>2.500 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>3.000 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>3.500 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>4.000 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>4.500 pc</strong></span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap" name="quanity" type="radio" />
+                      <span><strong>5.000 pc</strong></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Selectors for card creator end -->
 
-    <!-- JavaScript -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <!-- JavaScript end -->
-  </body>
+      <!-- File upload button -->
+      <div class="container" id="upload">
+        <div class="row">
+          <div class="col s12 center-align">
+            <form action="#">
+              <p>
+                <label>
+                  <a class="file-field btn-floating btn-large pulse"><i class="material-icons">file_upload</i><input
+                      type="file" multiple></a>
+                </label>
+              </p>
+            </form>
+            <p>
+              <span>Upload photo or logo</span> <br>
+              <span><em>(Please use a jpg or png file)</em></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- File upload button end -->
+
+  </main>
+  <!-- Creator content end -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-copyright">
+      <span>© Copyright 2021 - POSTFLY</span>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets/js/fabric.js"></script>
+  <!-- JavaScript end -->
+</body>
 
 </html>
