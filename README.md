@@ -88,7 +88,7 @@ What was changed is:
 
 [Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was choosen because this is already in use on the existing POSTFLY site.
 
-For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used.
+For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used and for the creator page the icons of [Materialize](https://materializecss.com/icons.html) were used.
 
 Features
 ======
@@ -207,9 +207,13 @@ All content has been written by myself
 3. [Toolur](https://compressimage.toolur.com/) was used to compress the hero image
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used
 #### Code:
-<!-- 1. [W3schools](https://www.w3schools.com/html/html_youtube.asp) to help embed the YouTube videos in the code.
-2. [Stackoverflow](https://stackoverflow.com/questions/37814508/order-columns-through-bootstrap4) to explain how to reverse the order of the moon phase cards on the mobile layout. 
-3. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
+<!-- 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
+
+#### For research when I forgot how things worked again:
+1. [Code Institute LMS](https://learn.codeinstitute.net/login)
+2. [W3schools](https://www.w3schools.com/)
+3. [Stackoverflow](https://stackoverflow.com/)
+4. [Materialize](https://materializecss.com/)
 
 ### Acknowledgements
 + My mentor from Code Institute, thank you Narender for your time and guidance.
