@@ -1,35 +1,16 @@
 // -------------  Modals ------------- 
 
-/* 
-Documentation from materialize was not sufficiant to
-let model work, with explanation of my husband(Django Heimgartner)
-I was able to produce this code 
-*/
-
-// Initialise Modal
-(function ($) {
-  $.fn.leanModal = function (options) {
-    if ($('.modal').length > 0) {
-      $('.modal').modal(options);
-    }
-  };
-
-  $.fn.openModal = function (options) {
-    $(this).modal(options);
-    $(this).modal('open');
-  };
-
-  $.fn.closeModal = function () {
-    $(this).modal('close');
-  };
-})(jQuery);
-
+// From materialize documentation to initialise the modal with jQuery
 $(document).ready(function () {
-  // The "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('.modal-trigger').leanModal();
-})
+  $('.modal').modal();
+});
 
 // ------------- Sample kit request form ------------- 
+
+// Validation for EmailJS
+document.onload = function () {
+  emailjs.init("user_341YHLcR0K48KFIHl0TNg");
+}();
 
 function sendRequestMail(requestForm) {
   // This ensures that all listed details are send through emailjs
