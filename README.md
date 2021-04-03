@@ -81,6 +81,7 @@ What was changed is:
 1. The color for the red headers and buttons were changed from #E73B3B to #e72f4c and #e02a51 because during testing #E73B3B did not give a good enough contrast.
 2. The icon for the website was added, because it would be logical to reffer to the main website of the company.
 3. On the sample kit request form a checkbox was added to reduce spam by checking if the user is a robot.
+4. The layout for desktop view on the creator.html for the card selectors was changed a bit to make it look more appealing on smaller screens and to make it more logical to follow the steps.
 
 
 **Fonts & icons**
@@ -188,7 +189,6 @@ remote: Compressing objects: 100% (71/71), done.
 remote: Total 113 (delta 34), reused 105 (delta 26), pack-reused 0
 Receiving objects: 100% (113/113), 8.54 MiB | 11.13 MiB/s, done.
 Resolving deltas: 100% (34/34), done.
-iMac:test postfly$ 
 ```
 
 Credits
