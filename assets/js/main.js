@@ -9,12 +9,12 @@ $(document).ready(function () {
 
 // Validation for EmailJS
 document.onload = function () {
-  emailjs.init("user_341YHLcR0K48KFIHl0TNg");
+  emailjs.init("user_2XFUnsxHC1xsdX5DI6gOQ");
 }();
 
 function sendRequestMail(requestForm) {
   // This ensures that all listed details are send through emailjs
-  emailjs.send("service_re41zx8", "sample kit request", {
+  emailjs.send("service_gcpzmbl", "sample kit request", {
     "from_fname": requestForm.fname.value,
     "from_lname": requestForm.lname.value,
     "from_address01": requestForm.address01.value,
