@@ -106,7 +106,8 @@ The site contains the following features:
 The following items can be added: 
 +	choose a different color for the frontside and the backside of the card
 +	choose the production / delivery time
-+	customize the paper size
++	customize the paper size 
++ choose between round or right angles
 +	integrate it on the POSTFLY website
 +	show costs in advance without having to ask for a quotation
 + set the designed business card through as an order
@@ -114,11 +115,13 @@ The following items can be added:
 Technologies
 ======
 
-**Code languages and frameworks**
+**Code languages, libraries and frameworks**
 + HTML5
 + CSS3
 + Materialize 1.0.0
 + JavaScript
++ Fabric
++ EmailJS
 
 **Wireframes**
 + Adobe XD
@@ -214,6 +217,13 @@ All content has been written by myself
 2. [W3schools](https://www.w3schools.com/)
 3. [Stackoverflow](https://stackoverflow.com/)
 4. [Materialize](https://materializecss.com/)
+
+### Other
+1. [Fabric](http://fabricjs.com/)
+As a libary to make the functions work on the canvas
+2. [cdnjs](https://cdnjs.com/) to get the js cdn's from
+3. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabris were followed to get an understanding of how things worked
+4. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
 
 ### Acknowledgements
 + My mentor from Code Institute, thank you Narender for your time and guidance.
