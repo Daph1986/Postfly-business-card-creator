@@ -1,11 +1,11 @@
-// -------------  Collapsibles ------------- 
+// ------------- Collapsibles ------------- 
 
 // From materialize documentation to initialise the collapsible with jQuery
 $(document).ready(function(){
   $('.collapsible').collapsible();
 });
 
-// -------------  Creator form ------------- 
+// ------------- EmailJS ------------- 
 
 // Validation for EmailJS
 document.onload = function () {
@@ -35,4 +35,35 @@ function sendQuotationMail(quotationForm) {
     );
   // Ensures that the location.replace is done instead of a reload of the page
   return false;
+}
+
+// ------------- Fabric ------------- 
+const canvas = new fabric.Canvas('canvas');
+
+
+function selectBackgroundColor(element) {
+  let div = document.getElementById('card-div');
+  if (element.id == 'a' && element.checked) {
+    div.style.backgroundColor = 'blue';
+  } else if (element.id == 'b' && element.checked) {
+    div.style.backgroundColor = 'green';
+  }
+  else if (element.id == 'c' && element.checked) {
+    div.style.backgroundColor = 'red';
+  }
+  else if (element.id == 'd' && element.checked) {
+    div.style.backgroundColor = 'yellow';
+  }
+  else if (element.id == 'e' && element.checked) {
+    div.style.backgroundColor = 'orange';
+  }
+  else if (element.id == 'f' && element.checked) {
+    div.style.backgroundColor = 'black';
+  }
+  else if (element.id == 'g' && element.checked) {
+    div.style.backgroundColor = 'grey';
+  }
+  else if (element.id == 'h' && element.checked) {
+    div.style.backgroundColor = 'white';
+  }
 }
