@@ -141,15 +141,38 @@ label {
 
 .canvas {
   background-color: #FFF;
-  height: 600px;
-  width: auto;
-  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+}
+#card-div {
+  width: 100%;
+  height: auto;
 }
 
 #cards {
-  width: 500px;
+  width: 100%;
   height: auto;
+}
 
+#preview {
+  background-color: #FFF;
+}
+
+#details {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #EFEFEF;
+}
+
+.drawing-area {
+  position: absolute;
+  top: 1027px;
+  left: 165px;
+  z-index: 10;
+  width: 100px;
+  height: 362px;
 }
 
 /* ------------- Buttons ------------- */
