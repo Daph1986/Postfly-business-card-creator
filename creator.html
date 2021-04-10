@@ -53,19 +53,19 @@
                     <div action="#">
                       <p>
                         <label>
-                          <input class="with-gap" name="size" type="radio" onclick="selectSize()" required />
+                          <input class="with-gap" id="size-single" name="size" type="radio" onchange="selectSize(this)" required />
                           <span><strong>Business card</strong> (85x55mm)</span>
                         </label>
                       </p>
                       <p>
                         <label>
-                          <input class="with-gap" name="size" type="radio" onclick="selectSize()" />
+                          <input class="with-gap" id="size-double-portrait" name="size" type="radio" onchange="selectSize(this)" />
                           <span><strong>Business card double portrait</strong> (110x85mm)</span>
                         </label>
                       </p>
                       <p>
                         <label>
-                          <input class="with-gap" name="size" type="radio" onclick="selectSize()" />
+                          <input class="with-gap" id="size-double-landscape" name="size" type="radio" onchange="selectSize(this)" />
                           <span><strong>Business card double landscape</strong> (170x55mm)</span>
                         </label>
                       </p>
@@ -82,13 +82,13 @@
                     <div action="#">
                       <p>
                         <label>
-                          <input class="with-gap" name="method" type="radio" required />
+                          <input class="with-gap" id="one-sided" name="method" type="radio" onchange="selectPrintingMethod(this)" required />
                           <span><strong>4/0 CMYK</strong> (Printed one-sided)</span>
                         </label>
                       </p>
                       <p>
                         <label>
-                          <input class="with-gap" name="method" type="radio" />
+                          <input class="with-gap" id="double-sided" name="method" type="radio" onchange="selectPrintingMethod(this)" />
                           <span><strong>4/4 CMYK</strong> (Printed double-sided)</span>
                         </label>
                       </p>
@@ -341,7 +341,7 @@
           <!-- Business card preview -->
           <div class="col l6 s12">
             <div id="card-div">
-              <img id="cards" src="assets/images/businesscards_templates/businescard_one_sided.png"
+              <img id="cards" src="assets/images/placeholder.png"
                 alt="businescard_one_sided">
               <div class="drawing-area" id="drawingArea">
                 <div class="canvas-container">
