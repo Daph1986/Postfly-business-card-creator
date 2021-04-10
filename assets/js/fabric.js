@@ -1,7 +1,7 @@
 // ------------- Collapsibles ------------- 
 
 // From materialize documentation to initialise the collapsible with jQuery
-$(document).ready(function(){
+$(document).ready(function () {
   $('.collapsible').collapsible();
 });
 
@@ -26,8 +26,10 @@ function sendQuotationMail(quotationForm) {
   })
     .then(
       function (response) {
-        alert("Thank you, your qoutation request has been sent successfully, you will return to the homepage!!", response);
-        location.replace("index.html");
+        M.toast({ html: 'Thank you, your qoutation request has been sent successfully, you will return to the homepage!!', displayLength: '4000', response });
+        window.setTimeout(function () {
+          location.replace("index.html");
+        }, 5000);
       },
       function (error) {
         alert("FAILED", error);
@@ -43,27 +45,27 @@ const canvas = new fabric.Canvas('canvas');
 
 function selectBackgroundColor(element) {
   let div = document.getElementById('card-div');
-  if (element.id == 'a' && element.checked) {
-    div.style.backgroundColor = 'blue';
-  } else if (element.id == 'b' && element.checked) {
-    div.style.backgroundColor = 'green';
+  if (element.id == 'bg-blue' && element.checked) {
+    div.style.backgroundColor = '#007bff';
+  } else if (element.id == 'bg-green' && element.checked) {
+    div.style.backgroundColor = '#28a745';
   }
-  else if (element.id == 'c' && element.checked) {
-    div.style.backgroundColor = 'red';
+  else if (element.id == 'bg-red' && element.checked) {
+    div.style.backgroundColor = '#dc3545';
   }
-  else if (element.id == 'd' && element.checked) {
-    div.style.backgroundColor = 'yellow';
+  else if (element.id == 'bg-yellow' && element.checked) {
+    div.style.backgroundColor = '#ffc107';
   }
-  else if (element.id == 'e' && element.checked) {
-    div.style.backgroundColor = 'orange';
+  else if (element.id == 'bg-orange' && element.checked) {
+    div.style.backgroundColor = '#fd7e14';
   }
-  else if (element.id == 'f' && element.checked) {
-    div.style.backgroundColor = 'black';
+  else if (element.id == 'bg-black' && element.checked) {
+    div.style.backgroundColor = '#000';
   }
-  else if (element.id == 'g' && element.checked) {
-    div.style.backgroundColor = 'grey';
+  else if (element.id == 'bg-grey' && element.checked) {
+    div.style.backgroundColor = '#6c757d';
   }
-  else if (element.id == 'h' && element.checked) {
-    div.style.backgroundColor = 'white';
+  else if (element.id == 'bg-white' && element.checked) {
+    div.style.backgroundColor = '#fff';
   }
 }
