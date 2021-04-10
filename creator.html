@@ -38,256 +38,260 @@
 
   <!-- Creator page content -->
   <main>
-    <div class="container">
+    <div>
       <form class="col s12" onsubmit="return sendRequestMail(this);">
 
         <!-- Selectors for card creator -->
-        <div class="row">
-          <div class="col l6 s12">
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">photo_size_select_small</i>Select Size</div>
-                <div class="collapsible-body">
-                  <div action="#">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">photo_size_select_small</i>1. Select Size
+                  </div>
+                  <div class="collapsible-body">
+                    <div action="#">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="size" type="radio" onclick="selectSize()" required />
+                          <span><strong>Business card</strong> (85x55mm)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="size" type="radio" onclick="selectSize()" />
+                          <span><strong>Business card double portrait</strong> (110x85mm)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="size" type="radio" onclick="selectSize()" />
+                          <span><strong>Business card double landscape</strong> (170x55mm)</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col l6 s12">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">print</i>2. Select Printing Method</div>
+                  <div class="collapsible-body">
+                    <div action="#">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="method" type="radio" required />
+                          <span><strong>4/0 CMYK</strong> (Printed one-sided)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="method" type="radio" />
+                          <span><strong>4/4 CMYK</strong> (Printed double-sided)</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l6 s12">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">format_color_fill</i>3. Select Background
+                    Color
+                  </div>
+                  <div class="collapsible-body">
                     <p>
                       <label>
-                        <input class="with-gap" name="size" type="radio" onclick="selectSize()" required />
-                        <span><strong>Business card</strong> (85x55mm)</span>
+                        <input class="with-gap" id="bg-blue" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" required />
+                        <span><strong>Blue</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="size" type="radio" onclick="selectSize()" />
-                        <span><strong>Business card double portrait</strong> (110x85mm)</span>
+                        <input class="with-gap" id="bg-green" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>Green</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="size" type="radio" onclick="selectSize()" />
-                        <span><strong>Business card double landscape</strong> (170x55mm)</span>
+                        <input class="with-gap" id="bg-red" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>Red</strong></span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" id="bg-yellow" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>Yellow</strong></span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" id="bg-orange" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>Orange</strong></span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" id="bg-black" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>Black</strong></span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" id="bg-grey" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>Grey</strong></span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" id="bg-white" name="color" type="radio"
+                          onchange="selectBackgroundColor(this)" />
+                        <span><strong>White</strong> (Paper color)</span>
                       </label>
                     </p>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col l6 s12">
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">print</i>Select Printing Method</div>
-                <div class="collapsible-body">
-                  <div action="#">
-                    <p>
-                      <label>
-                        <input class="with-gap" name="method" type="radio" required />
-                        <span><strong>4/0 CMYK</strong> (Printed one-sided)</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="method" type="radio" />
-                        <span><strong>4/4 CMYK</strong> (Printed double-sided)</span>
-                      </label>
-                    </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col l6 s12">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">note</i>4. Select Paper Type</div>
+                  <div class="collapsible-body">
+                    <div action="#">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="paper" type="radio" required />
+                          <span><strong>300 gr</strong> Eco Offset</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="paper" type="radio" />
+                          <span><strong>400 gr</strong> Mat Varnish</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="paper" type="radio" />
+                          <span><strong>400 gr</strong> Mat Lamination</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="paper" type="radio" />
+                          <span><strong>400 gr</strong> Gloss Lamination</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="paper" type="radio" />
+                          <span><strong>400 gr</strong> Mat Lamination + SpotUV</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="paper" type="radio" />
+                          <span><strong>350 gr</strong> Mat + one-sided Cold Foil</span>
+                        </label>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col l6 s12">
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">format_color_fill</i>Select Background Color
-                </div>
-                <div class="collapsible-body">
-                  <p>
-                    <label>
-                      <input class="with-gap" id="a" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" required />
-                      <span><strong>Blue</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="b" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>Green</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="c" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>Red</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="d" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>Yellow</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="e" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>Orange</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="f" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>Black</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="g" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>Grey</strong></span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input class="with-gap" id="h" name="color" type="radio"
-                      onchange="selectBackgroundColor(this)" />
-                      <span><strong>White</strong> (Paper color)</span>
-                    </label>
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col l6 s12">
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">note</i>Select Paper Type</div>
-                <div class="collapsible-body">
-                  <div action="#">
-                    <p>
-                      <label>
-                        <input class="with-gap" name="paper" type="radio" required />
-                        <span><strong>300 gr</strong> Eco Offset</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="paper" type="radio" />
-                        <span><strong>400 gr</strong> Mat Varnish</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="paper" type="radio" />
-                        <span><strong>400 gr</strong> Mat Lamination</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="paper" type="radio" />
-                        <span><strong>400 gr</strong> Gloss Lamination</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="paper" type="radio" />
-                        <span><strong>400 gr</strong> Mat Lamination + SpotUV</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="paper" type="radio" />
-                        <span><strong>350 gr</strong> Mat + one-sided Cold Foil</span>
-                      </label>
-                    </p>
+          <div class="row">
+            <div class="col l6 s12">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">shopping_cart</i>5. Select Quanity</div>
+                  <div class="collapsible-body">
+                    <div action="#">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" required />
+                          <span><strong>250 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>500 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>1.000 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>1.500 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>2.000 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>2.500 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>3.000 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>3.500 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>4.000 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>4.500 pc</strong></span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" name="quanity" type="radio" />
+                          <span><strong>5.000 pc</strong></span>
+                        </label>
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col l6 s12">
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Select Quanity</div>
-                <div class="collapsible-body">
-                  <div action="#">
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" required />
-                        <span><strong>250 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>500 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>1.000 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>1.500 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>2.000 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>2.500 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>3.000 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>3.500 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>4.000 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>4.500 pc</strong></span>
-                      </label>
-                    </p>
-                    <p>
-                      <label>
-                        <input class="with-gap" name="quanity" type="radio" />
-                        <span><strong>5.000 pc</strong></span>
-                      </label>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- Selectors for card creator end -->
@@ -319,9 +323,23 @@
         </div>
         <!-- Add text button -->
 
-        <div class="container" id="preview">
+        <div id="preview">
+          <!-- Legend -->
+          <br>
+          <h5 class="red-header flow-text">Legend:</h5> <br>
+          <div class="center-align">
+            <div class="cutting-edge"><i class="material-icons cutting-edge">remove</i> <i
+                class="material-icons cutting-edge">arrow_back</i> Your design will be cut on these marks. (Cutting
+              edge)</div>
+            <div class="bleed">- - - <i class="material-icons bleed">arrow_back</i> Provide 3mm extra bleed to your
+              design so that we can cut accurately. (Bleed)</div>
+            <div class="safety-zone">- - - <i class="material-icons safety-zone">arrow_back</i> Also make sure that your
+              texts are not too close to the edge. Stay about 3mm within the cutting edge. (Safety zone)</div> <br>
+
+          </div>
+          <!-- Legend end -->
           <!-- Business card preview -->
-          <div class="col s12">
+          <div class="col l6 s12">
             <div id="card-div">
               <img id="cards" src="assets/images/businesscards_templates/businescard_one_sided.png"
                 alt="businescard_one_sided">
@@ -334,7 +352,7 @@
             <!-- Business card preview end -->
 
             <!-- Download & reset buttons -->
-            <div class="row">
+            <div class="row button-spacing">
               <div class="col s12 center-align">
                 <p>
                   <label>
@@ -349,7 +367,7 @@
             </div>
             <!-- Download & reset buttons end -->
           </div>
-          
+
           <!-- Client details -->
           <div class="row" id="details">
             <div class="row">
@@ -386,7 +404,7 @@
 
           </div>
           <!-- Client details end -->
-
+        </div>
       </form>
     </div>
   </main>
