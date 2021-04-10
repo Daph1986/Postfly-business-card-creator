@@ -25,8 +25,10 @@ function sendRequestMail(requestForm) {
   })
     .then(
       function (response) {
-        alert("Thank you, your request has been sent successfully, you will return to the homepage!!", response);
-        location.replace("index.html");
+        M.toast({ html: 'Thank you, your request has been sent successfully, you will return to the homepage!!', displayLength: '4000', response });
+        window.setTimeout(function () {
+          location.replace("index.html");
+        }, 5000);
       },
       function (error) {
         alert("FAILED", error);
