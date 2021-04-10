@@ -87,7 +87,7 @@ nav .nav-title {
 
 /* ------------- Sample kit form ------------- */
 
-.postfly-forms {
+#postfly-form {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
@@ -128,6 +128,12 @@ label {
   border-bottom: 2px solid #e02a51;
 }
 
+.toast {
+  background-color: #e02a51;
+  align-items: center;
+  border-radius: 10px;
+}
+
 /* ------------- Creator page content ------------- */
 
 .material-icons {
@@ -144,6 +150,7 @@ label {
   width: 100%;
   height: auto;
 }
+
 #card-div {
   width: 100%;
   height: auto;
@@ -154,26 +161,56 @@ label {
   height: auto;
 }
 
+.cutting-edge {
+  color: #292D30;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cutting-edge.material-icons {
+  font-size: 17px;
+}
+
+.bleed {
+  color: #e02a51;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bleed.material-icons {
+  font-size: 17px;
+}
+
+.safety-zone {
+  color: #949494;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.safety-zone.material-icons {
+  font-size: 17px;
+}
+
 #preview {
   background-color: #FFF;
 }
 
 #details {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #EFEFEF;
 }
 
-.drawing-area {
+/* .drawing-area {
   position: absolute;
   top: 1027px;
   left: 165px;
   z-index: 10;
   width: 100px;
   height: 362px;
-}
+} */
 
 /* ------------- Buttons ------------- */
 
@@ -182,6 +219,10 @@ label {
 }
 
 .btn-large:hover {
+  background-color: #e02a51;
+}
+
+.btn-large:focus {
   background-color: #e02a51;
 }
 
@@ -194,9 +235,10 @@ label {
   background-color: #e02a51;
 }
 
-.btn-large:visited  {
+.btn-large:visited {
   background-color: #e02a51;
 }
+
 /* ------------- Radio buttons ------------- */
 
 [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
