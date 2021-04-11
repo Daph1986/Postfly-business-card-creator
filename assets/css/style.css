@@ -145,22 +145,6 @@ label {
   margin-bottom: 75px;
 }
 
-.canvas {
-  background-color: #FFF;
-  width: 100%;
-  height: auto;
-}
-
-#card-div {
-  width: 100%;
-  height: auto;
-}
-
-#cards {
-  width: 100%;
-  height: auto;
-}
-
 .cutting-edge {
   color: #292D30;
   padding-left: 15px;
@@ -191,8 +175,51 @@ label {
   font-size: 17px;
 }
 
+/* default Fabric class, margin 0 auto to center canvas */
+.canvas-container {
+  margin: 0 auto;
+}
+
+/* Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ */
+#canvas {
+  border:1px solid red;
+  top:22px;
+  left:0px;
+  height: 100%;
+  width: 99%;
+}
+
+.box {
+  margin: 1em;
+}
+
+.after-box {
+  clear: left;
+  }
+  /* Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end */
+
+#card-div {
+  width: 414px;
+  height: 253px;
+  position: relative;
+}
+
+#cards {
+  width: 414px;
+  height: 253px;
+}
+
 #preview {
   background-color: #FFF;
+}
+
+.drawing-area {
+  position: absolute;
+  top: 1027px;
+  left: 165px;
+  z-index: 10;
+  width: 100px;
+  height: 362px;
 }
 
 #details {
@@ -202,15 +229,6 @@ label {
   padding-bottom: 50px;
   background-color: #EFEFEF;
 }
-
-/* .drawing-area {
-  position: absolute;
-  top: 1027px;
-  left: 165px;
-  z-index: 10;
-  width: 100px;
-  height: 362px;
-} */
 
 /* ------------- Buttons ------------- */
 
