@@ -82,6 +82,7 @@ What was changed is:
 2. The icon for the website was added, because it would be logical to reffer to the main website of the company.
 3. On the sample kit request form a checkbox was added to reduce spam by checking if the user is a robot.
 4. The layout for desktop view on the creator.html for the card selectors was changed a bit to make it look more appealing on smaller screens and to make it more logical to follow the steps.
+5. The "Select Size" and "Select Printing Method" options were combined to give it a UX friendly experience.
 
 
 **Fonts & icons**
@@ -222,7 +223,7 @@ All content has been written by myself
 1. [Fabric](http://fabricjs.com/)
 As a libary to make the functions work on the canvas
 2. [cdnjs](https://cdnjs.com/) to get the js cdn's from
-3. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabris were followed to get an understanding of how things worked
+3. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked
 4. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
 
 ### Acknowledgements
