@@ -82,7 +82,7 @@ What was changed is:
 2. The icon for the website was added, because it would be logical to reffer to the main website of the company.
 3. On the sample kit request form a checkbox was added to reduce spam by checking if the user is a robot.
 4. The layout for desktop view on the creator.html for the card selectors was changed a bit to make it look more appealing on smaller screens and to make it more logical to follow the steps.
-5. The "Select Size" and "Select Printing Method" options were combined to give it a UX friendly experience.
+5. The Select Size and Select Printing Method options were combined to give it a UX friendly experience.
 
 
 **Fonts & icons**
