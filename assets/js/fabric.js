@@ -1,34 +1,23 @@
 const canvas = new fabric.Canvas('canvas');
 
-// ------------- Select size ------------- 
+// ------------- Select size & printing method ------------- 
 function selectSize(element) {
   let div = document.getElementById('card-div');
-  if (element.id == 'size-single' && element.checked) {
+  if (element.id == 'single-one-sided' && element.checked) {
     div.innerHTML = "<img src='assets/images/businesscards_templates/businescard_one_sided.png'>";
-  } else if (element.id == 'size-double-portrait' && element.checked) {
-    div.innerHTML = "<img src='assets/images/businesscards_templates/businesscard_double_portrait_one_sided.png'>";
-  } else if (element.id == 'size-double-landscape' && element.checked) {
-    div.innerHTML = "<img src='assets/images/businesscards_templates/businesscard_double_landscape_one_sided.png'>";
-  }
-}
-
-// ------------- Select printing method ------------- 
-function selectPrintingMethod(element) {
-  let div = document.getElementById('card-div');
-  if (element.id == ('size-single' && 'one-sided') && element.checked) {
-    div.innerHTML = "<img src='assets/images/businesscards_templates/businescard_one_sided.png'>";
-  } else if (element.id == ('size-single' && 'double-sided') && element.checked) {
+  } else if  (element.id == 'single-double-sided' && element.checked) {
     div.innerHTML = "<img src='assets/images/businesscards_templates/businescard_double_sided.png'>";
-  } else if (element.id == ('size-double-portrait' && 'one-sided') && element.checked) {
+  } else if (element.id == 'double-portrait-one-sided' && element.checked) {
     div.innerHTML = "<img src='assets/images/businesscards_templates/businesscard_double_portrait_one_sided.png'>";
-  } else if (element.id == ('size-double-portrait' && 'double-sided') && element.checked) {
+  } else if (element.id == 'double-portrait-double-sided' && element.checked) {
     div.innerHTML = "<img src='assets/images/businesscards_templates/businesscard_double_portrait_double_sided.png'>";
-  } else if (element.id == ('size-double-landscape' && 'one-sided') && element.checked) {
+  } else if (element.id == 'double-landscape-one-sided' && element.checked) {
     div.innerHTML = "<img src='assets/images/businesscards_templates/businesscard_double_landscape_one_sided.png'>";
-  } else if (element.id == ('size-double-landscape' && 'double-sided') && element.checked) {
+  } else if (element.id == 'double-landscape-double-sided' && element.checked) {
     div.innerHTML = "<img src='assets/images/businesscards_templates/businesscard_double_landscape_double_sided.png'>";
   }
 }
+
 
 // ------------- Select background color ------------- 
 function selectBackgroundColor(element) {
