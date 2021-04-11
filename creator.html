@@ -44,29 +44,49 @@
         <!-- Selectors for card creator -->
         <div class="container">
           <div class="row">
+
+            <!-- Selector size & method -->
             <div class="col l6 s12">
               <ul class="collapsible">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">photo_size_select_small</i>1. Select Size
+                  <div class="collapsible-header"><i class="material-icons">photo_size_select_small</i>1. Select Size & Printing Method
                   </div>
                   <div class="collapsible-body">
                     <div action="#">
                       <p>
                         <label>
-                          <input class="with-gap" id="size-single" name="size" type="radio" onchange="selectSize(this)" required />
-                          <span><strong>Business card</strong> (85x55mm)</span>
+                          <input class="with-gap" id="single-one-sided" name="size" type="radio" onchange="selectSize(this)" required />
+                          <span><strong>Business card 4/0 CMYK</strong> (85x55mm one-sided)</span>
                         </label>
                       </p>
                       <p>
                         <label>
-                          <input class="with-gap" id="size-double-portrait" name="size" type="radio" onchange="selectSize(this)" />
-                          <span><strong>Business card double portrait</strong> (110x85mm)</span>
+                          <input class="with-gap" id="single-double-sided" name="size" type="radio" onchange="selectSize(this)" required />
+                          <span><strong>Business card 4/4 CMYK</strong> (85x55mm double-sided)</span>
                         </label>
                       </p>
                       <p>
                         <label>
-                          <input class="with-gap" id="size-double-landscape" name="size" type="radio" onchange="selectSize(this)" />
-                          <span><strong>Business card double landscape</strong> (170x55mm)</span>
+                          <input class="with-gap" id="double-portrait-one-sided" name="size" type="radio" onchange="selectSize(this)" />
+                          <span><strong>Business card double portrait 4/0 CMYK</strong> (110x85mm one-sided)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" id="double-portrait-double-sided" name="size" type="radio" onchange="selectSize(this)" />
+                          <span><strong>Business card double portrait 4/4 CMYK</strong> (110x85mm double-sided)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" id="double-landscape-one-sided" name="size" type="radio" onchange="selectSize(this)" />
+                          <span><strong>Business card double landscape 4/0 CMYK</strong> (170x55mm one-sided)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input class="with-gap" id="double-landscape-double-sided" name="size" type="radio" onchange="selectSize(this)" />
+                          <span><strong>Business card double landscape 4/4 CMYK</strong> (170x55mm double-sided)</span>
                         </label>
                       </p>
                     </div>
@@ -74,35 +94,13 @@
                 </li>
               </ul>
             </div>
+            <!-- Selector size & method end -->
+
+            <!-- Selector background color -->
             <div class="col l6 s12">
               <ul class="collapsible">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">print</i>2. Select Printing Method</div>
-                  <div class="collapsible-body">
-                    <div action="#">
-                      <p>
-                        <label>
-                          <input class="with-gap" id="one-sided" name="method" type="radio" onchange="selectPrintingMethod(this)" required />
-                          <span><strong>4/0 CMYK</strong> (Printed one-sided)</span>
-                        </label>
-                      </p>
-                      <p>
-                        <label>
-                          <input class="with-gap" id="double-sided" name="method" type="radio" onchange="selectPrintingMethod(this)" />
-                          <span><strong>4/4 CMYK</strong> (Printed double-sided)</span>
-                        </label>
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col l6 s12">
-              <ul class="collapsible">
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">format_color_fill</i>3. Select Background
+                  <div class="collapsible-header"><i class="material-icons">format_color_fill</i>2. Select Background
                     Color
                   </div>
                   <div class="collapsible-body">
@@ -166,10 +164,16 @@
                 </li>
               </ul>
             </div>
+            <!-- Selector background color end -->
+
+          </div>
+          <div class="row">
+
+            <!-- Selector paper -->
             <div class="col l6 s12">
               <ul class="collapsible">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">note</i>4. Select Paper Type</div>
+                  <div class="collapsible-header"><i class="material-icons">note</i>3. Select Paper Type</div>
                   <div class="collapsible-body">
                     <div action="#">
                       <p>
@@ -213,12 +217,13 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="row">
+            <!-- Selector paper end -->
+
+            <!-- Selector quantity -->
             <div class="col l6 s12">
               <ul class="collapsible">
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">shopping_cart</i>5. Select Quanity</div>
+                  <div class="collapsible-header"><i class="material-icons">shopping_cart</i>4. Select Quanity</div>
                   <div class="collapsible-body">
                     <div action="#">
                       <p>
@@ -292,6 +297,8 @@
                 </li>
               </ul>
             </div>
+           <!-- Selector quantity end -->
+
           </div>
         </div>
         <!-- Selectors for card creator end -->
@@ -335,14 +342,14 @@
               design so that we can cut accurately. (Bleed)</div>
             <div class="safety-zone">- - - <i class="material-icons safety-zone">arrow_back</i> Also make sure that your
               texts are not too close to the edge. Stay about 3mm within the cutting edge. (Safety zone)</div> <br>
-
           </div>
           <!-- Legend end -->
+
           <!-- Business card preview -->
           <div class="col l6 s12">
             <div id="card-div">
               <img id="cards" src="assets/images/placeholder.png"
-                alt="businescard_one_sided">
+                alt="placeholder">
               <div class="drawing-area" id="drawingArea">
                 <div class="canvas-container">
                   <canvas id="canvas"></canvas>
