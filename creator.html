@@ -64,7 +64,7 @@
                       <p>
                         <label>
                           <input class="with-gap" id="single-double-sided" name="size" type="radio"
-                            onchange="selectSize(this)" required />
+                            onchange="selectSize(this)" />
                           <span><strong>Business card 4/4 CMYK</strong> (85x55mm double-sided)</span>
                         </label>
                       </p>
@@ -316,9 +316,11 @@
             <div class="col s12 center-align">
               <div action="#">
                 <p>
-                  <label for="files">
-                    <a class="file-field btn-floating btn-large pulse"><i class="material-icons">file_upload</i><input
-                        type="file" multiple id="files" name="files"></a>
+                  <label for="file-upload">
+                    <a class="btn-floating btn-large pulse">
+                      <i class="material-icons">file_upload</i>
+                      <input type="file" id="file-upload" name="file-upload" accept="image/*">
+                    </a>
                   </label>
                 </p>
               </div>
@@ -357,7 +359,7 @@
             <div class="col s12" id="template-div">
               <img class="col s12" id="templates" src="assets/images/placeholder.png" alt="Template">
               <div id="drawingArea" class="drawing-area">
-                <div class="canvas-container">
+                <div class="canvas-container box" id="box">
                   <canvas id="canvas"></canvas>
                 </div>
               </div>
