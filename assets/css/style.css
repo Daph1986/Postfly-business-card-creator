@@ -180,46 +180,56 @@ label {
   margin: 0 auto;
 }
 
-/* Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ */
+/* !!!! Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ !!!! */
 #canvas {
-  border:1px solid red;
-  top:22px;
+  border:2px solid purple;
   left:0px;
   height: 100%;
   width: 99%;
 }
 
-.box {
+/* .box {
   margin: 1em;
 }
 
 .after-box {
   clear: left;
-  }
-  /* Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end */
+} */
+/* !!!! Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end !!!! */
 
-#card-div {
-  width: 414px;
-  height: 253px;
+#template-div {
+  width: 100%;
+  height: auto;
   position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-#cards {
-  width: 414px;
-  height: 253px;
+#templates {
+  width: 100%;
+  height: auto;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 #preview {
   background-color: #FFF;
+  width: 100%;
 }
 
 .drawing-area {
   position: absolute;
-  top: 1027px;
-  left: 165px;
+  top: 60px;
+  left: 97px;
   z-index: 10;
-  width: 100px;
-  height: 362px;
+}
+
+.canvas-container {
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 #details {
