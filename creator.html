@@ -39,7 +39,7 @@
   <!-- Creator page content -->
   <main>
     <div>
-      <form class="col s12" onsubmit="return sendRequestMail(this);">
+      <form onsubmit="return sendRequestMail(this);">
 
         <!-- Selectors for card creator -->
         <div class="container">
@@ -353,23 +353,21 @@
           <!-- Legend end -->
 
           <!-- Business card preview -->
-          <!-- <div class="col l6 s12">
-            <div id="card-div">
-              <img id="cards" src="assets/images/placeholder.png" alt="placeholder">
-              <div class="drawing-area" id="drawingArea">
+          <div class="row">
+            <div class="col s12" id="template-div">
+              <img class="col s12" id="templates" src="assets/images/placeholder.png" alt="Template">
+              <div id="drawingArea" class="drawing-area">
+                <div class="canvas-container">
+                  <canvas id="canvas"></canvas>
+                </div>
               </div>
             </div>
-          </div> -->
-          <div class="box" id="box">
-            <canvas id="canvas"></canvas>
           </div>
-          
           <!-- Business card preview end -->
 
           <!-- Download & reset buttons -->
-          <div class="col l6 s12">
-            <div class="row button-spacing">
-              <div class="col s12 center-align">
+          <div class="row">
+            <div class="col s12 center-align button-spacing">
                 <p>
                   <label>
                     <a target="" href="#" class="waves-effect btn-large btn-postfly" type="text" name="action">Download
@@ -378,7 +376,6 @@
                 </p>
                 <div class="input-field">
                   <a class="waves-effect btn-large btn-postfly button-spacing" type="reset" value="Reset">Reset</a>
-                </div>
               </div>
             </div>
             <!-- Download & reset buttons end -->
