@@ -8,7 +8,7 @@ function selectSize(element) {
 
   if (element.id == 'single-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businescard_one_sided.png';
-  } else if  (element.id == 'single-double-sided' && element.checked) {
+  } else if (element.id == 'single-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businescard_double_sided.png';
   } else if (element.id == 'double-portrait-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_one_sided.png';
@@ -26,7 +26,7 @@ function selectSize(element) {
 function selectBackgroundColor(element) {
 
   const div = document.getElementById('template-div');
-  
+
   if (element.id == 'bg-blue' && element.checked) {
     div.style.backgroundColor = '#007bff';
   } else if (element.id == 'bg-green' && element.checked) {
@@ -49,63 +49,83 @@ function selectBackgroundColor(element) {
 
 // ------------- Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ ------------- 
 
-// widthscrencan = (window.innerWidth > 0) ? window.innerWidth : screen.width; // capture width screen onload
-// canvasScale = 1; //global  
+widthscrencan = (window.innerWidth > 0) ? window.innerWidth : screen.width; // capture width screen onload
+canvasScale = 1; //global  
 
-// let ocw = canvas.width;
-// let och = canvas.height;
-// let box = document.getElementById('box');
-// box.width = ocw;
+let ocw = canvas.width;
+let och = canvas.height;
+let box = document.getElementById('box');
+box.width = ocw;
 
 // console.log('ocw: ', ocw);
 // console.log('och: ', och);
 
-// window.addEventListener('resize', resizeCanvas, false);
+window.addEventListener('resize', resizeCanvas, false);
 
-// function resizeCanvas() {
-//   box.width = window.innerWidth * 0.35;
+function resizeCanvas() {
+  box.width = window.innerWidth * 0.90;
+  // console.log('box w: ', box.width);
 
-//   // console.log('box w: ', box.width);
+  let sf = box.width / ocw;
 
-//   let sf = box.width / ocw;
+  // console.log('sf: ', sf);
 
-//   console.log('sf: ', sf);
+  setCanvasZoom(sf);
+  canvas.requestRenderAll();
+}
 
-//   setCanvasZoom(sf);
-//   canvas.requestRenderAll();
-// }
-
-// // resize on init
-// resizeCanvas();
+// resize on init
+resizeCanvas();
 
 
-// function setCanvasZoom(zoom) {
-//   let objects = canvas.getObjects();
-//   for (i in objects) {
-//     let object = objects[i];
-//     let scaleX = object.scaleX,
-//       scaleY = object.scaleY,
-//       left = object.left,
-//       top = object.top;
+function setCanvasZoom(zoom) {
+  let objects = canvas.getObjects();
+  for (i in objects) {
+    let object = objects[i];
+    let scaleX = object.scaleX,
+      scaleY = object.scaleY,
+      left = object.left,
+      top = object.top;
 
-//     // preserve the original dimensions.
-//     object.original_scaleX = !object.original_scaleX ? scaleX : object.original_scaleX;
-//     object.original_scaleY = !object.original_scaleY ? scaleY : object.original_scaleY;
-//     object.original_left = !object.original_left ? left : object.original_left;
-//     object.original_top = !object.original_top ? top : object.original_top;
+    // preserve the original dimensions.
+    object.original_scaleX = !object.original_scaleX ? scaleX : object.original_scaleX;
+    object.original_scaleY = !object.original_scaleY ? scaleY : object.original_scaleY;
+    object.original_left = !object.original_left ? left : object.original_left;
+    object.original_top = !object.original_top ? top : object.original_top;
 
-//     object.scaleX = object.original_scaleX * zoom;
-//     object.scaleY = object.original_scaleY * zoom;
-//     object.left = object.original_left * zoom;
-//     object.top = object.original_top * zoom;
+    object.scaleX = object.original_scaleX * zoom;
+    object.scaleY = object.original_scaleY * zoom;
+    object.left = object.original_left * zoom;
+    object.top = object.original_top * zoom;
 
-//     object.setCoords();
-//   }
+    object.setCoords();
+  }
 
-//   canvas
-//     .setWidth(ocw * zoom)
-//     .setHeight(och * zoom);
-// };
+  canvas
+    .setWidth(ocw * zoom)
+    .setHeight(och * zoom);
+};
 
 // ------------- Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end ------------- 
 
+
+// ------------- Upload own image ------------- 
+// This code makes sure that the image(s) which are selected with the upload file button appear on the canvas
+
+let uploadedImg = (uploadFile) => {
+  let fileUpload = document.getElementById('file-upload')
+  let file = fileUpload.files[0];
+  reader.readAsDataURL(file)
+}
+
+let inputFile = document.getElementById('file-upload');
+inputFile.addEventListener('change', uploadedImg)
+
+let reader = new FileReader();
+
+reader.addEventListener("load", () => {
+  fabric.Image.fromURL(reader.result, img => {
+    canvas.add(img)
+    canvas.requestRenderAll()
+  })
+})
