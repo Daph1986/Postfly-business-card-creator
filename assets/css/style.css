@@ -186,13 +186,13 @@ label {
   left:0px;
 }
 
-/* .box {
+.box {
   margin: 1em;
 }
 
 .after-box {
   clear: left;
-} */
+}
 /* !!!! Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end !!!! */
 
 #template-div {
@@ -266,6 +266,10 @@ label {
 
 .btn-large:visited {
   background-color: #e02a51;
+}
+
+#file-upload {
+  display: none;
 }
 
 /* ------------- Radio buttons ------------- */
