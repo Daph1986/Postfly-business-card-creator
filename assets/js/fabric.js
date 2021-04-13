@@ -129,3 +129,10 @@ reader.addEventListener("load", () => {
     canvas.requestRenderAll()
   })
 })
+
+// ------------- Add text to canvas ------------- 
+
+function addTextField () {
+  let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize:16, left: 100, top: 100, selectable:true, });
+  canvas.add(text);
+}
