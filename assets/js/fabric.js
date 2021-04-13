@@ -37,8 +37,8 @@ function selectBackgroundColor(element) {
     div.style.backgroundColor = '#ffc107';
   } else if (element.id == 'bg-orange' && element.checked) {
     div.style.backgroundColor = '#fd7e14';
-  } else if (element.id == 'bg-black' && element.checked) {
-    div.style.backgroundColor = '#000';
+  } else if (element.id == 'bg-dark-grey' && element.checked) {
+    div.style.backgroundColor = '#343a40';
   } else if (element.id == 'bg-grey' && element.checked) {
     div.style.backgroundColor = '#6c757d';
   } else if (element.id == 'bg-white' && element.checked) {
@@ -135,4 +135,15 @@ reader.addEventListener("load", () => {
 function addTextField () {
   let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize:16, left: 100, top: 100, selectable:true, });
   canvas.add(text);
+}
+
+// ------------- Download preview ------------- 
+
+function downloadPreview() {
+  domtoimage.toJpeg(document.getElementById('template-div'), { quality: 0.90 }).then(function (dataUrl) {
+    let link = document.createElement('a');
+    link.download = 'preview.jpeg';
+    link.href = dataUrl;
+    link.click();
+  });
 }
