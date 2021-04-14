@@ -1,5 +1,8 @@
 const canvas = new fabric.Canvas('canvas');
-
+canvas.setDimensions({
+  width:320, 
+  height:750
+});
 
 // ------------- Select size & printing method ------------- 
 function selectSize(element) {
@@ -45,69 +48,6 @@ function selectBackgroundColor(element) {
     div.style.backgroundColor = '#fff';
   }
 }
-
-
-// ------------- Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ ------------- 
-
-widthscrencan = (window.innerWidth > 0) ? window.innerWidth : screen.width; // capture width screen onload
-canvasScale = 1; //global  
-
-let ocw = canvas.width;
-let och = canvas.height;
-let box = document.getElementById('box');
-box.width = ocw;
-
-// console.log('ocw: ', ocw);
-// console.log('och: ', och);
-
-window.addEventListener('resize', resizeCanvas, false);
-
-function resizeCanvas() {
-  box.width = window.innerWidth * 0.90;
-  // console.log('box w: ', box.width);
-
-  let sf = box.width / ocw;
-
-  // console.log('sf: ', sf);
-
-  setCanvasZoom(sf);
-  canvas.requestRenderAll();
-}
-
-// resize on init
-resizeCanvas();
-
-
-function setCanvasZoom(zoom) {
-  let objects = canvas.getObjects();
-  for (i in objects) {
-    let object = objects[i];
-    let scaleX = object.scaleX,
-      scaleY = object.scaleY,
-      left = object.left,
-      top = object.top;
-
-    // preserve the original dimensions.
-    object.original_scaleX = !object.original_scaleX ? scaleX : object.original_scaleX;
-    object.original_scaleY = !object.original_scaleY ? scaleY : object.original_scaleY;
-    object.original_left = !object.original_left ? left : object.original_left;
-    object.original_top = !object.original_top ? top : object.original_top;
-
-    object.scaleX = object.original_scaleX * zoom;
-    object.scaleY = object.original_scaleY * zoom;
-    object.left = object.original_left * zoom;
-    object.top = object.original_top * zoom;
-
-    object.setCoords();
-  }
-
-  canvas
-    .setWidth(ocw * zoom)
-    .setHeight(och * zoom);
-};
-
-// ------------- Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end ------------- 
-
 
 // ------------- Upload own image ------------- 
 // This code makes sure that the image(s) which are selected with the upload file button appear on the canvas
