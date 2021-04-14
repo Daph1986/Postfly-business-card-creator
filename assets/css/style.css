@@ -171,15 +171,16 @@ label {
   padding-right: 15px;
 }
 
-#center.row .col.s12 {
-  float: none;
-  margin: auto;
-}
-/* find solution for color stoke display bottom */
-
 .safety-zone.material-icons {
   font-size: 17px;
 }
+
+#center.row .col.s12 {
+  display: block;
+  margin: auto;
+  float: none;
+}
+/* find solution for color stoke display bottom */
 
 #template-div {
   width: 320px;
@@ -194,6 +195,7 @@ label {
   height: auto;
   padding-right: 0px;
   padding-left: 0px;
+
 }
 
 #preview {
