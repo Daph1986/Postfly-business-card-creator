@@ -1,10 +1,14 @@
+// ------------- Init canvas ------------- 
+
 const canvas = new fabric.Canvas('canvas');
+
 canvas.setDimensions({
-  width:320, 
-  height:750
+  width: 320,
+  height: 600
 });
 
 // ------------- Select size & printing method ------------- 
+
 function selectSize(element) {
 
   const image = document.getElementById('templates');
@@ -24,8 +28,8 @@ function selectSize(element) {
   }
 }
 
-
 // ------------- Select background color ------------- 
+
 function selectBackgroundColor(element) {
 
   const div = document.getElementById('template-div');
@@ -50,6 +54,7 @@ function selectBackgroundColor(element) {
 }
 
 // ------------- Upload own image ------------- 
+
 // This code makes sure that the image(s) which are selected with the upload file button appear on the canvas
 
 let uploadedImg = (uploadFile) => {
@@ -72,8 +77,8 @@ reader.addEventListener("load", () => {
 
 // ------------- Add text to canvas ------------- 
 
-function addTextField () {
-  let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize:16, left: 100, top: 100, selectable:true, });
+function addTextField() {
+  let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
   canvas.add(text);
 }
 
