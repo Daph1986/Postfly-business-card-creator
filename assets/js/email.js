@@ -1,4 +1,3 @@
-
 // Validation for EmailJS
 document.onload = function () {
   emailjs.init("user_2XFUnsxHC1xsdX5DI6gOQ");
@@ -18,13 +17,13 @@ function sendRequestMail(requestForm) {
   })
     .then(
       function (response) {
-        M.toast({ html: 'Thank you, your request has been sent successfully, you will return to the homepage!!', displayLength: '4000', response });
+        M.toast({ html: 'Thank you, your request has been sent successfully, you will return to the homepage!!', displayLength: '3000', response });
         window.setTimeout(function () {
           location.replace("index.html");
-        }, 5000);
+        }, 4000);
       },
       function (error) {
-        M.toast({ html: 'Sorry, something went wrong :-(', displayLength: '4000', error});
+        M.toast({ html: 'Sorry, something went wrong :-(', displayLength: '3000', error});
       }
     );
   // Ensures that the location.replace is done instead of a reload of the page
@@ -32,29 +31,28 @@ function sendRequestMail(requestForm) {
 }
 
 // ------------- Request quotation form ------------- 
-// Need to sort this function out so that all the items are send in EmailJS as well as the preview of the card
+// Need to sort this function out so that I also get the value's of the size / paper and quantity radio buttons and preferable also de preview file
+
 function sendQuotationMail(quotationForm) {
   // This ensures that all listed details are send through emailjs
   emailjs.send("service_gcpzmbl", "quotation request", {
     "from_fname": quotationForm.fname.value,
     "from_lname": quotationForm.lname.value,
     "from_email": quotationForm.email.value,
-    "from_size": quotationForm.size.value,
-    "from_method": quotationForm.method.value,
-    "from_paper": quotationForm.paper.value,
-    "from_quantity": quotationForm.quanity.value,
   })
     .then(
       function (response) {
-        M.toast({ html: 'Thank you, your qoutation request has been sent successfully, you will return to the homepage!!', displayLength: '4000', response });
+        M.toast({ html: 'Thank you, your qoutation request has been sent successfully, you will return to the homepage!!', displayLength: '3000', response });
         window.setTimeout(function () {
           location.replace("index.html");
-        }, 5000);
+        }, 4000);
       },
       function (error) {
-        M.toast({ html: 'Sorry, something went wrong :-(', displayLength: '4000', error});
+        M.toast({ html: 'Sorry, something went wrong :-(', displayLength: '3000', error});
       }
     );
   // Ensures that the location.replace is done instead of a reload of the page
   return false;
 }
+
+
