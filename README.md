@@ -211,7 +211,6 @@ All content has been written by myself
 3. [Toolur](https://compressimage.toolur.com/) was used to compress the hero image
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used
 #### Code:
-<!-- 1. [JSFiddle](https://jsfiddle.net/fvzj7z1d/7/) was used to create the responsiveness of the canvas, this is also commented in the code. -->
 <!-- 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
 
 #### For research when I forgot how things worked again:
