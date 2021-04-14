@@ -171,32 +171,18 @@ label {
   padding-right: 15px;
 }
 
+#center.row .col.s12 {
+  float: none;
+  margin: auto;
+}
+/* find solution for color stoke display bottom */
+
 .safety-zone.material-icons {
   font-size: 17px;
 }
 
-/* default Fabric class, margin 0 auto to center canvas */
-.canvas-container {
-  margin: 0 auto;
-}
-
-/* !!!! Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ !!!! */
-#canvas {
-  border:2px solid purple;
-  left:0px;
-}
-
-.box {
-  margin: 1em;
-}
-
-.after-box {
-  clear: left;
-}
-/* !!!! Responsive canvas code part from https://jsfiddle.net/fvzj7z1d/7/ end !!!! */
-
 #template-div {
-  width: 100%;
+  width: 320px;
   height: auto;
   position: relative;
   padding-left: 0px;
@@ -204,7 +190,7 @@ label {
 }
 
 #templates {
-  width: 100%;
+  width: 320px;
   height: auto;
   padding-right: 0px;
   padding-left: 0px;
@@ -217,12 +203,10 @@ label {
 
 .drawing-area {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  top: 8px;
   z-index: 10;
-  border:2px solid palevioletred;
-  width: 97%;
-  height: 97%;
+  width: 320px;
+  height: auto;
 }
 
 .canvas-container {
