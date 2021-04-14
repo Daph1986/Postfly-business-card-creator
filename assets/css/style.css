@@ -1,4 +1,8 @@
+/* ------------- Link for Google font ------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ------------- Styling for gerneral use ------------- */
 
 body, html {
   background-color: #EFEFEF;
@@ -32,21 +36,6 @@ nav .nav-title {
   margin-left: 10%;
 }
 
-@media screen and (max-width: 1024px) {
-  #logo {
-    height: 17.5%;
-  }
-}
-
-@media screen and (max-width: 338px) {
-  #logo {
-    height: 12.5%;
-  }
-  nav .nav-title {
-    font-size: 10px;
-  }
-}
-
 /* ------------- Hero image ------------- */
 
 .hero-image {
@@ -58,7 +47,7 @@ nav .nav-title {
   background-size: cover;
 }
 
-/* ------------- Landing page content ------------- */
+/* ------------- Headers ------------- */
 
 .red-header {
   text-transform: uppercase;
@@ -71,6 +60,41 @@ nav .nav-title {
   text-align: center;
 }
 
+/* ------------- General buttons ------------- */
+
+.btn-postfly {
+  background-color: #e02a51;
+}
+
+.btn-large:hover {
+  background-color: #e02a51;
+}
+
+.btn-large:focus {
+  background-color: #e02a51;
+}
+
+.button-spacing {
+  margin-top: 33px;
+  margin-bottom: 33px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pulse {
+  background-color: #e02a51;
+}
+
+.btn-large:visited {
+  background-color: #e02a51;
+}
+
+#file-upload {
+  display: none;
+}
+
+/* ------------- Homepage content ------------- */
+
 .contact-icons i {
   color: #e02a51;
   font-size: 20px;
@@ -79,10 +103,19 @@ nav .nav-title {
   margin-bottom: 33px;
 }
 
-@media screen and (max-width: 319.99px) {
-  .contact-icons i {
-    font-size: 15px;
-  }
+/* ------------- Homepage modal ------------- */
+
+.modal .modal-footer {
+  text-align: center;
+}
+
+.modal-content h4 {
+  color: #e02a51;
+}
+
+a.modal-close {
+  color: #e02a51;
+  font-size: 16px;
 }
 
 /* ------------- Sample kit form ------------- */
@@ -145,6 +178,10 @@ label {
   margin-bottom: 20px;
 }
 
+#space {
+  margin-top: 25px;
+}
+
 .cutting-edge {
   color: #292D30;
   padding-left: 15px;
@@ -159,6 +196,7 @@ label {
   color: #e02a51;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 10px;
 }
 
 .bleed.material-icons {
@@ -169,18 +207,28 @@ label {
   color: #949494;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 10px;
 }
 
 .safety-zone.material-icons {
   font-size: 17px;
 }
 
+#details {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #EFEFEF;
+}
+
+/* ------------- Creator page canvas ------------- */
+
 #center.row .col.s12 {
   display: block;
   margin: auto;
   float: none;
 }
-/* find solution for color stoke display bottom */
 
 #template-div {
   width: 320px;
@@ -195,12 +243,13 @@ label {
   height: auto;
   padding-right: 0px;
   padding-left: 0px;
-
 }
 
 #preview {
   background-color: #FFF;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .drawing-area {
@@ -219,46 +268,7 @@ label {
   -ms-user-select: none;
 }
 
-#details {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #EFEFEF;
-}
-
-/* ------------- Buttons ------------- */
-
-.btn-postfly {
-  background-color: #e02a51;
-}
-
-.btn-large:hover {
-  background-color: #e02a51;
-}
-
-.btn-large:focus {
-  background-color: #e02a51;
-}
-
-.button-spacing {
-  margin-top: 33px;
-  margin-bottom: 33px;
-}
-
-.pulse {
-  background-color: #e02a51;
-}
-
-.btn-large:visited {
-  background-color: #e02a51;
-}
-
-#file-upload {
-  display: none;
-}
-
-/* ------------- Radio buttons ------------- */
+/* ------------- Creator radio buttons ------------- */
 
 [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
   background-color: #e02a51;
@@ -278,17 +288,31 @@ label {
   line-height: 64px;
 }
 
-/* ------------- Modal ------------- */
+/* ------------- Media queries ------------- */
 
-.modal .modal-footer {
-  text-align: center;
+@media screen and (max-width: 1024px) {
+  #logo {
+    height: 17.5%;
+  }
 }
 
-.modal-content h4 {
-  color: #e02a51;
+@media screen and (max-width: 338px) {
+  #logo {
+    height: 12.5%;
+  }
+  nav .nav-title {
+    font-size: 10px;
+  }
+  body {
+    font-size: 12px;
+  }
+  .btn-large {
+    font-size: 12.5px;
+  }
 }
 
-a.modal-close {
-  color: #e02a51;
-  font-size: 16px;
+@media screen and (max-width: 319.99px) {
+  .contact-icons i {
+    font-size: 15px;
+  }
 }
