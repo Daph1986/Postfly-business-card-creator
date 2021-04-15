@@ -7,6 +7,22 @@ canvas.setDimensions({
   height: 600
 });
 
+// ------------- Larger canvas on bigger screen ------------- 
+
+// This piece of code is bases on W3schools change color function for JS
+
+let l = window.matchMedia("(min-width: 1200px)");
+
+function makeCanvasLarge(l) {
+  if (l.matches) { canvas.setDimensions({
+    width: 720,
+    height: 1400
+  });
+  }
+}
+makeCanvasLarge(l);
+l.addListener(makeCanvasLarge);
+
 // ------------- Select size & printing method ------------- 
 
 function selectSize(element) {
@@ -58,22 +74,24 @@ function selectBackgroundColor(element) {
 // This code makes sure that the image(s) which are selected with the upload file button appear on the canvas
 
 let uploadedImg = (uploadFile) => {
-  let fileUpload = document.getElementById('file-upload')
+  let fileUpload = document.getElementById('file-upload');
   let file = fileUpload.files[0];
-  reader.readAsDataURL(file)
-}
+  reader.readAsDataURL(file);
+};
 
 let inputFile = document.getElementById('file-upload');
-inputFile.addEventListener('change', uploadedImg)
+inputFile.addEventListener('change', uploadedImg);
 
 let reader = new FileReader();
 
 reader.addEventListener("load", () => {
   fabric.Image.fromURL(reader.result, img => {
-    canvas.add(img)
-    canvas.requestRenderAll()
-  })
-})
+    img.scaleToHeight(100);
+    img.scaleToWidth(100);
+    canvas.add(img);
+    canvas.requestRenderAll();
+  });
+});
 
 // ------------- Add text to canvas ------------- 
 
