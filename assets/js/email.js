@@ -31,7 +31,35 @@ function sendRequestMail(requestForm) {
 }
 
 // ------------- Request quotation form ------------- 
-// Need to sort this function out so that I also get the value's of the size / paper and quantity radio buttons and preferable also de preview file
+
+// First the checked value from the radio buttons for size / paper and quantity are needed
+
+let sizeResult 
+
+for (let i = 0; i<document.form.size.length; i++) {
+  if (document.form.size[i].checked) {
+
+    sizeResult = document.form.size[i].value
+  }
+}
+
+let paperResult 
+
+for (let i = 0; i<document.form.paper.length; i++) {
+  if (document.form.paper[i].checked) {
+
+    paperResult = document.form.paper[i].value
+  }
+}
+
+let quantityResult 
+
+for (let i = 0; i<document.form.quantity.length; i++) {
+  if (document.form.quantity[i].checked) {
+
+    quantityResult = document.form.quantity[i].value
+  }
+}
 
 function sendQuotationMail(quotationForm) {
   // This ensures that all listed details are send through emailjs
@@ -39,6 +67,9 @@ function sendQuotationMail(quotationForm) {
     "from_fname": quotationForm.fname.value,
     "from_lname": quotationForm.lname.value,
     "from_email": quotationForm.email.value,
+    "from_size": quotationForm.sizeResult.value,
+    "from_paper": quotationForm.paperResult.value,
+    "from_quantity": quotationForm.sizeResult.value,
   })
     .then(
       function (response) {
@@ -54,5 +85,3 @@ function sendQuotationMail(quotationForm) {
   // Ensures that the location.replace is done instead of a reload of the page
   return false;
 }
-
-
