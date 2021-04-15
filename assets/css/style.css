@@ -178,10 +178,6 @@ label {
   margin-bottom: 20px;
 }
 
-#space {
-  margin-top: 25px;
-}
-
 .cutting-edge {
   color: #292D30;
   padding-left: 15px;
@@ -196,7 +192,6 @@ label {
   color: #e02a51;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 10px;
 }
 
 .bleed.material-icons {
@@ -207,7 +202,6 @@ label {
   color: #949494;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 10px;
 }
 
 .safety-zone.material-icons {
@@ -303,7 +297,7 @@ label {
   nav .nav-title {
     font-size: 10px;
   }
-  body {
+  html {
     font-size: 12px;
   }
   .btn-large {
@@ -314,5 +308,25 @@ label {
 @media screen and (max-width: 319.99px) {
   .contact-icons i {
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
+
+  .btn-large {
+    font-size: 20px;
+  }
+
+  #template-div {
+    width: 720px;
+    height: auto;
+  }
+  
+  #templates {
+    width: 720px;
+    height: auto;
   }
 }
