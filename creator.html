@@ -38,7 +38,7 @@
 
   <!-- Creator page content -->
   <main>
-    <form action="#" onsubmit="return sendQuotationMail(this);">
+    <form name="form" action="#" onsubmit="return sendQuotationMail(this);">
 
       <!-- Selectors for card creator -->
       <div class="container">
@@ -55,42 +55,42 @@
                   <div class="input-field">
                     <p>
                       <label>
-                        <input class="with-gap" id="single-one-sided" name="size" type="radio"
+                        <input class="with-gap" id="single-one-sided" name="size" value="normal1" type="radio"
                           onchange="selectSize(this)" required />
                         <span><strong>Business card 4/0 CMYK</strong> (85x55mm one-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" id="single-double-sided" name="size" type="radio"
+                        <input class="with-gap" id="single-double-sided" name="size" value="normal2" type="radio"
                           onchange="selectSize(this)" />
                         <span><strong>Business card 4/4 CMYK</strong> (85x55mm double-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" id="double-portrait-one-sided" name="size" type="radio"
+                        <input class="with-gap" id="double-portrait-one-sided" name="size" value="portrait1" type="radio"
                           onchange="selectSize(this)" />
                         <span><strong>Business card double portrait 4/0 CMYK</strong> (110x85mm one-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" id="double-portrait-double-sided" name="size" type="radio"
+                        <input class="with-gap" id="double-portrait-double-sided" name="size" value="portrait2" type="radio"
                           onchange="selectSize(this)" />
                         <span><strong>Business card double portrait 4/4 CMYK</strong> (110x85mm double-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" id="double-landscape-one-sided" name="size" type="radio"
+                        <input class="with-gap" id="double-landscape-one-sided" name="size" value="landscape1" type="radio"
                           onchange="selectSize(this)" />
                         <span><strong>Business card double landscape 4/0 CMYK</strong> (170x55mm one-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" id="double-landscape-double-sided" name="size" type="radio"
+                        <input class="with-gap" id="double-landscape-double-sided" name="size" value="landscape1" type="radio"
                           onchange="selectSize(this)" />
                         <span><strong>Business card double landscape 4/4 CMYK</strong> (170x55mm double-sided)</span>
                       </label>
@@ -112,56 +112,56 @@
                 <div class="collapsible-body">
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-blue" name="color" type="radio"
+                      <input class="with-gap" id="bg-blue" name="color" value="blue" type="radio"
                         onchange="selectBackgroundColor(this)" required />
                       <span><strong>Blue</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-green" name="color" type="radio"
+                      <input class="with-gap" id="bg-green" name="color" value="green" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>Green</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-red" name="color" type="radio"
+                      <input class="with-gap" id="bg-red" name="color" value="red" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>Red</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-yellow" name="color" type="radio"
+                      <input class="with-gap" id="bg-yellow" name="color" value="yellow" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>Yellow</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-orange" name="color" type="radio"
+                      <input class="with-gap" id="bg-orange" name="color" value="orange" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>Orange</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-dark-grey" name="color" type="radio"
+                      <input class="with-gap" id="bg-dark-grey" name="color" value="dgrey" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>Dark Grey</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-grey" name="color" type="radio"
+                      <input class="with-gap" id="bg-grey" name="color" value="grey" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>Grey</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap" id="bg-white" name="color" type="radio"
+                      <input class="with-gap" id="bg-white" name="color" value="white" type="radio"
                         onchange="selectBackgroundColor(this)" />
                       <span><strong>White</strong> (Paper color)</span>
                     </label>
@@ -186,37 +186,37 @@
                   <div class="input-field">
                     <p>
                       <label>
-                        <input class="with-gap" name="paper" type="radio" required />
+                        <input class="with-gap" name="paper" value="eco" type="radio" required />
                         <span><strong>300 gr</strong> Eco Offset</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="paper" type="radio" />
+                        <input class="with-gap" name="paper" value="varnish" type="radio" />
                         <span><strong>400 gr</strong> Mat Varnish</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="paper" type="radio" />
+                        <input class="with-gap" name="paper" value="mat" type="radio" />
                         <span><strong>400 gr</strong> Mat Lamination</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="paper" type="radio" />
+                        <input class="with-gap" name="paper" value="gloss" type="radio" />
                         <span><strong>400 gr</strong> Gloss Lamination</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="paper" type="radio" />
+                        <input class="with-gap" name="paper" value="uv" type="radio" />
                         <span><strong>400 gr</strong> Mat Lamination + SpotUV</span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="paper" type="radio" />
+                        <input class="with-gap" name="paper" value="foil" type="radio" />
                         <span><strong>350 gr</strong> Mat + one-sided Cold Foil</span>
                       </label>
                     </p>
@@ -238,67 +238,67 @@
                   <div class="input-field">
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" required />
+                        <input class="with-gap" name="quantity" value="250" type="radio" required />
                         <span><strong>250 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="500" type="radio" />
                         <span><strong>500 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="1000" type="radio" />
                         <span><strong>1.000 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="1500" type="radio" />
                         <span><strong>1.500 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="2000" type="radio" />
                         <span><strong>2.000 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="2500" type="radio" />
                         <span><strong>2.500 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="3000" type="radio" />
                         <span><strong>3.000 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="3500" type="radio" />
                         <span><strong>3.500 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="4000" type="radio" />
                         <span><strong>4.000 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="4500" type="radio" />
                         <span><strong>4.500 pc</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
-                        <input class="with-gap" name="quantity" type="radio" />
+                        <input class="with-gap" name="quantity" value="5000" type="radio" />
                         <span><strong>5.000 pc</strong></span>
                       </label>
                     </p>
