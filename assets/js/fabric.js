@@ -11,12 +11,12 @@ canvas.setDimensions({
 
 // This piece of code is bases on W3schools change color function for JS
 
-let l = window.matchMedia("(min-width: 1200px)");
+let l = window.matchMedia("(min-width: 1440px)");
 
 function makeCanvasLarge(l) {
   if (l.matches) { canvas.setDimensions({
     width: 720,
-    height: 1400
+    height: 1300
   });
   }
 }
