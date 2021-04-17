@@ -9,7 +9,7 @@ canvas.setDimensions({
 
 // ------------- Larger canvas on bigger screen ------------- 
 
-// This piece of code is bases on W3schools change color function for JS
+// This piece of code is based on the How TO - Media Queries with JavaScript change color function of W3schools.com 
 
 let l = window.matchMedia("(min-width: 1440px)");
 
