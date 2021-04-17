@@ -14,10 +14,11 @@ canvas.setDimensions({
 let l = window.matchMedia("(min-width: 1440px)");
 
 function makeCanvasLarge(l) {
-  if (l.matches) { canvas.setDimensions({
-    width: 720,
-    height: 1300
-  });
+  if (l.matches) {
+    canvas.setDimensions({
+      width: 720,
+      height: 1300
+    });
   }
 }
 makeCanvasLarge(l);
@@ -31,16 +32,63 @@ function selectSize(element) {
 
   if (element.id == 'single-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businescard_one_sided.png';
+
+    if (l.matches) {
+      canvas.setDimensions({ width: 720, height: 1300 });
+      document.getElementById("center").style.height = "495px";}
+    else {
+      canvas.setDimensions({ width: 320, height: 200 });
+      document.getElementById("center").style.height = "220px";}
+
   } else if (element.id == 'single-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businescard_double_sided.png';
+
+    if (l.matches) {
+      canvas.setDimensions({ width: 720, height: 1300 });
+      document.getElementById("center").style.height = "1220px";}
+    else {
+      canvas.setDimensions({ width: 320, height: 200 });
+      document.getElementById("center").style.height = "535px";}
+
   } else if (element.id == 'double-portrait-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_one_sided.png';
+
+    if (l.matches) {
+      canvas.setDimensions({ width: 720, height: 1300 });
+      document.getElementById("center").style.height = "556px";}
+    else {
+      canvas.setDimensions({ width: 320, height: 200 });
+      document.getElementById("center").style.height = "250px";}
+
   } else if (element.id == 'double-portrait-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_double_sided.png';
+
+    if (l.matches) {
+      canvas.setDimensions({ width: 720, height: 1300 });
+      document.getElementById("center").style.height = "1305px";}
+    else {
+      canvas.setDimensions({ width: 320, height: 200 });
+      document.getElementById("center").style.height = "580px";}
+    
   } else if (element.id == 'double-landscape-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_landscape_one_sided.png';
+   
+    if (l.matches) {
+      canvas.setDimensions({ width: 720, height: 1300 });
+      document.getElementById("center").style.height = "253px";}
+    else {
+      canvas.setDimensions({ width: 320, height: 200 });
+      document.getElementById("center").style.height = "112px";}
+
   } else if (element.id == 'double-landscape-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_landscape_double_sided.png';
+    
+    if (l.matches) {
+      canvas.setDimensions({ width: 720, height: 1300 });
+      document.getElementById("center").style.height = "643px";}
+    else {
+      canvas.setDimensions({ width: 320, height: 200 });
+      document.getElementById("center").style.height = "282px";}
   }
 }
 
