@@ -1,8 +1,9 @@
 POSTFLY Business card creator
 ======
+
 **[Code Institute](https://codeinstitute.net/)  Milestone Project 2: Interactive  Frontend Development**
 
-<img src="assets/images/readme_images/hero_image.png" alt="Hero Image" width="65%" height="65%">
+<img src="assets/images/readme_images/hero_image.png" alt="Hero Image" width="80%" height="80%">
 
 POSTFLY Business card creator is a site where it is possible to design your own business cards. The focus with this site is to combine knowledge about what it takes to design a business card with what was learned this far about HTML, CSS and JavaScript. The site’s goal is to design your own business card which you can download and request a quotation for.
 
@@ -11,32 +12,41 @@ Demo
 
 By clicking this [link](https://daph1986.github.io/Postfly-business-card-creator/) a live demo version will be visible.
 
-<!-- ![Mock-up]() -->
+<img src="assets/images/readme_images/mockup1.png" alt="Mockup 1" width="65%" height="65%">
+<img src="assets/images/readme_images/mockup2.png" alt="Mockup 2" width="65%" height="65%">
 
 Table of Contents
 ======
 
-  * [User Experience (UX)](#user-experience-(ux))
-  * [Features](#features)
-  * [Technologies](#technologies)
-  * [Testing & Bugs](#testing-bugs)
-  * [Deployment](#deployment)
-  * [Credits](#credits)
-
+- [User Experience (UX)](#user-experience--ux-)
+    + [Visitor Goals](#visitor-goals)
+    + [Site Owners Goals](#site-owners-goals)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Testing & Bugs](#testing---bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    + [Content](#content)
+    + [Media](#media)
+    + [Other](#other)
+    + [Acknowledgements](#acknowledgements)
 
 User Experience (UX)
 ======
+
 This is meant to be a B2B site which targets visitors  who are in need of business cards and want to design it themselves.
 
 **User stories**
 
 ##### Visitor Goals
+
 * Create / design your own business card.
 * Be able to choose the paper type and quantity.
 * Request a sample kit with papers for if you are not familiar with the paper types.
 * Request quotation and download the designed cards.
 
 ##### Site Owners Goals
+
 * Provide the service of designing your own business cards in an easy way, without additional designing costs.
 * Reduce workload on the prepress (design) staff.
 * Expand customer base.
@@ -47,7 +57,7 @@ The design goal is to make a clear, accessible, structured site so that visitors
 
 **Scope**
 
-The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a pdf file, to choose the paper type, to choose the quantity, to send a request for a quotation for the designed business cards. 
+The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a pdf file, to choose the paper type, to choose the quantity, to send a request for a quotation for the designed business cards.
 
 **Structure**
 
@@ -67,13 +77,11 @@ Mobile wireframes<br>
 
 <img src="assets/images/readme_images/mobile_overview.png" alt="Mobile Overview 1" width="85%" height="85%">
 
-
 **Surface**
 
 The colors that were used are the existing corporate identity colors, white and an off-white color, which are:
 
 <img src="assets/images/readme_images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/readme_images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/readme_images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/readme_images/off_white.png" alt="Off White"  width="25%" height="25%">
-
 
 During development the site's layout was restructured a little bit, because this seemed visually or otherwise better.
 What was changed is:
@@ -84,7 +92,6 @@ What was changed is:
 4. The layout for desktop view on the creator.html for the card selectors was changed a bit to make it look more appealing on smaller screens and to make it more logical to follow the steps.
 5. The Select Size and Select Printing Method options were combined to give it a UX friendly experience.
 
-
 **Fonts & icons**
 
 [Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was choosen because this is already in use on the existing POSTFLY site.
@@ -93,6 +100,7 @@ For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used 
 
 Features
 ======
+
 The site contains the following features: 
 + send a request for a quotation for the designed business cards
 + choose out of three different sizes of business cards
@@ -135,11 +143,13 @@ Technologies
 
 Testing & Bugs
 ======
+
 <!-- The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created.  -->
 <!-- For more details on testing and bugs please view this [file](TESTING.md). -->
 
 Deployment
 ======
+
 To create a live version of the website VSCode was used together with GitHub Pages.
 To deploy the website with GitHub pages the following steps were made:
 1. Login into the personal GitHub account
@@ -197,11 +207,14 @@ Resolving deltas: 100% (34/34), done.
 
 Credits
 ======
+
 ### Content
 All content has been written by myself
 
 ### Media 
+
 #### Images:
+
 1. [POSTFLY](http://www.postfly.nl/) 
 * the POSTFLY logo provided by my collegue Filip Matthys
 * the POSTFLY business cards templates provided by my collegue Filip Matthys, edited by myself
@@ -214,19 +227,23 @@ All content has been written by myself
 <!-- 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
 
 #### For research when I forgot how things worked again:
+
 1. [Code Institute LMS](https://learn.codeinstitute.net/login)
 2. [W3schools](https://www.w3schools.com/)
 3. [Stackoverflow](https://stackoverflow.com/)
 4. [Materialize](https://materializecss.com/)
 
 ### Other
+
 1. [Fabric](http://fabricjs.com/)
 As a libary to make the functions work on the canvas
 2. [cdnjs](https://cdnjs.com/) to get the js cdn's from
 3. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked
 4. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
+5. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) this creates a table of contents for Markdown, manny thanks to follow student Aukje (byIlsa_lead) for sharing this.
 
 ### Acknowledgements
+
 + My mentor from Code Institute, thank you Narender for your time and guidance.
 + My husband, thank you Django for taking care of our son more so I can work on my education and thank you for your patience!
 <!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
