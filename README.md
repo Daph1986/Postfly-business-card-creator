@@ -40,16 +40,16 @@ This is meant to be a B2B site which targets visitors  who are in need of busine
 
 ##### Visitor Goals
 
-* Create / design your own business card.
-* Be able to choose the paper type and quantity.
-* Request a sample kit with papers for if you are not familiar with the paper types.
-* Request quotation and download the designed cards.
+- Create / design your own business card.
+- Be able to choose the paper type and quantity.
+- Request a sample kit with papers for if you are not familiar with the paper types.
+- Request quotation and download the designed card.
 
 ##### Site Owners Goals
 
-* Provide the service of designing your own business cards in an easy way, without additional designing costs.
-* Reduce workload on the prepress (design) staff.
-* Expand customer base.
+- Provide the service of designing your own business cards in an easy way, without additional designing costs.
+- Reduce workload on the prepress (design) staff.
+- Expand customer base.
 
 **Strategy**
 
@@ -57,7 +57,7 @@ The design goal is to make a clear, accessible, structured site so that visitors
 
 **Scope**
 
-The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a pdf file, to choose the paper type, to choose the quantity, to send a request for a quotation for the designed business cards.
+The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to choose the paper type, to choose the quantity, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a low res jpeg file, to send a request for a quotation for the designed business cards.
 
 **Structure**
 
@@ -107,7 +107,7 @@ The site contains the following features:
 + upload an own photo or logo
 + choose a background color
 + edit text content
-+ download the designed card as a pdf file
++ download the designed card as a low res jpeg file
 + choose the paper type
 + choose the quantity
 
@@ -136,22 +136,23 @@ Technologies
 + Adobe XD
 
 **Others**
-+ Adobe Photoshop: to resize the images.
-+ Adobe Illustrator: to adjust the business cards templates.
++ Adobe Photoshop: to resize the images
++ Adobe Illustrator: to adjust the business cards templates
 + Adobe InDesign to make a favicon
-+ VSCode: to write the code in.
++ VSCode: to write the code in
 
 Testing & Bugs
 ======
 
 <!-- The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created.  -->
-<!-- For more details on testing and bugs please view this [file](TESTING.md). -->
+For more details on testing and bugs please view this [file](TESTING.md).
 
 Deployment
 ======
 
 To create a live version of the website VSCode was used together with GitHub Pages.
 To deploy the website with GitHub pages the following steps were made:
+
 1. Login into the personal GitHub account
 2. Go to the repository: https://github.com/Daph1986/Postfly-business-card-creator
 3. Click on settings <br>
@@ -168,6 +169,7 @@ To deploy the website with GitHub pages the following steps were made:
 <img src="assets/images/readme_images/deployment_3.png" alt="Deployment link 3" width="75%" height="50%"/>
 
 To view the deployed version, the steps underneath can be followed:
+
 1. Log in on [GitHub](https://github.com/) 
 2. Find Daph1986's [page](https://github.com/Daph1986)
 3. Select repositories
@@ -176,10 +178,11 @@ To view the deployed version, the steps underneath can be followed:
 By clicking that link the live demo version will be visible. <br>
 
 <img src="assets/images/readme_images/deployment_4.png" alt="Deployment link 4" width="75%" height="50%"/>
-<!-- <img src="assets/images/readme_images/deployment_5.png" alt="Deployment link 5" width="75%" height="50%"/> -->
+<img src="assets/images/readme_images/deployment_5.png" alt="Deployment link 5" width="75%" height="50%"/>
 
 If you would like to run this website locally you can clone this repository in an IDE such as Cloud9 or VSCode.
 You can clone it by following the next steps: <br>
+
 1. Log in on [GitHub](https://github.com/) 
 2. Find Daph1986's [page](https://github.com/Daph1986)
 3. Select repositories
@@ -191,9 +194,11 @@ You can clone it by following the next steps: <br>
 6. Copy the URL 
 7. Open VScode or your preferred IDE, open the file or folder in which you want to use the project and open a CLI terminal
 8. Put the following command in the CLI terminal:
+
 ``` 
 git clone https://github.com/Daph1986/Postfly-business-card-creator.git
 ``` 
+
 9. Press enter and the clone will be created, it is ready to work on.
 ```
 Cloning into 'Postfly-business-card-creator'...
@@ -216,13 +221,16 @@ All content has been written by myself
 #### Images:
 
 1. [POSTFLY](http://www.postfly.nl/) 
-* the POSTFLY logo provided by my collegue Filip Matthys
-* the POSTFLY business cards templates provided by my collegue Filip Matthys, edited by myself
+- the POSTFLY logo provided by my collegue Filip Matthys
+- the POSTFLY business cards templates provided by my collegue Filip Matthys, edited by myself
+
 2. [Rawpixel](https://www.rawpixel.com/image/2024655/woman-holding-business-card-png#eyJkYXRhIjp7ImtleXMiOiJidXNpbmVzcyUyMGNhcmRzIiwicGFnZSI6Miwic29ydCI6ImN1cmF0ZWQiLCJjdXJyZW50X3VybCI6Ii9zZWFyY2gvYnVzaW5lc3MlMjBjYXJkcz9zb3J0PWN1cmF0ZWQmcGFnZT0xIiwic2FmZV9zZWFyY2giOjEsInBhZ2VzaXplIjoxMDAsInByZW1pdW0iOiJmcmVlIiwiZnJlZWNjMCI6MCwic2hvd2Nhc2UiOjAsInNvcnRlZEtleXMiOiJidXNpbmVzcyBjYXJkIn0sInBvcyI6MjB9) 
-* image that was  used to create the hero image on the landing page
+- image that was  used to create the hero image on the landing page
   - Woman holding business card(id-2024655) by cuz.gallery
+
 3. [Toolur](https://compressimage.toolur.com/) was used to compress the hero image
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used
+
 #### Code:
 <!-- 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
 
@@ -241,9 +249,11 @@ As a libary to make the functions work on the canvas
 3. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked
 4. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
 5. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) this creates a table of contents for Markdown, manny thanks to follow student Aukje (byIlsa_lead) for sharing this.
+6. [Am I Responsive?](http://ami.responsivedesign.is/?url=https%3A%2F%2Fdaph1986.github.io%2FPostfly-business-card-creator%2Findex.html) to check the responsiveness and make the mockup's.
 
 ### Acknowledgements
 
 + My mentor from Code Institute, thank you Narender for your time and guidance.
-+ My husband, thank you Django for taking care of our son more so I can work on my education and thank you for your patience!
++ My husband, thank you Django for taking care of our son more so I can work on my education and thank you for your patience and thank you for your extra explanation about JavaScript!
++ Aukje (byIlsa_lead) thank you for hosting a Preparing for your Second Milestone Project call on zoom, it was really helpfull! And thank you for your time and effort to go through my code in order to help me with my question about my form.
 <!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
