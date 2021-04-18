@@ -23,7 +23,7 @@ Table of Contents
     + [Site Owners Goals](#site-owners-goals)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Testing & Bugs](#testing---bugs)
+- [Testing & Bugs](#testing-and-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
     + [Content](#content)
@@ -141,7 +141,7 @@ Technologies
 + Adobe InDesign to make a favicon
 + VSCode: to write the code in
 
-Testing & Bugs
+Testing and Bugs
 ======
 
 <!-- The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created.  -->
