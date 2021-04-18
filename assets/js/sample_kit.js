@@ -7,6 +7,7 @@ document.onload = function () {
 function sendRequestMail(requestForm) {
   // This ensures that all listed details are send through emailjs
   emailjs.send("service_gcpzmbl", "sample kit request", {
+    "from_cname": requestForm.cname.value,
     "from_fname": requestForm.fname.value,
     "from_lname": requestForm.lname.value,
     "from_address01": requestForm.address01.value,
