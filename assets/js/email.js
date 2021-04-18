@@ -67,9 +67,9 @@ function sendQuotationMail(quotationForm) {
     "from_fname": quotationForm.fname.value,
     "from_lname": quotationForm.lname.value,
     "from_email": quotationForm.email.value,
-    "from_size": quotationForm.sizeResult.value,
-    "from_paper": quotationForm.paperResult.value,
-    "from_quantity": quotationForm.sizeResult.value,
+    "from_size": sizeResult,
+    "from_paper": paperResult,
+    "from_quantity": quantityResult,
   })
     .then(
       function (response) {
