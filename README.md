@@ -23,7 +23,7 @@ Table of Contents
     + [Site Owners Goals](#site-owners-goals)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Testing & Bugs](#testing-and-bugs)
+- [Testing and Bugs](#testing-and-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
     + [Content](#content)
@@ -81,20 +81,24 @@ Mobile wireframes<br>
 
 The colors that were used are the existing corporate identity colors, white and an off-white color, which are:
 
-<img src="assets/images/readme_images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/readme_images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/readme_images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/readme_images/off_white.png" alt="Off White"  width="25%" height="25%">
+<img src="assets/images/readme_images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/readme_images/red2.png" alt="Red 2" width="25%" height="25%"> <img src="assets/images/readme_images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/readme_images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/readme_images/off_white.png" alt="Off White"  width="25%" height="25%">
 
 During development the site's layout was restructured a little bit, because this seemed visually or otherwise better.
 What was changed is:
 
-1. The color for the red headers and buttons were changed from #E73B3B to #e72f4c and #e02a51 because during testing #E73B3B did not give a good enough contrast.
+1. The color for the red headers and buttons were changed from #e73b3b to #e72f4c and #e02a51 because during testing #e73b3b did not give a good enough contrast.
 2. The icon for the website was added, because it would be logical to reffer to the main website of the company.
 3. On the sample kit request form a checkbox was added to reduce spam by checking if the user is a robot.
 4. The layout for desktop view on the creator.html for the card selectors was changed a bit to make it look more appealing on smaller screens and to make it more logical to follow the steps.
 5. The Select Size and Select Printing Method options were combined to give it a UX friendly experience.
+6. The buttons for adding a text field, downloading the preview file and reseting the made choices are grouped together to present a better and UX friendly experience.
+7. The button to upload an own file was seperated from the other selector and made pulsing to give it better attention.
+8. The legend which explaines all the lines (bleed etc) of the templates has been put above the template to give it a UX friendly experience.
+9. On the bottom of the page above the input fields for name and email address a small explantion was added to create a more UX friendly experience.
 
 **Fonts & icons**
 
-[Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was choosen because this is already in use on the existing POSTFLY site.
+[Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was choosen because this is already in use on the existing POSTFLY site and it fits the corporate identity.
 
 For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used and for the creator page the icons of [Materialize](https://materializecss.com/icons.html) were used.
 
@@ -102,20 +106,21 @@ Features
 ======
 
 The site contains the following features: 
-+ send a request for a quotation for the designed business cards
 + choose out of three different sizes of business cards
-+ upload an own photo or logo
 + choose a background color
-+ edit text content
-+ download the designed card as a low res jpeg file
 + choose the paper type
 + choose the quantity
++ upload an own photo or logo
++ edit text content
++ download the designed card as a low res jpeg file
++ reset the selected items
++ send a request for a quotation for the designed business cards
 
 **Features for the future** <br>
 The following items can be added: 
 +	choose a different color for the frontside and the backside of the card
 +	choose the production / delivery time
-+	customize the paper size 
++	customize the paper size
 + choose between round or right angles
 +	integrate it on the POSTFLY website
 +	show costs in advance without having to ask for a quotation
@@ -136,7 +141,7 @@ Technologies
 + Adobe XD
 
 **Others**
-+ Adobe Photoshop: to resize the images
++ Adobe Photoshop: to resize the images and provide the images of arrows, ect where necessary (for example the README.md images)
 + Adobe Illustrator: to adjust the business cards templates
 + Adobe InDesign to make a favicon
 + VSCode: to write the code in
@@ -144,7 +149,7 @@ Technologies
 Testing and Bugs
 ======
 
-<!-- The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created.  -->
+The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created. 
 For more details on testing and bugs please view this [file](TESTING.md).
 
 Deployment
@@ -243,17 +248,17 @@ All content has been written by myself
 
 ### Other
 
-1. [Fabric](http://fabricjs.com/)
-As a libary to make the functions work on the canvas
-2. [cdnjs](https://cdnjs.com/) to get the js cdn's from
-3. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked
-4. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
-5. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) this creates a table of contents for Markdown, manny thanks to follow student Aukje (byIlsa_lead) for sharing this.
-6. [Am I Responsive?](http://ami.responsivedesign.is/?url=https%3A%2F%2Fdaph1986.github.io%2FPostfly-business-card-creator%2Findex.html) to check the responsiveness and make the mockup's.
+1. [DIGIdesigner](https://github.com/D1ang/DIGIdesigner) this idea got me the insparation for my subject on the milestone 2 project
+2. [Fabric](http://fabricjs.com/) as a libary to make the functions work on the canvas
+3. [cdnjs](https://cdnjs.com/) to get the js cdn's from
+4. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked
+5. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
+6. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) this creates a table of contents for Markdown, manny thanks to follow student Aukje (byIlsa_lead) for sharing this.
+7. [Am I Responsive?](http://ami.responsivedesign.is/?url=https%3A%2F%2Fdaph1986.github.io%2FPostfly-business-card-creator%2Findex.html) to check the responsiveness and make the mockup's.
 
 ### Acknowledgements
 
 + My mentor from Code Institute, thank you Narender for your time and guidance.
-+ My husband, thank you Django for taking care of our son more so I can work on my education and thank you for your patience and thank you for your extra explanation about JavaScript!
-+ Aukje (byIlsa_lead) thank you for hosting a Preparing for your Second Milestone Project call on zoom, it was really helpfull! And thank you for your time and effort to go through my code in order to help me with my question about my form.
++ My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience and thank you for your extra explanation about JavaScript!
++ Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpfull! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
 <!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
