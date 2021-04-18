@@ -93,6 +93,10 @@ nav .nav-title {
   display: none;
 }
 
+button {
+  border: none;
+}
+
 /* ------------- Homepage content ------------- */
 
 .contact-icons i {
