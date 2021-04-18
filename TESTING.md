@@ -9,7 +9,7 @@ Table of Contents
   - [GTmetrix](#gtmetrix)
   - [Color blindness](#color-blindness)
   - [Slack](#slack)
-  - [Colleagues friends family](#colleagues-friends-family)
+  - [Others](#others)
   - [Bugs](#bugs)
 
 
@@ -39,18 +39,18 @@ This can been done in step 3 and 4.
 - Edit text content.
 - Download the designed card as a low res jpeg file. <br>
 <img src="assets/images/testing_images/buttons.png" alt="Buttons" width="25%" height="25%">
-<img src="assets/images/testing_images/preview.png" alt="Preview" width="25%" height="25%">
+<img src="assets/images/testing_images/preview.png" alt="Preview" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/preview_testing.jpeg" alt="Download preview" width="18%" height="18%"> <br>
-The user can click the buttons to achieve this
+The user can click the buttons to achieve this, also the selections made with step 1 and 2 are visible on this preview.
 - Send a request for a quotation for the designed business cards.<br>
 <img src="assets/images/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
-<img src="assets/images/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%">
+<img src="assets/images/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/request_form3.png" alt="Request form 3" width="25%" height="25%"> <br>
 As with the sample kit form after everything is filled out the request quotation button can be clicked and the user will be informed the request is send succesfully and will be redirected to the homepage.
 
 It can be concluded that all goals have been achieved. <br>
-<!-- The site has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. <br>
-The site was also tested on multiple devices among others an OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should. -->
+The site has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. <br>
+<!-- The site was also tested on multiple devices among others an OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should. -->
 
 ## HTML
 
@@ -120,7 +120,7 @@ The results are satisfying, so at this moment there is no need for adjustments. 
 
 <!-- On the 3rd of February the project was placed on [Slack](https://slack.com/intl/en-nl/) and there a few points were brought up by Richard Lovett & Marina Pavlovic, among others the fact that the moon calendar modal could be viewed better when there is a difference in background with the base page and that the contrast for the text and background on the daily life page wasn’t enough. The decision was made to adjust this by changing the background of the modal a bit and to change the background color for the daily life page in order to get a good contrast and keep the consistency in text color. Richard also gave the advice to run the CSS code through an online Autoprefixer CSS. -->
 
-## Colleagues / friends / family
+## Others
 
 <!-- A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola G5, Samsung S7, iPhone 6, iPhone 7, iPhone 12 and iPhone 12 Pro Max among others.
 My colleague found a bug when you turn your iPhone in landscape mode. 
