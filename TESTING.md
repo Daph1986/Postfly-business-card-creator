@@ -9,36 +9,46 @@ Table of Contents
   - [GTmetrix](#gtmetrix)
   - [Color blindness](#color-blindness)
   - [Slack](#slack)
-  - [Colleagues / friends / family](#colleagues-friends-family)
+  - [Colleagues friends family](#colleagues-friends-family)
   - [Bugs](#bugs)
 
 
 ## General
 
 The design goal is to make a clear, accessible, structured site so that visitors can easily design their own business cards. <br>
-As a visitor there were multiple steps you would like to take, in the tests it was checked if these were achieved.
+When landing on the page there is an explanation on how things work: <br>
+<img src="assets/images/testing_images/explanation.png" alt="Explanation" width="25%" height="25%"> <br>
+After reading it the user can either request a sample kit or start designing. When the user clicks the sample kit button they will be taken to a form, this form needs to be filled in to get the address to send the sample kit. <br>
+<img src="assets/images/testing_images/sample_form1.png" alt="Sample form 1" width="25%" height="25%">
+<img src="assets/images/testing_images/sample_form2.png" alt="Sample form 3" width="25%" height="25%">
+<img src="assets/images/testing_images/sample_form3.png" alt="Sample form 3" width="24%" height="24%"> <br> 
+After everything is filled out an email is send to, in this case me, with the data needed to send the sample kit through mail. <br>
+<img src="assets/images/testing_images/sample_form_emailjs_mail.png" alt="Form emailJS mail" width="40%" height="40%"> <br>
+When the user feels ready to start designing they can click the start design button, which will take them to the creator.html page. <br>
+<img src="assets/images/testing_images/creator_page.png" alt="Creator page" width="25%" height="25%"> <br>
+As a visitor there were multiple steps you would like to take, in the manual tests it was checked if these were achieved.
 - Choose out of three different sizes of business cards
-    <!-- * When coming on the page it is clear what subject of the page is and if you would like to know more / if you are curious there is a button you can click which will give more information.  <img src="assets/images/TESTING images/subject.png" alt="Subject"/>The button redirects you to the Daily life page where more information about the subject is displayed.
-    Furthermore, after reading the content there is a button displayed which if you click on, it shows a form where you can sign up for the newsletter if you would like. <img src="assets/images/TESTING images/sign_up_modal.png" alt="Sign up modal"/>  -->
-
-- Choose a background color.
-    <!-- * When you go to the moon phases page, you will see the eight different phases of the moon with explanation, and among others some do's and don'ts. <img src="assets/images/TESTING images/moon_phases_page.png" alt="Moon phases page"/>  -->
-
+- Choose a background color. <br>
+<img src="assets/images/testing_images/step1_2.png" alt="Step 1 & 2" width="25%" height="25%"> <br>
+This can been done in step 1 and 2.
 - Choose the paper type.
-
-- Choose the quantity.
-
+- Choose the quantity. <br>
+<img src="assets/images/testing_images/step3_4.png" alt="Step 3 & 4" width="25%" height="25%"> <br>
+This can been done in step 3 and 4.
 - Upload an own photo or logo.
-    <!-- * When you navigate to moon calendar in the navbar, you reach the moon calendar page. There it is explained that you can view the calendar or open an A4 version for downloading or printing. <img src="assets/images/TESTING images/moon_calendar_page.png" alt="Moon calendar page"/>  -->
-
 - Edit text content.
-     <!-- * If you want to relax and follow a meditation, you visit the last page, the meditation page. You can find six different meditations there, pick one that you think is fitting for you at this moment and enjoy. <img src="assets/images/TESTING images/meditations.png" alt="Meditations page"/>  -->
+- Download the designed card as a low res jpeg file. <br>
+<img src="assets/images/testing_images/buttons.png" alt="Buttons" width="25%" height="25%">
+<img src="assets/images/testing_images/preview.png" alt="Preview" width="25%" height="25%">
+<img src="assets/images/testing_images/preview_testing.jpeg" alt="Download preview" width="18%" height="18%"> <br>
+The user can click the buttons to achieve this
+- Send a request for a quotation for the designed business cards.<br>
+<img src="assets/images/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
+<img src="assets/images/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%">
+<img src="assets/images/testing_images/request_form3.png" alt="Request form 3" width="25%" height="25%"> <br>
+As with the sample kit form after everything is filled out the request quotation button can be clicked and the user will be informed the request is send succesfully and will be redirected to the homepage.
 
-- Download the designed card as a low res jpeg file.
-
-- Send a request for a quotation for the designed business cards.
-
-<!-- It can be concluded that all goals have been achieved.  <br> -->
+It can be concluded that all goals have been achieved. <br>
 <!-- The site has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. <br>
 The site was also tested on multiple devices among others an OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should. -->
 
@@ -227,3 +237,31 @@ This ensures that for size the user selects on the screensize the user is on the
 The preview is good now: <br>
 <img src="assets/images/testing_images/preview_bug_fixed.jpeg" alt="Preview bug fixed" width="25%" height="25%"> <br>
 One thing remains to be said, when a size selection is made switching from screen size does not resizes the canvas. Only when a new selection is made the proper size will be shown. Of course this can been seen as a bug, but with normal usage this will not happen.
+
+#### Safari button bug
+
+The site was tested on Safari webbrowser among others and there appeared to be something wrong with the add text, download & reset buttons section. <br>
+<img src="assets/images/testing_images/safari_button_bug1.jpeg" alt="Safari button bug 1" width="35%" height="35%"> <br>
+The buttons were colorless, the following code was tried to fix it: <br>
+creator.html:
+```
+<button class="waves-effect btn-large btn-postfly button-spacing" type="button" name="action"
+  onclick="addTextField()">Add text field</button>
+<button class="waves-effect btn-large btn-postfly" type="button" onclick="downloadPreview()">Download your preview</button>
+<button><a class="waves-effect btn-large btn-postfly button-spacing" type="reset" value="Reset"
+href="creator.html">Reset</a></button>
+```
+css:
+```
+button {
+  border: none;
+}
+```
+This resulted in the following: <br>
+<img src="assets/images/testing_images/safari_button_bug2.jpeg" alt="Safari button bug 2" width="35%" height="35%"> <br>
+After inspecting the type and value seemed to be the problem, so the css styling was removed again and the code for the reset button in creator.html was changed to:
+```
+<a class="waves-effect btn-large btn-postfly button-spacing" href="creator.html">Reset</a>
+```
+That fixed the problem.<br>
+<img src="assets/images/testing_images/safari_button_bug_fixed.jpeg" alt="Safari button bug fixed" width="35%" height="35%">
