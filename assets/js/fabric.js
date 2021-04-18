@@ -37,7 +37,7 @@ function selectSize(element) {
       canvas.setDimensions({ width: 720, height: 1300 });
       document.getElementById("center").style.height = "495px";}
     else {
-      canvas.setDimensions({ width: 320, height: 200 });
+      canvas.setDimensions({ width: 320, height: 600 });
       document.getElementById("center").style.height = "220px";}
 
   } else if (element.id == 'single-double-sided' && element.checked) {
@@ -47,7 +47,7 @@ function selectSize(element) {
       canvas.setDimensions({ width: 720, height: 1300 });
       document.getElementById("center").style.height = "1220px";}
     else {
-      canvas.setDimensions({ width: 320, height: 200 });
+      canvas.setDimensions({ width: 320, height: 600 });
       document.getElementById("center").style.height = "535px";}
 
   } else if (element.id == 'double-portrait-one-sided' && element.checked) {
@@ -57,7 +57,7 @@ function selectSize(element) {
       canvas.setDimensions({ width: 720, height: 1300 });
       document.getElementById("center").style.height = "556px";}
     else {
-      canvas.setDimensions({ width: 320, height: 200 });
+      canvas.setDimensions({ width: 320, height: 600 });
       document.getElementById("center").style.height = "250px";}
 
   } else if (element.id == 'double-portrait-double-sided' && element.checked) {
@@ -67,7 +67,7 @@ function selectSize(element) {
       canvas.setDimensions({ width: 720, height: 1300 });
       document.getElementById("center").style.height = "1305px";}
     else {
-      canvas.setDimensions({ width: 320, height: 200 });
+      canvas.setDimensions({ width: 320, height: 600 });
       document.getElementById("center").style.height = "580px";}
     
   } else if (element.id == 'double-landscape-one-sided' && element.checked) {
@@ -77,7 +77,7 @@ function selectSize(element) {
       canvas.setDimensions({ width: 720, height: 1300 });
       document.getElementById("center").style.height = "253px";}
     else {
-      canvas.setDimensions({ width: 320, height: 200 });
+      canvas.setDimensions({ width: 320, height: 600 });
       document.getElementById("center").style.height = "112px";}
 
   } else if (element.id == 'double-landscape-double-sided' && element.checked) {
@@ -87,7 +87,7 @@ function selectSize(element) {
       canvas.setDimensions({ width: 720, height: 1300 });
       document.getElementById("center").style.height = "643px";}
     else {
-      canvas.setDimensions({ width: 320, height: 200 });
+      canvas.setDimensions({ width: 320, height: 600 });
       document.getElementById("center").style.height = "282px";}
   }
 }
