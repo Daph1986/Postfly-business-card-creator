@@ -22,32 +22,32 @@ After reading it the user can either request a sample kit or start designing. Wh
 <img src="assets/images/testing_images/sample_form1.png" alt="Sample form 1" width="25%" height="25%">
 <img src="assets/images/testing_images/sample_form2.png" alt="Sample form 3" width="25%" height="25%">
 <img src="assets/images/testing_images/sample_form3.png" alt="Sample form 3" width="24%" height="24%"> <br> 
-After everything is filled out an email is send to, in this case me, with the data needed to send the sample kit through mail. <br>
+After everything is filled out an email is sent to, in this case me, with the data needed to send the sample kit through mail. <br>
 <img src="assets/images/testing_images/sample_form_emailjs_mail.png" alt="Form emailJS mail" width="40%" height="40%"> <br>
 When the user feels ready to start designing they can click the start design button, which will take them to the creator.html page. <br>
 <img src="assets/images/testing_images/creator_page.png" alt="Creator page" width="25%" height="25%"> <br>
 As a visitor there were multiple steps you would like to take, in the manual tests it was checked if these were achieved.
-- Choose out of three different sizes of business cards
+- Choose out of three different sizes of business cards.
 - Choose a background color. <br>
 <img src="assets/images/testing_images/step1_2.png" alt="Step 1 & 2" width="25%" height="25%"> <br>
-This can been done in step 1 and 2.
+This can be done in step 1 and 2.
 - Choose the paper type.
 - Choose the quantity. <br>
 <img src="assets/images/testing_images/step3_4.png" alt="Step 3 & 4" width="25%" height="25%"> <br>
-This can been done in step 3 and 4.
+This can be done in step 3 and 4.
 - Upload an own photo or logo.
 - Edit text content.
-- Download the designed card as a low res jpeg file. <br>
+- Download the designed card as a low-res jpeg file. <br>
 <img src="assets/images/testing_images/buttons.png" alt="Buttons" width="25%" height="25%">
 <img src="assets/images/testing_images/preview.png" alt="Preview" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/preview_testing.jpeg" alt="Download preview" width="18%" height="18%"> <br>
-The user can click the buttons to achieve this, also the selections made with step 1 and 2 are visible on this preview.
+The user can click the buttons to achieve this, also the selections made with steps 1 and 2 are visible on this preview.
 - Send a request for a quotation for the designed business cards.<br>
 <img src="assets/images/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
 <img src="assets/images/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/request_form3.png" alt="Request form 3" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/quotation_form_emailjs_mail.png" alt="Quotation form emailJS mail" width="40%" height="40%"> <br>
-As with the sample kit form after everything is filled out the request quotation button can be clicked and the user will be informed the request is send succesfully and will be redirected to the homepage and the email with the values that are needed to make a quotation is send through EmailJS, to in this case me. 
+As with the sample kit form after everything is filled out the request quotation button can be clicked and the user will be informed the request is send successfully  and will be redirected to the homepage and the email with the values that are needed to make a quotation is send through EmailJS, to in this case me.
 
 It can be concluded that all goals have been achieved. <br>
 The site has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. <br>
@@ -142,7 +142,7 @@ Bugs
 
 #### Preview file
 
-The following css code was used to set the preview to center:
+The following CSS code was used to set the preview to center:
 ```
 #center.row .col.s12 {
   float: none;
@@ -153,7 +153,7 @@ The following css code was used to set the preview to center:
 ```
 but as a result when downloading the preview file the prewiew was cut off. <br>
 <img src="assets/images/testing_images/preview_bug1.jpeg" alt="Preview bug 1" width="26%" height="26%"> <br>
-This was solved by changing the row into a container and giving it this css code:
+This was solved by changing the row into a container and giving it this CSS code:
 ```
 #center {
   width: 100%;
@@ -165,7 +165,7 @@ This was solved by changing the row into a container and giving it this css code
 But then a strip of the background color on the bottom of preview got visible. <br>
 <img src="assets/images/testing_images/preview_bug2.jpeg" alt="Preview bug 2" width="25%" height="25%">
 <img src="assets/images/testing_images/preview_bug3.jpeg" alt="Preview bug 3" width="25%" height="25%"> <br>
-This was fixed by combining the excisting js funtions for selectSize, setDimensions and makeCanvasLarge into the selectSize function. 
+This was fixed by combining the existing JavaScript functions for selectSize, setDimensions and makeCanvasLarge into the selectSize function. 
 
 ```
 function selectSize(element) {
@@ -234,17 +234,17 @@ function selectSize(element) {
   }
 }
 ```
-This ensures that for size the user selects on the screensize the user is on the right div and canvas size is selected.
+This ensures that for size the user selects on the screen size the user is on the right div and canvas size is selected.
 The preview is good now: <br>
 <img src="assets/images/testing_images/preview_bug_fixed.jpeg" alt="Preview bug fixed" width="25%" height="25%"> <br>
-One thing remains to be said, when a size selection is made switching from screen size does not resizes the canvas. Only when a new selection is made the proper size will be shown. Of course this can been seen as a bug, but with normal usage this will not happen.
+One thing remains to be said, when a size selection is made switching from screen size does not resizes the canvas. Only when a new selection is made the proper size will be shown. Of course, this can been seen as a bug, but with normal usage this will not happen.
 
 #### Safari button bug
 
-The site was tested on Safari webbrowser among others and there appeared to be something wrong with the add text, download & reset buttons section. <br>
+The site was tested on Safari web browser among others and there appeared to be something wrong with the add text, download & reset buttons section. <br>
 <img src="assets/images/testing_images/safari_button_bug1.jpeg" alt="Safari button bug 1" width="35%" height="35%"> <br>
 The buttons were colorless, the following code was tried to fix it: <br>
-creator.html:
+HTML creator.html:
 ```
 <button class="waves-effect btn-large btn-postfly button-spacing" type="button" name="action"
   onclick="addTextField()">Add text field</button>
@@ -252,7 +252,7 @@ creator.html:
 <button><a class="waves-effect btn-large btn-postfly button-spacing" type="reset" value="Reset"
 href="creator.html">Reset</a></button>
 ```
-css:
+CSS:
 ```
 button {
   border: none;
@@ -260,7 +260,7 @@ button {
 ```
 This resulted in the following: <br>
 <img src="assets/images/testing_images/safari_button_bug2.jpeg" alt="Safari button bug 2" width="35%" height="35%"> <br>
-After inspecting the type and value seemed to be the problem, so the css styling was removed again and the code for the reset button in creator.html was changed to:
+After inspecting the type and value seemed to be the problem, so the CSS styling was removed again and the code for the reset button in creator.html was changed to:
 ```
 <a class="waves-effect btn-large btn-postfly button-spacing" href="creator.html">Reset</a>
 ```
