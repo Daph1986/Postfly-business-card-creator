@@ -67,6 +67,11 @@ nav .nav-title {
   text-align: center;
 }
 
+p.grey-header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 /* ------------- General buttons ------------- */
 
 .btn-postfly {
@@ -142,7 +147,8 @@ a.modal-close {
 /* For some reason materialize form colors are very hard to overwrite, 
 after inspection all of the below must be named to have the wanted color change effect */
 
-input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+input[type=text]:not(.browser-default):focus:not([readonly]), 
+input[type=email]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #e02a51;
   -webkit-box-shadow: 0 1px 0 0 #e02a51;
   box-shadow: 0 1px 0 0 #e02a51;
