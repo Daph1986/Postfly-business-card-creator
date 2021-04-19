@@ -57,11 +57,11 @@ The design goal is to make a clear, accessible, structured site so that visitors
 
 ### Scope
 
-The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to choose the paper type, to choose the quantity, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a low res jpeg file, to send a request for a quotation for the designed business cards.
+The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to choose the paper type, to choose the quantity, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a low-res jpeg file, to send a request for a quotation for the designed business cards.
 
 ### Structure
 
-This site is structured as clear as possible, it is easy to see what can be done on the page, on all screen sizes it is clear shouls be done on each part of the site. The design of the card is visible on all screen sizes. This all ensures that the user knows what to do and what to expect.
+This site is structured as clear as possible, it is easy to see what can be done on the page, on all screen sizes it is clear should be done on each part of the site. The design of the card is visible on all screen sizes. This all ensures that the user knows what to do and what to expect.
 
 ### Skeleton
 
@@ -87,18 +87,18 @@ During development the site's layout was restructured a little bit, because this
 What was changed is:
 
 1. The color for the red headers and buttons were changed from #e73b3b to #e72f4c and #e02a51 because during testing #e73b3b did not give a good enough contrast.
-2. The icon for the website was added, because it would be logical to reffer to the main website of the company.
-3. On the sample kit request form a checkbox was added to reduce spam by checking if the user is a robot.
+2. The icon for the website was added, because it would be logical to refer to the main website of the company.
+3. On the sample kit request form and the quotation request form a checkbox was added to reduce spam by checking if the user is a robot.
 4. The layout for desktop view on the creator.html for the card selectors was changed a bit to make it look more appealing on smaller screens and to make it more logical to follow the steps.
 5. The Select Size and Select Printing Method options were combined to give it a UX friendly experience.
-6. The buttons for adding a text field, downloading the preview file and reseting the made choices are grouped together to present a better and UX friendly experience.
-7. The button to upload an own file was seperated from the other selector and made pulsing to give it better attention.
-8. The legend which explaines all the lines (bleed etc) of the templates has been put above the template to give it a UX friendly experience.
-9. On the bottom of the page above the input fields for name and email address a small explantion was added to create a more UX friendly experience.
+6. The buttons for adding a text field, downloading the preview file and resetting the made choices are grouped together to present a better and UX friendly experience.
+7. The button to upload an own file was separated from the other selectors and made pulsing to give it better attention.
+8. The legend which explains all the lines (bleed etc.) of the templates has been put above the template to give it a UX friendly experience.
+9. On the bottom of the page above the input fields for name and email address a small explanation was added to create a more UX friendly experience.
 
 ### Fonts & icons
 
-[Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was choosen because this is already in use on the existing POSTFLY site and it fits the corporate identity.
+[Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was chosen because this is already in use on the existing POSTFLY site and it fits the corporate identity.
 
 For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used and for the creator page the icons of [Materialize](https://materializecss.com/icons.html) were used.
 
@@ -112,7 +112,7 @@ The site contains the following features:
 + choose the quantity
 + upload an own photo or logo
 + edit text content
-+ download the designed card as a low res jpeg file
++ download the designed card as a low-res jpeg file
 + reset the selected items
 + send a request for a quotation for the designed business cards
 
@@ -145,10 +145,10 @@ Technologies
 
 ### Others
 
-+ Adobe Photoshop: to resize the images and provide the images of arrows, ect where necessary (for example the README.md images)
-+ Adobe Illustrator: to adjust the business cards templates
-+ Adobe InDesign to make a favicon
-+ VSCode: to write the code in
++ Adobe Photoshop: to resize the images and provide the images of arrows, ect. where necessary (for example the README.md images).
++ Adobe Illustrator: to adjust the business cards templates.
++ Adobe InDesign to make a favicon.
++ VSCode: to write the code in.
 
 Testing and Bugs
 ======
@@ -163,11 +163,11 @@ Deployment
 
 To view the deployed version, the steps underneath can be followed:
 
-1. Log in on [GitHub](https://github.com/) 
+1. Log in on [GitHub](https://github.com/)
 2. Find Daph1986's [page](https://github.com/Daph1986)
-3. Select repositories
-4. Select the Postfly-business-card-creator repository
-5. Click on the link on the right side or on the link under "Demo"
+3. Select repositories.
+4. Select the Postfly-business-card-creator repository.
+5. Click on the link on the right side or on the link under "Demo".
 By clicking that link the live demo version will be visible. <br>
 
 <img src="assets/images/readme_images/deployment_4.png" alt="Deployment link 4" width="75%" height="50%"/>
@@ -178,9 +178,9 @@ By clicking that link the live demo version will be visible. <br>
 To create a live version of the website VSCode was used together with GitHub Pages.
 To deploy the website with GitHub pages the following steps were made:
 
-1. Login into the personal GitHub account
+1. Login into the personal GitHub account.
 2. Go to the repository: https://github.com/Daph1986/Postfly-business-card-creator
-3. Click on settings <br>
+3. Click on settings. <br>
 
 <img src="assets/images/readme_images/deployment_1.png" alt="Deployment link 1" width="75%" height="50%"/>
 
@@ -188,7 +188,7 @@ To deploy the website with GitHub pages the following steps were made:
 
 <img src="assets/images/readme_images/deployment_2.png" alt="Deployment link 2" width="75%" height="50%"/>
 
-5. After a few minutes the published result was visible <br>
+5. After a few minutes the published result was visible. <br>
 
 <img src="assets/images/readme_images/deployment_3.png" alt="Deployment link 3" width="75%" height="50%"/>
 
@@ -199,14 +199,14 @@ You can clone it by following the next steps: <br>
 
 1. Log in on [GitHub](https://github.com/) 
 2. Find Daph1986's [page](https://github.com/Daph1986)
-3. Select repositories
-4. Select the Postfly-business-card-creator repository
-5. Click on the green "Code" button <br>
+3. Select repositories.
+4. Select the Postfly-business-card-creator repository.
+5. Click on the green "Code" button. <br>
 
 <img src="assets/images/readme_images/deployment_6.png" alt="Deployment link 6" width="75%" height="50%"/> <br>
 
-6. Copy the URL 
-7. Open VScode or your preferred IDE, open the file or folder in which you want to use the project and open a CLI terminal
+6. Copy the URL.
+7. Open VScode or your preferred IDE, open the file or folder in which you want to use the project and open a CLI terminal.
 8. Put the following command in the CLI terminal:
 
 ``` 
@@ -226,40 +226,40 @@ Resolving deltas: 100% (34/34), done.
 
 ### Setting EmailJS up
 
-1. Go to [EmailJS](https://www.emailjs.com/) sign in to your excisting account or sign up to create an account
-2. Click on Email Services and then add new service <br>
+1. Go to [EmailJS](https://www.emailjs.com/) sign in to your existing account or sign up to create an account.
+2. Click on Email Services and then add new service. <br>
 <img src="assets/images/readme_images/set_up.png" alt="Set up EmailJS" width="50%" height="50%"/> <br>
-3. Save and click on Email Templates <br>
+3. Save and click on Email Templates. <br>
 <img src="assets/images/readme_images/new_template.png" alt="EmailJS new template" width="50%" height="50%"/> <br>
-4. Make 2 templates and give them the id names of "sample kit request" and "quotation request" to ensure they work with the functions in this code <br>
+4. Make 2 templates and give them the id names of "sample kit request" and "quotation request" to ensure they work with the functions in this code. <br>
 <img src="assets/images/readme_images/settings.png" alt="Template settings" width="50%" height="50%"/> <br>
-5. Copy the service id as shown at step 2
-6. Replace the id in the code for your own id <br>
+5. Copy the service id as shown at step 2.
+6. Replace the id in the code for your own id. <br>
 <img src="assets/images/readme_images/js.png" alt="JS file" width="50%" height="50%"/> <img src="assets/images/readme_images/js2.png" alt="JS 2 file" width="50%" height="50%"/> <br>
-7. Go to Integration and copy the user id and replace your id for the id in the js file
+7. Go to Integration and copy the user id and replace your id for the id in the JavaScript file.
 <img src="assets/images/readme_images/integration.png" alt="Integration" width="50%" height="50%"/> <br>
-8. The EmailJS service is set up and everything should work
+8. The EmailJS service is set up and everything should work.
 
 Credits
 ======
 
 ### Content
-All content has been written by myself
+All content has been written by me.
 
 ### Media 
 
 #### Images:
 
 1. [POSTFLY](http://www.postfly.nl/) 
-- the POSTFLY logo provided by my collegue Filip Matthys
-- the POSTFLY business cards templates provided by my collegue Filip Matthys, edited by myself
+- the POSTFLY logo provided by my colleague Filip Matthys.
+- the POSTFLY business cards templates provided by my colleague Filip Matthys, edited by myself.
 
 2. [Rawpixel](https://www.rawpixel.com/image/2024655/woman-holding-business-card-png#eyJkYXRhIjp7ImtleXMiOiJidXNpbmVzcyUyMGNhcmRzIiwicGFnZSI6Miwic29ydCI6ImN1cmF0ZWQiLCJjdXJyZW50X3VybCI6Ii9zZWFyY2gvYnVzaW5lc3MlMjBjYXJkcz9zb3J0PWN1cmF0ZWQmcGFnZT0xIiwic2FmZV9zZWFyY2giOjEsInBhZ2VzaXplIjoxMDAsInByZW1pdW0iOiJmcmVlIiwiZnJlZWNjMCI6MCwic2hvd2Nhc2UiOjAsInNvcnRlZEtleXMiOiJidXNpbmVzcyBjYXJkIn0sInBvcyI6MjB9) 
-- image that was  used to create the hero image on the landing page
-  - Woman holding business card(id-2024655) by cuz.gallery
+- image that was  used to create the hero image on the landing page.
+  - Woman holding business card(id-2024655) by cuz.gallery.
 
-3. [Toolur](https://compressimage.toolur.com/) was used to compress the hero image
-4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used
+3. [Toolur](https://compressimage.toolur.com/) was used to compress the hero image.
+4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
 
 #### Code:
 <!-- 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
@@ -268,23 +268,23 @@ All content has been written by myself
 
 1. [Code Institute LMS](https://learn.codeinstitute.net/login)
 2. [W3schools](https://www.w3schools.com/)
-3. [Stackoverflow](https://stackoverflow.com/)
+3. [Stack Overflow](https://stackoverflow.com/)
 4. [Materialize](https://materializecss.com/)
 
 ### Other
 
-1. [DIGIdesigner](https://github.com/D1ang/DIGIdesigner) this idea got me the insparation for my subject on the milestone 2 project
-2. [Fabric](http://fabricjs.com/) as a libary to make the functions work on the canvas
-3. [cdnjs](https://cdnjs.com/) to get the js cdn's from
-4. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked
+1. [DIGIdesigner](https://github.com/D1ang/DIGIdesigner) this idea got me the inspiration for my subject on the milestone 2 project.
+2. [Fabric](http://fabricjs.com/) as a library to make the functions work on the canvas.
+3. [cdnjs](https://cdnjs.com/) to get the JavaScript cdn's from.
+4. [JustSunOne](https://www.youtube.com/watch?v=mghXNWvVGTs) his tutorials about Fabric were followed to get an understanding of how things worked.
 5. [Our Code World](https://ourcodeworld.com/articles/read/1016/how-to-create-your-own-t-shirt-designer-using-fabricjs-in-javascript) this example was used as an inspiration for the business card creator tool.
-6. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) this creates a table of contents for Markdown, manny thanks to follow student Aukje (byIlsa_lead) for sharing this.
-7. [Am I Responsive?](http://ami.responsivedesign.is/?url=https%3A%2F%2Fdaph1986.github.io%2FPostfly-business-card-creator%2Findex.html) to check the responsiveness and make the mockup's.
+6. [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) this creates a table of contents for Markdown, many thanks to follow student Aukje (byIlsa_lead) for sharing this.
+7. [Am I Responsive?](http://ami.responsivedesign.is/?url=https%3A%2F%2Fdaph1986.github.io%2FPostfly-business-card-creator%2Findex.html) to check the responsiveness and make the mockups.
 
 ### Acknowledgements
 
 + My mentor from Code Institute, thank you Narender for your time and guidance.
 + My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience and thank you for your extra explanation about JavaScript!
-+ Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpfull! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
-+ Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my js function and through that explaining my error.
++ Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpful! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
++ Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my JavaScript function and through that explaining my error.
 <!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
