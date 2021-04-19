@@ -46,7 +46,8 @@ The user can click the buttons to achieve this, also the selections made with st
 <img src="assets/images/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
 <img src="assets/images/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/request_form3.png" alt="Request form 3" width="25%" height="25%"> <br>
-As with the sample kit form after everything is filled out the request quotation button can be clicked and the user will be informed the request is send succesfully and will be redirected to the homepage.
+<img src="assets/images/testing_images/quotation_form_emailjs_mail.png" alt="Quotation form emailJS mail" width="40%" height="40%"> <br>
+As with the sample kit form after everything is filled out the request quotation button can be clicked and the user will be informed the request is send succesfully and will be redirected to the homepage and the email with the values that are needed to make a quotation is send through EmailJS, to in this case me. 
 
 It can be concluded that all goals have been achieved. <br>
 The site has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. <br>
