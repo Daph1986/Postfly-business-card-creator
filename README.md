@@ -36,7 +36,7 @@ User Experience (UX)
 
 This is meant to be a B2B site which targets visitors  who are in need of business cards and want to design it themselves.
 
-**User stories**
+### User stories
 
 ##### Visitor Goals
 
@@ -51,19 +51,19 @@ This is meant to be a B2B site which targets visitors  who are in need of busine
 - Reduce workload on the prepress (design) staff.
 - Expand customer base.
 
-**Strategy**
+### Strategy
 
 The design goal is to make a clear, accessible, structured site so that visitors can easily design their own business cards.
 
-**Scope**
+### Scope
 
 The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to choose the paper type, to choose the quantity, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a low res jpeg file, to send a request for a quotation for the designed business cards.
 
-**Structure**
+### Structure
 
 This site is structured as clear as possible, it is easy to see what can be done on the page, on all screen sizes it is clear shouls be done on each part of the site. The design of the card is visible on all screen sizes. This all ensures that the user knows what to do and what to expect.
 
-**Skeleton**
+### Skeleton
 
 Desktop wireframes <br>
 
@@ -96,7 +96,7 @@ What was changed is:
 8. The legend which explaines all the lines (bleed etc) of the templates has been put above the template to give it a UX friendly experience.
 9. On the bottom of the page above the input fields for name and email address a small explantion was added to create a more UX friendly experience.
 
-**Fonts & icons**
+### Fonts & icons
 
 [Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was choosen because this is already in use on the existing POSTFLY site and it fits the corporate identity.
 
@@ -116,7 +116,8 @@ The site contains the following features:
 + reset the selected items
 + send a request for a quotation for the designed business cards
 
-**Features for the future** <br>
+### Features for the future 
+
 The following items can be added: 
 +	choose a different color for the frontside and the backside of the card
 +	choose the production / delivery time
@@ -129,7 +130,8 @@ The following items can be added:
 Technologies
 ======
 
-**Code languages, libraries and frameworks**
+### Code languages, libraries and frameworks
+
 + HTML5
 + CSS3
 + Materialize 1.0.0
@@ -137,10 +139,12 @@ Technologies
 + Fabric
 + EmailJS
 
-**Wireframes**
+### Wireframes
+
 + Adobe XD
 
-**Others**
+### Others
+
 + Adobe Photoshop: to resize the images and provide the images of arrows, ect where necessary (for example the README.md images)
 + Adobe Illustrator: to adjust the business cards templates
 + Adobe InDesign to make a favicon
@@ -155,23 +159,7 @@ For more details on testing and bugs please view this [file](TESTING.md).
 Deployment
 ======
 
-To create a live version of the website VSCode was used together with GitHub Pages.
-To deploy the website with GitHub pages the following steps were made:
-
-1. Login into the personal GitHub account
-2. Go to the repository: https://github.com/Daph1986/Postfly-business-card-creator
-3. Click on settings <br>
-
-<img src="assets/images/readme_images/deployment_1.png" alt="Deployment link 1" width="75%" height="50%"/>
-
-4. Then almost at the bottom the "GitHub Pages" part is found 
-5. The branch "master" was selected and saved. <br>
-
-<img src="assets/images/readme_images/deployment_2.png" alt="Deployment link 2" width="75%" height="50%"/>
-
-6. After a few minutes the published result was visible <br>
-
-<img src="assets/images/readme_images/deployment_3.png" alt="Deployment link 3" width="75%" height="50%"/>
+### Live version
 
 To view the deployed version, the steps underneath can be followed:
 
@@ -184,6 +172,27 @@ By clicking that link the live demo version will be visible. <br>
 
 <img src="assets/images/readme_images/deployment_4.png" alt="Deployment link 4" width="75%" height="50%"/>
 <img src="assets/images/readme_images/deployment_5.png" alt="Deployment link 5" width="75%" height="50%"/>
+
+### GitHub Pages
+
+To create a live version of the website VSCode was used together with GitHub Pages.
+To deploy the website with GitHub pages the following steps were made:
+
+1. Login into the personal GitHub account
+2. Go to the repository: https://github.com/Daph1986/Postfly-business-card-creator
+3. Click on settings <br>
+
+<img src="assets/images/readme_images/deployment_1.png" alt="Deployment link 1" width="75%" height="50%"/>
+
+4. Then almost at the bottom the "GitHub Pages" part is found, the branch "master" was selected and saved. <br>
+
+<img src="assets/images/readme_images/deployment_2.png" alt="Deployment link 2" width="75%" height="50%"/>
+
+5. After a few minutes the published result was visible <br>
+
+<img src="assets/images/readme_images/deployment_3.png" alt="Deployment link 3" width="75%" height="50%"/>
+
+### Run local
 
 If you would like to run this website locally you can clone this repository in an IDE such as Cloud9 or VSCode.
 You can clone it by following the next steps: <br>
@@ -214,6 +223,22 @@ remote: Total 113 (delta 34), reused 105 (delta 26), pack-reused 0
 Receiving objects: 100% (113/113), 8.54 MiB | 11.13 MiB/s, done.
 Resolving deltas: 100% (34/34), done.
 ```
+
+### Setting EmailJS up
+
+1. Go to [EmailJS](https://www.emailjs.com/) sign in to your excisting account or sign up to create an account
+2. Click on Email Services and then add new service <br>
+<img src="assets/images/readme_images/set_up.png" alt="Set up EmailJS" width="50%" height="50%"/> <br>
+3. Save and click on Email Templates <br>
+<img src="assets/images/readme_images/new_template.png" alt="EmailJS new template" width="50%" height="50%"/> <br>
+4. Make 2 templates and give them the id names of "sample kit request" and "quotation request" to ensure they work with the functions in this code <br>
+<img src="assets/images/readme_images/settings.png" alt="Template settings" width="50%" height="50%"/> <br>
+5. Copy the service id as shown at step 2
+6. Replace the id in the code for your own id <br>
+<img src="assets/images/readme_images/js.png" alt="JS file" width="50%" height="50%"/> <img src="assets/images/readme_images/js2.png" alt="JS 2 file" width="50%" height="50%"/> <br>
+7. Go to Integration and copy the user id and replace your id for the id in the js file
+<img src="assets/images/readme_images/integration.png" alt="Integration" width="50%" height="50%"/> <br>
+8. The EmailJS service is set up and everything should work
 
 Credits
 ======
@@ -261,4 +286,5 @@ All content has been written by myself
 + My mentor from Code Institute, thank you Narender for your time and guidance.
 + My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience and thank you for your extra explanation about JavaScript!
 + Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpfull! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
++ Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my js function and through that explaining my error.
 <!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
