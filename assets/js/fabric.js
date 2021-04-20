@@ -4,7 +4,7 @@ const canvas = new fabric.Canvas('canvas');
 
 canvas.setDimensions({
   width: 320,
-  height: 600
+  height: 220
 });
 
 // ------------- Larger canvas on bigger screen ------------- 
@@ -28,67 +28,67 @@ l.addListener(makeCanvasLarge);
 
 function selectSize(element) {
 
-  const image = document.getElementById('templates');
+  const image = document.getElementById('cards');
 
   if (element.id == 'single-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businescard_one_sided.png';
 
     if (l.matches) {
       canvas.setDimensions({ width: 720, height: 1300 });
-      document.getElementById("center").style.height = "495px";}
+      document.getElementById("center-canvas").style.height = "495px";}
     else {
       canvas.setDimensions({ width: 320, height: 600 });
-      document.getElementById("center").style.height = "220px";}
+      document.getElementById("center-canvas").style.height = "220px";}
 
   } else if (element.id == 'single-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businescard_double_sided.png';
 
     if (l.matches) {
       canvas.setDimensions({ width: 720, height: 1300 });
-      document.getElementById("center").style.height = "1220px";}
+      document.getElementById("center-canvas").style.height = "1220px";}
     else {
       canvas.setDimensions({ width: 320, height: 600 });
-      document.getElementById("center").style.height = "535px";}
+      document.getElementById("center-canvas").style.height = "535px";}
 
   } else if (element.id == 'double-portrait-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_one_sided.png';
 
     if (l.matches) {
       canvas.setDimensions({ width: 720, height: 1300 });
-      document.getElementById("center").style.height = "556px";}
+      document.getElementById("center-canvas").style.height = "556px";}
     else {
       canvas.setDimensions({ width: 320, height: 600 });
-      document.getElementById("center").style.height = "250px";}
+      document.getElementById("center-canvas").style.height = "250px";}
 
   } else if (element.id == 'double-portrait-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_double_sided.png';
 
     if (l.matches) {
       canvas.setDimensions({ width: 720, height: 1300 });
-      document.getElementById("center").style.height = "1305px";}
+      document.getElementById("center-canvas").style.height = "1305px";}
     else {
       canvas.setDimensions({ width: 320, height: 600 });
-      document.getElementById("center").style.height = "580px";}
+      document.getElementById("center-canvas").style.height = "580px";}
     
   } else if (element.id == 'double-landscape-one-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_landscape_one_sided.png';
    
     if (l.matches) {
       canvas.setDimensions({ width: 720, height: 1300 });
-      document.getElementById("center").style.height = "253px";}
+      document.getElementById("center-canvas").style.height = "253px";}
     else {
       canvas.setDimensions({ width: 320, height: 600 });
-      document.getElementById("center").style.height = "112px";}
+      document.getElementById("center-canvas").style.height = "112px";}
 
   } else if (element.id == 'double-landscape-double-sided' && element.checked) {
     image.src = 'assets/images/businesscards_templates/businesscard_double_landscape_double_sided.png';
     
     if (l.matches) {
       canvas.setDimensions({ width: 720, height: 1300 });
-      document.getElementById("center").style.height = "643px";}
+      document.getElementById("center-canvas").style.height = "643px";}
     else {
       canvas.setDimensions({ width: 320, height: 600 });
-      document.getElementById("center").style.height = "282px";}
+      document.getElementById("center-canvas").style.height = "282px";}
   }
 }
 
@@ -96,7 +96,7 @@ function selectSize(element) {
 
 function selectBackgroundColor(element) {
 
-  const div = document.getElementById('template-div');
+  const div = document.getElementById('card-div');
 
   if (element.id == 'bg-blue' && element.checked) {
     div.style.backgroundColor = '#007bff';
@@ -151,7 +151,7 @@ function addTextField() {
 // ------------- Download preview ------------- 
 
 function downloadPreview() {
-  domtoimage.toJpeg(document.getElementById('template-div'), { quality: 0.90 }).then(function (dataUrl) {
+  domtoimage.toJpeg(document.getElementById('card-div'), { quality: 0.90 }).then(function (dataUrl) {
     let link = document.createElement('a');
     link.download = 'preview.jpeg';
     link.href = dataUrl;
