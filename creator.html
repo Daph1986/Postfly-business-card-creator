@@ -315,7 +315,7 @@
       <!-- Selectors for card creator end -->
 
       <!-- File upload button -->
-      <div class="container" id="upload">
+      <div class="container upload-file">
         <div class="row">
           <div class="col s12 center-align">
             <div>
@@ -324,7 +324,7 @@
                   <a class="btn-floating btn-large pulse">
                     <i class="material-icons">file_upload</i>
                   </a>
-                  <input type="file" id="file-upload" name="file-upload" accept="image/*">
+                  <input type="file" class="hide-default" id="file-upload" name="file-upload" accept="image/*">
                 </label>
               </p>
             </div>
@@ -340,20 +340,20 @@
       <!-- Add text, download & reset buttons -->
       <div class="container">
         <div class="row">
-          <div class="col s12 center-align button-spacing">
+          <div class="col s12 center-align btn-spacing">
             <div class="input-field center-align">
-              <button class="waves-effect btn-large btn-postfly button-spacing" type="button" name="action"
+              <button class="waves-effect btn-large btn-custom-red btn-custom-size-extra-large" type="button" name="action"
                 onclick="addTextField()">Add text field</button>
-              <button class="waves-effect btn-large btn-postfly" type="button" onclick="downloadPreview()">Download your
+              <button class="waves-effect btn-large btn-custom-red btn-custom-size-extra-large btn-spacing" type="button" onclick="downloadPreview()">Download your
                 preview</button>
-              <a class="waves-effect btn-large btn-postfly button-spacing" href="creator.html">Reset</a>
+              <a class="waves-effect btn-large btn-custom-red btn-custom-size-extra-large" href="creator.html">Reset</a>
             </div>
           </div>
         </div>
       </div>
       <!-- Add text, download & reset buttons end -->
 
-      <div id="preview">
+      <div class="card-preview">
 
         <!-- Legend -->
         <div class="row">
@@ -369,16 +369,17 @@
                 design so that we can cut accurately. (Bleed)</div>
               <div class="safety-zone">- - - <i class="material-icons safety-zone">arrow_back</i> Also make sure that
                 your
-                texts are not too close to the edge. Stay about 3mm within the cutting edge. (Safety zone)</div> <br>
+                texts are not too close to the edge. Stay about 3mm within the cutting edge. (Safety zone)</div>
+                <div>..........<i class="material-icons cutting-edge">arrow_back</i> The dotted line in the double portrait and double landscape cards indicate the fold line. </div> <br>
             </div>
           </div>
         </div>
         <!-- Legend end -->
 
         <!-- Business card preview -->
-        <div class="container" id="center">
-          <div class="col s12" id="template-div">
-            <img class="col s12" id="templates" src="assets/images/placeholder.png" alt="Template">
+        <div class="container" id="center-canvas">
+          <div class="col s12" id="card-div">
+            <img class="col s12" id="cards" src="assets/images/placeholder.png" alt="Card">
             <div id="drawingArea" class="drawing-area">
               <div class="canvas-container">
                 <canvas id="canvas"></canvas>
@@ -406,7 +407,7 @@
           </p>
         </div>
       </div>
-      <div class="row" id="details">
+      <div class="row sample-form">
         <div class="row">
           <div class="input-field col l6 s12">
             <input placeholder="First Name" name="fname" id="first_name" type="text" required="" aria-required="true">
@@ -426,7 +427,7 @@
           </div>
         </div>
         <p>
-          <label>
+          <label id="checkbox">
             <input type="checkbox" required="" aria-required="true" />
             <span>I'm not a robot!</span>
           </label>
@@ -434,7 +435,7 @@
 
         <!-- Request button -->
         <div class="input-field center-align">
-          <button class="waves-effect btn-large btn-postfly button-spacing" type="submit" name="action">Request
+          <button class="waves-effect btn-large btn-custom-red btn-custom-size-extra-large btn-custom-request" type="submit" name="action">Request
             quotation</button>
         </div>
         <!-- Request button end -->
