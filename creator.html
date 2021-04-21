@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <!-- Validation for EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" defer></script>
   <!-- Validation for EmailJS end -->
 </head>
 
@@ -57,42 +57,42 @@
                     <p>
                       <label>
                         <input class="with-gap" id="single-one-sided" name="size" value="normal1" type="radio"
-                          onchange="selectSize(this)" required />
+                          onchange="singleOneSided(this)" required />
                         <span><strong>Business card 4/0 CMYK</strong> (85x55mm one-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" id="single-double-sided" name="size" value="normal2" type="radio"
-                          onchange="selectSize(this)" />
+                          onchange="singleDoubleSided(this)" />
                         <span><strong>Business card 4/4 CMYK</strong> (85x55mm double-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" id="double-portrait-one-sided" name="size" value="portrait1"
-                          type="radio" onchange="selectSize(this)" />
+                          type="radio" onchange="doublePortraitOneSided(this)" />
                         <span><strong>Business card double portrait 4/0 CMYK</strong> (110x85mm one-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" id="double-portrait-double-sided" name="size" value="portrait2"
-                          type="radio" onchange="selectSize(this)" />
+                          type="radio" onchange="doublePortraitDoubleSided(this)" />
                         <span><strong>Business card double portrait 4/4 CMYK</strong> (110x85mm double-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" id="double-landscape-one-sided" name="size" value="landscape1"
-                          type="radio" onchange="selectSize(this)" />
+                          type="radio" onchange="doubleLandscapeOneSided(this)" />
                         <span><strong>Business card double landscape 4/0 CMYK</strong> (170x55mm one-sided)</span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" id="double-landscape-double-sided" name="size" value="landscape2"
-                          type="radio" onchange="selectSize(this)" />
+                          type="radio" onchange="doubleLandscapeDoubleSided(this)" />
                         <span><strong>Business card double landscape 4/4 CMYK</strong> (170x55mm double-sided)</span>
                       </label>
                     </p>
@@ -114,56 +114,56 @@
                   <p>
                     <label>
                       <input class="with-gap" id="bg-blue" name="color" value="blue" type="radio"
-                        onchange="selectBackgroundColor(this)" required />
+                        onchange="colorBlue(this)" required />
                       <span><strong>Blue</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-green" name="color" value="green" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorGreen(this)" />
                       <span><strong>Green</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-red" name="color" value="red" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorRed(this)" />
                       <span><strong>Red</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-yellow" name="color" value="yellow" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorYellow(this)" />
                       <span><strong>Yellow</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-orange" name="color" value="orange" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorOrange(this)" />
                       <span><strong>Orange</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-dark-grey" name="color" value="dgrey" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorDarkGrey(this)" />
                       <span><strong>Dark Grey</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-grey" name="color" value="grey" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorGrey(this)" />
                       <span><strong>Grey</strong></span>
                     </label>
                   </p>
                   <p>
                     <label>
                       <input class="with-gap" id="bg-white" name="color" value="white" type="radio"
-                        onchange="selectBackgroundColor(this)" />
+                        onchange="colorWhite(this)" />
                       <span><strong>White</strong> (Paper color)</span>
                     </label>
                   </p>
