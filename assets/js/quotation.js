@@ -7,33 +7,13 @@ document.onload = function () {
 
 function sendQuotationMail(quotationForm) {
 
-  // First the checked value from the radio buttons for size / paper and quantity are needed
-  let sizeResult;
-
-  for (let i = 0; i < document.form.size.length; i++) {
-    if (document.form.size[i].checked) {
-
-      sizeResult = document.form.size[i].value;
-    }
-  }
-
-  let paperResult;
-
-  for (let i = 0; i < document.form.paper.length; i++) {
-    if (document.form.paper[i].checked) {
-
-      paperResult = document.form.paper[i].value;
-    }
-  }
-
-  let quantityResult;
-
-  for (let i = 0; i < document.form.quantity.length; i++) {
-    if (document.form.quantity[i].checked) {
-
-      quantityResult = document.form.quantity[i].value;
-    }
-  }
+  /* 
+  First the checked value from the radio buttons for size / paper and quantity are needed
+  This code is based on a code that was found codegrepper.com for getting radio button values with javascript
+  */
+  let sizeResult = document.querySelector('input[name="size"]:checked').value;
+  let paperResult = document.querySelector('input[name="paper"]:checked').value;
+  let quantityResult = document.querySelector('input[name="quantity"]:checked').value;
 
   // This ensures that all listed details are send through emailjs
   emailjs.send("service_gcpzmbl", "quotation request", {
@@ -46,7 +26,7 @@ function sendQuotationMail(quotationForm) {
   })
     .then(
       function (response) {
-        M.toast({ html: 'Thank you, your quotation request has been sent successfully, you will return to the homepage!!', displayLength: '3000', response });
+        M.toast({ html: 'Thank you, your quotation request has been sent successfully, you will return to the homepage!', displayLength: '3000', response });
         window.setTimeout(function () {
           location.replace("index.html");
         }, 4000);
