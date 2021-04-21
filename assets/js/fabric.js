@@ -104,33 +104,33 @@ function getCardType(id) {
   switch (id) {
     case 'single-one-sided':
       singleOneSided();
-      break
+      break;
 
     case 'single-double-sided':
       singleDoubleSided();
-      break
+      break;
 
     case 'double-portrait-one-sided':
       doublePortraitOneSided();
-      break
+      break;
 
     case 'double-portrait-double-sided':
       doublePortraitDoubleSided();
-      break
+      break;
 
     case 'double-landscape-one-sided':
       doubleLandscapeOneSided();
-      break
+      break;
 
     case 'double-landscape-double-sided':
       doubleLandscapeDoubleSided();
-      break
+      break;
   }
 }
 
 function selectSize(element) {
   if (element.checked) {
-    getCardType(element.id)
+    getCardType(element.id);
   }
   else {
     return false;
@@ -142,80 +142,77 @@ function selectSize(element) {
 const div = document.getElementById('template-div');
 
 function colorBlue() {
-    document.getElementById('template-div').style.backgroundColor = '#007bff';
-  }
-
-
-function colorGreen() {
-    div.style.backgroundColor = '#28a745';
+  div.style.backgroundColor = '#007bff';
 }
 
+function colorGreen() {
+  div.style.backgroundColor = '#28a745';
+}
 
 function colorRed() {
-    div.style.backgroundColor = '#dc3545';
+  div.style.backgroundColor = '#dc3545';
 }
 
 function colorYellow() {
-    div.style.backgroundColor = '#ffc107';
+  div.style.backgroundColor = '#ffc107';
 }
 
 function colorOrange() {
-    div.style.backgroundColor = '#fd7e14';
-  
+  div.style.backgroundColor = '#fd7e14';
 }
 
 function colorDarkGrey() {
-    div.style.backgroundColor = '#343a40';
+  div.style.backgroundColor = '#343a40';
 }
 
 function colorGrey() {
-    div.style.backgroundColor = '#6c757d';
-}
-function colorWhite() {
-    div.style.backgroundColor = '#fff';
+  div.style.backgroundColor = '#6c757d';
 }
 
+function colorWhite() {
+  div.style.backgroundColor = '#fff';
+}
 
 function getColor(id) {
 
   switch (id) {
     case 'bg-blue':
       colorBlue();
-      break
+      break;
 
     case 'bg-green':
       colorGreen();
-      break
+      break;
 
     case 'bg-red':
       colorRed();
-      break
+      break;
 
     case 'bg-yellow':
       colorYellow();
-      break
+      break;
 
     case 'bg-orange':
       colorOrange();
-      break
+      break;
 
     case 'bg-dark-grey':
       colorDarkGrey();
-      break
+      break;
 
     case 'bg-grey':
       colorGrey();
-      break
+      break;
 
     case 'bg-white':
       colorWhite();
-      break
+      break;
   }
 }
 
 function selectBackgroundColor(element) {
   if (element.checked) {
-    getColor(element.id)
+    getColor(element.id);
   }
   else {
     return false;
