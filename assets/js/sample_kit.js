@@ -18,7 +18,7 @@ function sendRequestMail(requestForm) {
   })
     .then(
       function (response) {
-        M.toast({ html: 'Thank you, your request has been sent successfully, you will return to the homepage!!', displayLength: '3000', response });
+        M.toast({ html: 'Thank you, your request has been sent successfully, you will return to the homepage!', displayLength: '3000', response });
         window.setTimeout(function () {
           location.replace("index.html");
         }, 4000);
