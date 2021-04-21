@@ -83,6 +83,9 @@ The colors that were used are the existing corporate identity colors, white and 
 
 <img src="assets/images/readme_images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/readme_images/red2.png" alt="Red 2" width="25%" height="25%"> <img src="assets/images/readme_images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/readme_images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/readme_images/off_white.png" alt="Off White"  width="25%" height="25%">
 
+The colors used as background colors for the user to select were found when another project was inspected with the DevTools. These colors have been chosen because they are full and bright.
+<img src="assets/images/readme_images/colors.png" alt="Background colors" width="25%" height="25%">
+
 During development the site's layout was restructured a little bit, because this seemed visually or otherwise better.
 What was changed is:
 
@@ -145,7 +148,7 @@ Technologies
 
 ### Others
 
-+ Adobe Photoshop: to resize the images and provide the images of arrows, ect. where necessary (for example the README.md images).
++ Adobe Photoshop: to resize the images and provide the images of arrows, ect. where necessary (for example the README images).
 + Adobe Illustrator: to adjust the business cards templates.
 + Adobe InDesign to make a favicon.
 + VSCode: to write the code in.
@@ -262,7 +265,13 @@ All content has been written by me.
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
 
 #### Code:
-<!-- 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code. -->
+
+1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code.
+2. Adding the defer attribute to the scripts in html was a tip given by my mentor Narender, this ensures that the script files are executed when the page has finished loading.
+3. [Codegrepper](https://www.codegrepper.com/code-examples/javascript/getting+value+from+radio+button+javascript) for getting the value of the checked radio buttons instead of using for loops.
+4. [W3schools](https://www.w3schools.com/howto/howto_js_media_queries.asp) to get an idea of how to do a media query in JavaScript.
+5. [Code Institute LMS Sending Emails Using EmailJS](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/) to get understanding on how to EmailJS works, the used EmailJS are based on what waslearned in the course material.
+
 
 #### For research when I forgot how things worked again:
 
@@ -285,6 +294,7 @@ All content has been written by me.
 
 + My mentor from Code Institute, thank you Narender for your time and guidance.
 + My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience and thank you for your extra explanation about JavaScript!
++ My colleague Bart Lauwaert for helping with the translation of the correct English names for the paper types.
 + Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpful! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
 + Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my JavaScript function and through that explaining my error.
 <!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
