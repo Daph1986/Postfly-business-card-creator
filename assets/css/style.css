@@ -99,6 +99,13 @@ p.grey-header {
   margin-right: 20px;
 }
 
+.btn-custom-spacing {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .btn-custom-request {
   margin-top: 33px;
   margin-bottom: 33px;
@@ -141,7 +148,7 @@ a.modal-close {
   font-size: 16px;
 }
 
-/* ------------- Styling for both orms ------------- */
+/* ------------- Styling for both forms ------------- */
 
 .sample-form {
   padding-left: 50px;
@@ -204,9 +211,8 @@ label {
   color: #e02a51;
 }
 
-.upload-file {
-  background-color: #fff;
-  margin-bottom: 20px;
+.custom-margin {
+  margin-top: 0px;
 }
 
 .cutting-edge {
@@ -311,9 +317,9 @@ label {
 
 /* ------------- Media queries ------------- */
 
-@media screen and (max-width: 1024px) {
-  #logo {
-    height: 17.5%;
+@media screen and (max-width: 319.99px) {
+  .contact-icons i {
+    font-size: 15px;
   }
 }
 
@@ -332,9 +338,16 @@ label {
   }
 }
 
-@media screen and (max-width: 319.99px) {
-  .contact-icons i {
-    font-size: 15px;
+@media screen and (max-width: 376px) {
+  .btn-custom-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #logo {
+    height: 17.5%;
   }
 }
 
