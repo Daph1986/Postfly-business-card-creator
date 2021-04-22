@@ -83,7 +83,7 @@ The colors that were used are the existing corporate identity colors, white and 
 
 <img src="assets/images/readme_images/red.png" alt="Red" width="25%" height="25%"> <img src="assets/images/readme_images/red2.png" alt="Red 2" width="25%" height="25%"> <img src="assets/images/readme_images/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"> <img src="assets/images/readme_images/white.png" alt="White"  width="25%" height="25%"> <img src="assets/images/readme_images/off_white.png" alt="Off White"  width="25%" height="25%">
 
-The colors used as background colors for the user to select were found when another project was inspected with the DevTools. These colors have been chosen because they are full and bright.
+The colors used as background colors for the user to select were found when another project was inspected with the DevTools. These colors have been chosen because they are full and bright. <br>
 <img src="assets/images/readme_images/colors.png" alt="Background colors" width="25%" height="25%">
 
 During development the site's layout was restructured a little bit, because this seemed visually or otherwise better.
