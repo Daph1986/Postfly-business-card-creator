@@ -55,51 +55,26 @@ The site has been tested on the available DevTools for phone and tablet sizes as
 
 ## HTML
 
-HTML code was tested with a [HTML](https://validator.w3.org/#validate_by_input) validator, all the pages were checked.
-<!-- <img src="assets/images/TESTING images/no_errors.png" alt="No Errors"/> -->
-<!-- 
-It gives only an error for the iframes of the meditations.html: 
-<img src="assets/images/TESTING images/meditations_page.png" alt="Meditations page"/> -->
-
-<!-- ```
-Text not allowed in element iframe in this context.
-``` 
-This paragraph text could have just been skipped, but it is left in and the error was ignored, because this is what was learned in the HTML iframes section of the course: 
-```
-Some very old browsers do not support iframes. It is good practice to add a message to be displayed to users when the iframe will not load. This message goes between the opening and closing iframe tags like this:
-```
-```
- <iframe src="..."><p>Your browser does not support iframes.</p></iframe>"
-```
-After consulting with tutor assistance about it, a srcdoc attribute was tested, but then the iframe wouldn't load, so the paragraph text was left the way it was. -->
+HTML code was tested with a [HTML](https://validator.w3.org/#validate_by_input) validator, all the pages were checked. <br>
+<img src="assets/images/testing_images/html_check.png" alt="HTML check" width="55%" height="55%"> <br>
+No errors or warnings were found.
 
 ## CSS
 
-CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator.
-
-<!-- <img src="assets/images/TESTING images/css_validator.png" alt="CSS Validator"/>
-
-As is shown above two errors remain. <br>
-First error:
-```
-Value Error : height Too many values or values are not recognized : intrinsic
-``` 
-This value was given to keep the image on the moon calendar page from getting pushed together on iPhone, it was one of the two suggestions given my mentor and it works as it should, because the image is pushed together on iPhone anymore.
-
-Second error:
-```
-text underline offset property does not exist: 0.4em
-``` 
-Tutor assistance was consulted about it, and it was left this way because this is a functional CSS property, it does what it's supposed to do, it gives a little space between the underline and the active page in the navbar. It was tested on desktop and mobile devices on multiple browsers like Google Chrome, Safari, Microsoft Edge, Firefox and Brave. -->
+CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
+<img src="assets/images/testing_images/css_check.png" alt="CSS check" width="55%" height="55%"> <br>
+Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 
 ## JavaScript
 
-JavaScript was tested with a [JavaScript](https://jshint.com/) validator.
-<!-- <img src="assets/images/TESTING images/js_validator.png" alt="JS Validator"/> -->
+JavaScript was tested with a [JavaScript](https://jshint.com/) validator. <br>
+<img src="assets/images/testing_images/js_check1.png" alt="JS check 1" width="55%" height="55%">
+<img src="assets/images/testing_images/js_check2.png" alt="JS check 2" width="55%" height="55%"><br>
+Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 
 ## Lighthouse
 
-All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: 
+<!-- All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here:  -->
 <!-- <img src="assets/images/TESTING images/lighthouse_desktop_reports.png" alt="Lighthouse desktop reports"/>
 and these are the results for the mobile versions:
 <img src="assets/images/TESTING images/lighthouse_mobile_reports.png" alt="Lighthouse mobile reports"/>
@@ -155,17 +130,21 @@ but as a result when downloading the preview file the prewiew was cut off. <br>
 <img src="assets/images/testing_images/preview_bug1.jpeg" alt="Preview bug 1" width="26%" height="26%"> <br>
 This was solved by changing the row into a container and giving it this CSS code:
 ```
-#center {
+#center-template {
   width: 100%;
-  height: 440px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 ```
 But then a strip of the background color on the bottom of preview got visible. <br>
 <img src="assets/images/testing_images/preview_bug2.jpeg" alt="Preview bug 2" width="25%" height="25%">
 <img src="assets/images/testing_images/preview_bug3.jpeg" alt="Preview bug 3" width="25%" height="25%"> <br>
-This was fixed by combining the existing JavaScript functions for selectSize, setDimensions and makeCanvasLarge into the selectSize function. 
+This was first fixed by combining the existing JavaScript functions for selectSize, setDimensions and makeCanvasLarge into the selectSize function. 
 
 ```
 function selectSize(element) {
@@ -234,7 +213,121 @@ function selectSize(element) {
   }
 }
 ```
-This ensures that for size the user selects on the screen size the user is on the right div and canvas size is selected.
+But my mentor advised that this code was not the best to read, so after refactoring the code looks like this:
+```
+const image = document.getElementById('templates');
+
+function singleOneSided() {
+  image.src = 'assets/images/businesscards_templates/businescard_one_sided.png';
+  if (screenResolution.matches) {
+    canvas.setDimensions({ width: 720, height: 480 });
+    document.getElementById("center-template").style.height = "495px";
+  }
+  else {
+    canvas.setDimensions({ width: 320, height: 205 });
+    document.getElementById("center-template").style.height = "220px";
+  }
+}
+
+function singleDoubleSided() {
+  image.src = 'assets/images/businesscards_templates/businescard_double_sided.png';
+  if (screenResolution.matches) {
+    canvas.setDimensions({ width: 720, height: 1205 });
+    document.getElementById("center-template").style.height = "1220px";
+  }
+  else {
+    canvas.setDimensions({ width: 320, height: 520 });
+    document.getElementById("center-template").style.height = "535px";
+  }
+}
+
+function doublePortraitOneSided() {
+  image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_one_sided.png';
+  if (screenResolution.matches) {
+    canvas.setDimensions({ width: 720, height: 540 });
+    document.getElementById("center-template").style.height = "556px";
+  }
+  else {
+    canvas.setDimensions({ width: 320, height: 235 });
+    document.getElementById("center-template").style.height = "250px";
+  }
+}
+
+function doublePortraitDoubleSided() {
+  image.src = 'assets/images/businesscards_templates/businesscard_double_portrait_double_sided.png';
+  if (screenResolution.matches) {
+    canvas.setDimensions({ width: 720, height: 1290 });
+    document.getElementById("center-template").style.height = "1305px";
+  }
+  else {
+    canvas.setDimensions({ width: 320, height: 565 });
+    document.getElementById("center-template").style.height = "580px";
+  }
+}
+
+function doubleLandscapeOneSided() {
+  image.src = 'assets/images/businesscards_templates/businesscard_double_landscape_one_sided.png';
+  if (screenResolution.matches) {
+    canvas.setDimensions({ width: 720, height: 240 });
+    document.getElementById("center-template").style.height = "253px";
+  }
+  else {
+    canvas.setDimensions({ width: 320, height: 100 });
+    document.getElementById("center-template").style.height = "112px";
+  }
+}
+
+function doubleLandscapeDoubleSided() {
+  image.src = 'assets/images/businesscards_templates/businesscard_double_landscape_double_sided.png';
+  if (screenResolution.matches) {
+    canvas.setDimensions({ width: 720, height: 625 });
+    document.getElementById("center-template").style.height = "640px";
+  }
+  else {
+    canvas.setDimensions({ width: 320, height: 270 });
+    document.getElementById("center-template").style.height = "282px";
+  }
+}
+
+function getCardType(id) {
+  switch (id) {
+    case 'single-one-sided':
+      singleOneSided();
+      break;
+
+    case 'single-double-sided':
+      singleDoubleSided();
+      break;
+
+    case 'double-portrait-one-sided':
+      doublePortraitOneSided();
+      break;
+
+    case 'double-portrait-double-sided':
+      doublePortraitDoubleSided();
+      break;
+
+    case 'double-landscape-one-sided':
+      doubleLandscapeOneSided();
+      break;
+
+    case 'double-landscape-double-sided':
+      doubleLandscapeDoubleSided();
+      break;
+  }
+}
+
+function selectSize(element) {
+  if (element.checked) {
+    getCardType(element.id);
+  }
+  else {
+    return false;
+  }
+}
+
+```
+This ensures that for size the user selects, on the screen size the user is on, the right div and canvas size  selected.
 The preview is good now: <br>
 <img src="assets/images/testing_images/preview_bug_fixed.jpeg" alt="Preview bug fixed" width="25%" height="25%"> <br>
 One thing remains to be said, when a size selection is made switching from screen size does not resizes the canvas. Only when a new selection is made the proper size will be shown. Of course, this can been seen as a bug, but with normal usage this will not happen.
