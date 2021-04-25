@@ -22,7 +22,7 @@ main {
   flex: 1 0 auto;
 }
 
-/* ------------- Navbar ------------- */
+/* ---------------------- Navbar ---------------------- */
 
 nav {
   background-color: #fff;
@@ -36,12 +36,12 @@ nav .nav-title {
   font-size: 1em;
 }
 
-#logo {
+.logo {
   height: 25%;
   margin-left: 10%;
 }
 
-/* ------------- Hero image ------------- */
+/* -------------------- Hero image -------------------- */
 
 .hero-image {
   background-image: url("..//images/hero_image.jpg");
@@ -52,7 +52,7 @@ nav .nav-title {
   background-size: cover;
 }
 
-/* ------------- Headers ------------- */
+/* --------------------- Headers ---------------------- */
 
 .red-header {
   text-transform: uppercase;
@@ -70,10 +70,14 @@ p.grey-header {
   margin-right: 25px;
 }
 
-/* ------------- General buttons ------------- */
+/* ----------------- General buttons ------------------ */
 
 .btn-custom-red {
   background-color: #e02a51;
+}
+
+.btn-custom-size-small {
+  width: 120px;
 }
 
 .btn-custom-size-large {
@@ -92,6 +96,14 @@ p.grey-header {
   background-color: #e02a51;
 }
 
+.menu-spacing {
+  margin-right: 10px;
+}
+
+.material-tooltip {
+  background-color: #e02a51;
+}
+
 .btn-spacing {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -99,14 +111,14 @@ p.grey-header {
   margin-right: 20px;
 }
 
-.btn-custom-spacing {
+.btn-custom-download {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.btn-custom-request {
+.btn-custom-send-request {
   margin-top: 33px;
   margin-bottom: 33px;
 }
@@ -123,7 +135,7 @@ p.grey-header {
   display: none;
 }
 
-/* ------------- Homepage contact icons ------------- */
+/* -------------- Homepage contact icons -------------- */
 
 .contact-icons i {
   color: #e02a51;
@@ -133,7 +145,7 @@ p.grey-header {
   margin-bottom: 33px;
 }
 
-/* ------------- Homepage modal ------------- */
+/* ------------------ Homepage modal ------------------ */
 
 .modal .modal-footer {
   text-align: center;
@@ -148,7 +160,7 @@ a.modal-close {
   font-size: 16px;
 }
 
-/* ------------- Styling for both forms ------------- */
+/* -------------- Styling for both forms -------------- */
 
 .sample-form {
   padding-left: 50px;
@@ -156,16 +168,13 @@ a.modal-close {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#checkbox  {
-  margin-left: 12px;
-}
 
 .required {
   color: #e02a51;
   padding-left: 2px;
 }
 
-/* For some reason materialize form colors are very hard to overwrite, 
+/* Materialize form colors are very hard to overwrite, 
 after inspection all of the below must be named to have the wanted color change effect */
 
 input[type=text]:not(.browser-default):focus:not([readonly]), 
@@ -175,7 +184,7 @@ input[type=email]:not(.browser-default):focus:not([readonly]) {
   box-shadow: 0 1px 0 0 #e02a51;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label, 
 input[type=email]:not(.browser-default):focus:not([readonly])+label {
   color: #e02a51;
 }
@@ -205,7 +214,7 @@ label {
   border-radius: 10px;
 }
 
-/* ------------- Creator page content ------------- */
+/* --------------- Creator page content --------------- */
 
 .material-icons {
   color: #e02a51;
@@ -245,7 +254,11 @@ label {
   font-size: 17px;
 }
 
-/* ------------- Creator page canvas ------------- */
+#checkbox {
+  margin-left: 12px;
+}
+
+/* --------------- Creator page canvas ---------------- */
 
 #center-template {
   width: 100%;
@@ -295,17 +308,20 @@ label {
   -ms-user-select: none;
 }
 
-/* ------------- Creator radio buttons ------------- */
+/* -------------- Creator radio buttons --------------- */
 
-[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+[type="radio"]:checked+span:after, 
+[type="radio"].with-gap:checked+span:after {
   background-color: #e02a51;
 }
 
-[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+[type="radio"]:checked+span:after, 
+[type="radio"].with-gap:checked+span:before, 
+[type="radio"].with-gap:checked+span:after {
   border: 2px solid #292d30;
 }
 
-/* ------------- Footer ------------- */
+/* ---------------------- Footer --------------------- */
 
 .footer-copyright {
   background-color: #fff;
@@ -315,7 +331,7 @@ label {
   line-height: 64px;
 }
 
-/* ------------- Media queries ------------- */
+/* ------------------ Media queries ------------------- */
 
 @media screen and (max-width: 319.99px) {
   .contact-icons i {
@@ -324,7 +340,7 @@ label {
 }
 
 @media screen and (max-width: 338px) {
-  #logo {
+  .logo {
     height: 12.5%;
   }
   nav .nav-title {
@@ -339,15 +355,19 @@ label {
 }
 
 @media screen and (max-width: 376px) {
-  .btn-custom-spacing {
+  .btn-custom-download {
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  #logo {
+  .logo {
     height: 17.5%;
+  }
+  h6.grey-header {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
