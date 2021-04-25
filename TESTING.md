@@ -81,9 +81,9 @@ Lighthouse
 ======
 
 All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
-<img src="assets/images/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="55%" height="55%"><br>
+<img src="assets/images/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="65%" height="65%"><br>
 and these are the results for the mobile versions:<br>
-<img src="assets/images/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="55%" height="55%"><br>
+<img src="assets/images/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="65%" height="65%"><br>
 The results are satisfying, so at this moment there is no need for adjustments.
 
 GTmetrix
@@ -98,10 +98,10 @@ Color blindness
 ======
 
 Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find a screenshot off the homepage test, but of course all pages were tested. <br>
-<img src="assets/images/testing_images/protanopia.png" alt="Protanopia" width="35%" height="35%"/>
-<img src="assets/images/testing_images/deutanopia.png" alt="Deutanopia" width="35%" height="35%"/>
-<img src="assets/images/testing_images/tritanopia.png" alt="Tritanopia" width="35%" height="35%"/>
-<img src="assets/images/testing_images/greyscale_achromatopsia.png" alt="Greyscale / Achromatopsia" width="35%" height="35%"/>
+<img src="assets/images/testing_images/protanopia.png" alt="Protanopia" width="25%" height="25%"/>
+<img src="assets/images/testing_images/deutanopia.png" alt="Deutanopia" width="25%" height="25%"/>
+<img src="assets/images/testing_images/tritanopia.png" alt="Tritanopia" width="25%" height="25%"/>
+<img src="assets/images/testing_images/greyscale_achromatopsia.png" alt="Greyscale / Achromatopsia" width="25%" height="25%"/>
 
 Other tests
 ======
@@ -130,7 +130,7 @@ The following CSS code was used to set the preview to center:
 ```
 
 As a result when downloading the preview file the prewiew was cut off. <br>
-<img src="assets/images/testing_images/preview_bug1.jpeg" alt="Preview bug 1" width="26%" height="26%"> <br>
+<img src="assets/images/testing_images/preview_bug1.jpeg" alt="Preview bug 1" width="20%" height="20%"> <br>
 This was solved by changing the row into a container and giving it this CSS code:
 
 ```
@@ -147,8 +147,8 @@ This was solved by changing the row into a container and giving it this CSS code
 ```
 
 But then a strip of the background color on the bottom of preview got visible. <br>
-<img src="assets/images/testing_images/preview_bug2.jpeg" alt="Preview bug 2" width="25%" height="25%">
-<img src="assets/images/testing_images/preview_bug3.jpeg" alt="Preview bug 3" width="25%" height="25%"> <br>
+<img src="assets/images/testing_images/preview_bug2.jpeg" alt="Preview bug 2" width="20%" height="20%">
+<img src="assets/images/testing_images/preview_bug3.jpeg" alt="Preview bug 3" width="20%" height="20%"> <br>
 This was first fixed by combining the existing JavaScript functions for selectSize, setDimensions and makeCanvasLarge into the selectSize function. 
 
 ```
