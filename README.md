@@ -19,17 +19,17 @@ Table of Contents
 ======
 
 - [User Experience (UX)](#user-experience--ux-)
-    + [Visitor Goals](#visitor-goals)
-    + [Site Owners Goals](#site-owners-goals)
+    - [Visitor Goals](#visitor-goals)
+    - [Site Owners Goals](#site-owners-goals)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Testing and Bugs](#testing-and-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
-    + [Content](#content)
-    + [Media](#media)
-    + [Other](#other)
-    + [Acknowledgements](#acknowledgements)
+    - [Content](#content)
+    - [Media](#media)
+    - [Other](#other)
+    - [Acknowledgements](#acknowledgements)
 
 User Experience (UX)
 ======
@@ -98,6 +98,7 @@ What was changed is:
 7. The button to upload an own file was separated from the other selectors and made pulsing to give it better attention.
 8. The legend which explains all the lines (bleed etc.) of the templates has been put above the template to give it a UX friendly experience.
 9. On the bottom of the page above the input fields for name and email address a small explanation was added to create a more UX friendly experience.
+10. After testing the user-friendliness was experienced as not good enough, because only the logo could be used to return to the homepage. That is why on the page for requesting the sample kit and for designing the business card, 2 buttons have been added at the top to switch between the other pages. Cancel buttons have also been added to the bottom of the forms and the request quotation button was changed to send. This increases user-friendliness.
 
 ### Fonts & icons
 
@@ -109,54 +110,57 @@ Features
 ======
 
 The site contains the following features: 
-+ choose out of three different sizes of business cards
-+ choose a background color
-+ choose the paper type
-+ choose the quantity
-+ upload an own photo or logo
-+ edit text content
-+ download the designed card as a low-res jpeg file
-+ reset the selected items
-+ send a request for a quotation for the designed business cards
+
+- choose out of three different sizes of business cards
+- choose a background color
+- choose the paper type
+- choose the quantity
+- upload an own photo or logo
+- edit text content
+- download the designed card as a low-res jpeg file
+- reset the selected items
+- send a request for a quotation for the designed business cards
 
 ### Features for the future 
 
 The following items can be added: 
-+	choose a different color for the frontside and the backside of the card
-+	choose the production / delivery time
-+	customize the paper size
-+ choose between round or right angles
-+	integrate it on the POSTFLY website
-+	show costs in advance without having to ask for a quotation
-+ set the designed business card through as an order
+
+- choose a different color for the frontside and the backside of the card
+-	choose the production / delivery time
+-	customize the paper size
+- choose between round or right angles
+-	integrate it on the POSTFLY website
+-	show costs in advance without having to ask for a quotation
+- set the designed business card through as an order
 
 Technologies
 ======
 
 ### Code languages, libraries and frameworks
 
-+ HTML5
-+ CSS3
-+ Materialize 1.0.0
-+ JavaScript
-+ Fabric
-+ EmailJS
+- HTML5
+- CSS3
+- Materialize 1.0.0
+- JavaScript
+- Fabric
+- EmailJS
 
 ### Wireframes
 
-+ Adobe XD
+- Adobe XD
 
 ### Others
 
-+ Adobe Photoshop: to resize the images and provide the images of arrows, ect. where necessary (for example the README images).
-+ Adobe Illustrator: to adjust the business cards templates.
-+ Adobe InDesign to make a favicon.
-+ VSCode: to write the code in.
+- Adobe Photoshop: to resize the images and provide the images of arrows, ect. where necessary 
+(for example the README images).
+- Adobe Illustrator: to adjust the business cards templates.
+- Adobe InDesign to make a favicon.
+- VSCode: to write the code in.
 
 Testing and Bugs
 ======
 
-The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created. 
+The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created.
 For more details on testing and bugs please view this [file](TESTING.md).
 
 Deployment
@@ -166,7 +170,7 @@ Deployment
 
 To view the deployed version, the steps underneath can be followed:
 
-1. Log in on [GitHub](https://github.com/)
+1. Go to [GitHub](https://github.com/)
 2. Find Daph1986's [page](https://github.com/Daph1986)
 3. Select repositories.
 4. Select the Postfly-business-card-creator repository.
@@ -197,10 +201,10 @@ To deploy the website with GitHub pages the following steps were made:
 
 ### Run local
 
-If you would like to run this website locally you can clone this repository in an IDE such as Cloud9 or VSCode.
+If you would like to run this website locally you can clone this repository in an IDE such as VSCode.
 You can clone it by following the next steps: <br>
 
-1. Log in on [GitHub](https://github.com/) 
+1. Log in at [GitHub](https://github.com/) 
 2. Find Daph1986's [page](https://github.com/Daph1986)
 3. Select repositories.
 4. Select the Postfly-business-card-creator repository.
@@ -292,9 +296,9 @@ All content has been written by me.
 
 ### Acknowledgements
 
-+ My mentor from Code Institute, thank you Narender for your time and guidance.
-+ My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience and thank you for your extra explanation about JavaScript!
-+ My colleague Bart Lauwaert for helping with the translation of the correct English names for the paper types.
-+ Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpful! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
-+ Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my JavaScript function and through that explaining my error.
-<!-- + Special thanks to my colleagues, my husband, friends and family for their support, tips, and for testing my site. -->
+- My mentor from Code Institute, thank you Narender for your time and guidance.
+- My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience, thank you for your extra explanation about JavaScript and thank you for checking my project!
+- My colleague Bart Lauwaert for helping with the translation of the correct English names for the paper types.
+- Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpful! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
+- Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my JavaScript function and through that explaining my error.
+- Special thanks to my colleagues, friends and family for their support, tips and for testing my site.
