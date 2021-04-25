@@ -1,11 +1,10 @@
-// Validation for EmailJS
+// -------------- Validation for EmailJS -------------- 
 document.onload = function () {
   emailjs.init("user_2XFUnsxHC1xsdX5DI6gOQ");
 }();
 
 // ------------- Sample kit request form ------------- 
 function sendRequestMail(requestForm) {
-  // This ensures that all listed details are send through emailjs
   emailjs.send("service_gcpzmbl", "sample kit request", {
     "from_cname": requestForm.cname.value,
     "from_fname": requestForm.fname.value,

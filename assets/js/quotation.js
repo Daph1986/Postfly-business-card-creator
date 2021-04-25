@@ -1,4 +1,4 @@
-// Validation for EmailJS
+// ------------- Validation for EmailJS ------------- 
 document.onload = function () {
   emailjs.init("user_2XFUnsxHC1xsdX5DI6gOQ");
 }();
@@ -6,7 +6,6 @@ document.onload = function () {
 // ------------- Request quotation form ------------- 
 
 function sendQuotationMail(quotationForm) {
-
   /* 
   First the checked value from the radio buttons for size / paper and quantity are needed
   This code is based on a code that was found codegrepper.com for getting radio button values with javascript
@@ -15,7 +14,6 @@ function sendQuotationMail(quotationForm) {
   let paperResult = document.querySelector('input[name="paper"]:checked').value;
   let quantityResult = document.querySelector('input[name="quantity"]:checked').value;
 
-  // This ensures that all listed details are send through emailjs
   emailjs.send("service_gcpzmbl", "quotation request", {
     "from_fname": quotationForm.fname.value,
     "from_lname": quotationForm.lname.value,
