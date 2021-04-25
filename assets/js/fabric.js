@@ -1,4 +1,4 @@
-// ------------- Init canvas ------------- 
+// ---------------------- Init canvas -----------------------
 
 const canvas = new fabric.Canvas('canvas');
 
@@ -24,7 +24,7 @@ function makeCanvasLarge(screenResolution) {
 makeCanvasLarge(screenResolution);
 screenResolution.addListener(makeCanvasLarge);
 
-// ------------- Select size & printing method ------------- 
+// ------------- Select size & printing method -------------- 
 
 const image = document.getElementById('templates');
 
@@ -137,7 +137,7 @@ function selectSize(element) {
   }
 }
 
-// ------------- Select background color ------------- 
+// ---------------- Select background color -----------------
 
 const div = document.getElementById('template-div');
 
@@ -219,7 +219,7 @@ function selectBackgroundColor(element) {
   }
 }
 
-// ------------- Upload own image ------------- 
+// -------------------- Upload own image --------------------
 
 // This code makes sure that the image(s) which are selected with the upload file button appear on the canvas
 let uploadedImg = (uploadFile) => {
@@ -242,14 +242,14 @@ reader.addEventListener("load", () => {
   });
 });
 
-// ------------- Add text to canvas ------------- 
+// ------------------- Add text to canvas ------------------- 
 
 function addTextField() {
   let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
   canvas.add(text);
 }
 
-// ------------- Download preview ------------- 
+// -------------------- Download preview -------------------- 
 
 function downloadPreview() {
   domtoimage.toJpeg(document.getElementById('template-div'), { quality: 0.90 }).then(function (dataUrl) {
