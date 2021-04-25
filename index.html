@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSTFLY Business card creator</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="32x32">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
@@ -18,7 +18,7 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="index.html"><img id="logo" src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
+        <a href="index.html"><img class="logo" src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
         <span class="nav-title"><strong>Business card creator</strong></span>
       </div>
     </nav>
@@ -33,14 +33,14 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h5 class="red-header flow-text">Welcome on the Postfly business card creator site</h5>
+          <h5 class="red-header flow-text">Welcome to the Postfly business card creator</h5>
         </div>
       </div>
       <div class="row">
         <div class="col s12">
-          <h6 class="grey-header flow-text"><strong>On this site you can you design your own business card step by step.
-              <br>
-              It works as follows:</strong></h6>
+          <h6 class="grey-header flow-text">
+            <strong>On this website you can design your own business card step by step.<br>It works as follows:</strong>
+          </h6>
         </div>
       </div>
     </div>
@@ -48,44 +48,53 @@
 
   <main>
 
-    <!-- Landing page content -->
+    <!-- Homepage content -->
     <div class="container">
-      <div class="row">
+      <div class="row center-align">
         <div class="col s12">
-          <ol>
-            <li>Choose 1 out of 3 available business card sizes.</li>
-            <li>Choose your printing method, 4/0 CMYK means printed on just one side, 4/4 CMYK means printed double
-              sided.
+          <ul>
+            <li>
+              1. Choose 1 out of 3 available business card sizes.
             </li>
-            <li>Choose 1 of the available background colors.</li>
-            <li>Select your paper type, if you are not familiar with our paper types or you want to physically see the
-              paper types,
-              please request the sample kit by clicking the button below.
+            <li>
+              2. Choose the printing method. 4/0 CMYK means printed on just one side, 4/4 CMYK means printed double sided.
             </li>
-          </ol>
-          <div class="center-align">
+            <li>
+              3. Choose 1 of the 8 available background colors.
+            </li>
+            <li>
+              4. Select the paper type. If you are not familiar with our paper types or you want to physically see the
+              paper types, please request a sample kit by clicking the button below.
+            </li>
+          </ul>
+          <div>
             <a class="waves-effect btn-large btn-custom-red btn-custom-size-large btn-spacing" href="form.html">Sample kit</a>
           </div>
-          <ol start="5">
-            <li>Select the quantity you would like.</li>
-            <li>With the remaining steps you are able to personalize your card, you can:
+          <ul>
+            <li>
+              5. Select the quantity you would like to order.
+            </li>
+            <li>
+              6. With the remaining steps you are able to personalize your card, you can:
               <ul>
-                <li>• Upload your own photo or logo.</li>
-                <li>• You can add one or more text fields for your name / address / email / website / phone number, etc.
+                <li>
+                  • Upload your own photo or logo.
+                </li>
+                <li>
+                  • You can add one or more text fields for your name / address / email / website / phone number, etc.
                 </li>
               </ul>
             </li>
-          </ol>
+          </ul>
           <p>
-            You will always see a preview of your design. If you are satisfied with your design, enter your name and e-mail address 
-            and hit the request quotation button. You are also able to download the preview of your design or start over by clicking the
-            reset button. <br> Would you like to start your design journey? Then please click the start designing
-            button.
-            <br> If you have any questions or want to contact us, please use one of the icons below.
+            You will see a preview of your design as you create your card. If you are satisfied with it, enter your name
+            and e-mail address and click on the send button to request your quotation. You can also download a sample of
+            your design or start over by clicking the reset button.<br> Would you like to start your design journey?
           </p>
-          <div class="center-align">
+          <div>
             <a class="waves-effect btn-large btn-custom-red btn-custom-size-large btn-spacing" href="creator.html">Start designing!</a>
           </div>
+          <p>If you have any questions or want to contact us, please use one of the icons below.</p>
         </div>
       </div>
       <div class="row">
@@ -110,8 +119,8 @@
             <i class="fas fa-phone" aria-hidden="true"></i>
             <span class="sr-only">Phone</span>
           </a>
-          <a target="_blank" href="mailto:info@postfly.nl" data-toggle="tooltip" data-placement="top"
-            title="info@postfly.nl" rel="noreferrer">
+          <a target="_blank" href="mailto:info@postfly.nl" data-toggle="tooltip" data-placement="top" title="info@postfly.nl"
+            rel="noreferrer">
             <i class="far fa-paper-plane" aria-hidden="true"></i>
             <span class="sr-only">Email</span>
           </a>
@@ -122,7 +131,7 @@
         </div>
       </div>
     </div>
-     <!-- Landing page content end -->
+    <!-- Homepage content end -->
 
   </main>
 
@@ -152,7 +161,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <!-- JavaScript end -->
-  
+
 </body>
 
 </html>
