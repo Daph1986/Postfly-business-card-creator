@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSTFLY Business card creator</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="32x32">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
   <!-- Validation for EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" defer></script>
   <!-- Validation for EmailJS end -->
+
 </head>
 
 <body>
@@ -20,7 +23,7 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="index.html"><img id="logo" src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
+        <a href="index.html"><img class="logo" src="assets/images/postfly_logo.png" alt="Postfly logo"></a>
         <span class="nav-title"><strong>Business card creator</strong></span>
       </div>
     </nav>
@@ -29,14 +32,27 @@
 
   <header>
     <div class="row">
+      <div class="col s12 center-align custom-margin">
+        <p>
+          <a class="btn tooltipped btn-floating btn-large menu-spacing" data-position="left" data-tooltip="Homepage"
+            href="index.html">
+            <i class="material-icons">home</i>
+          </a>
+          <a class="btn tooltipped btn-floating btn-large" data-position="right" data-tooltip="Start designing"
+            href="creator.html">
+            <i class="material-icons">note</i>
+          </a>
+        </p>
+      </div>
       <div class="col s12">
         <h5 class="red-header flow-text">Request your free sample kit!</h5>
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <h6 class="grey-header flow-text"><strong>Please fill out the form and
-            click the send button in order to receive your free sample kit.</strong></h6>
+        <h6 class="grey-header flow-text">
+          <strong>Please fill out the form and click the send button in order to receive a free sample kit.</strong>
+        </h6>
       </div>
     </div>
   </header>
@@ -63,8 +79,7 @@
         </div>
         <div class="row">
           <div class="input-field col l6 s12">
-            <input placeholder="Street Name + House Number" name="address01" id="address01" type="text" required=""
-              aria-required="true">
+            <input placeholder="Street Name + House Number" name="address01" id="address01" type="text" required="" aria-required="true">
             <label for="address01"><span>Address</span><span class="required">*</span></label>
           </div>
           <div class="input-field col l6 s12">
@@ -87,11 +102,9 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input placeholder="Email Address" name="email" id="email" type="email" required="" aria-required="true"
-              class="validate">
+            <input placeholder="Email Address" name="email" id="email" type="email" required="" aria-required="true" class="validate">
             <label for="email"><span>Email Address</span><span class="required">*</span></label>
-            <span class="helper-text" data-error="wrong" data-success="right">Please
-              use a valid email address</span>
+            <span class="helper-text" data-error="wrong" data-success="right">Please use a valid email address</span>
           </div>
         </div>
         <p>
@@ -101,14 +114,15 @@
           </label>
         </p>
         <div class="input-field center-align">
-          <button class="waves-effect btn-large btn-custom-red btn-spacing" type="submit" name="action">Send</button>
+          <button class="waves-effect btn-large btn-custom-red btn-custom-size-small btn-spacing" type="submit" name="action">Send</button>
+          <a class="waves-effect btn-large btn-custom-red btn-custom-size-small btn-spacing" href="index.html">Cancel</a>
         </div>
       </form>
     </div>
     <!-- Sample kit form end -->
 
   </main>
-  
+
 
   <!-- Footer -->
   <footer>
@@ -122,8 +136,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
   <script src="assets/js/sample_kit.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
   <!-- JavaScript end -->
-  
+
 </body>
 
 </html>
