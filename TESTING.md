@@ -372,3 +372,24 @@ After inspecting the type and value seemed to be the problem, so the CSS styling
 
 That fixed the problem.<br>
 <img src="assets/images/testing_images/safari_button_bug_fixed.jpeg" alt="Safari button bug fixed" width="35%" height="35%"> 
+
+#### Text bug
+
+During testing, it emerged that when you upload an image and put text over it, the text disappears under the image. This can be prevented by changing the JavaScript code from:
+
+```
+function addTextField() {
+  let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
+  canvas.add(text);
+}
+```
+
+to:
+
+```
+function addTextField() {
+  let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
+  text.setCoords();
+  canvas.add(text);
+}
+```
