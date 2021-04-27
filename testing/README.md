@@ -65,7 +65,7 @@ CSS
 ======
 
 CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
-<img src="testing/testing_images/css_check.png" alt="CSS check" width="55%" height="55%"> <br>
+<img src="../testing/testing_images/css_check.png" alt="CSS check" width="55%" height="55%"> <br>
 Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 
 JavaScript
@@ -81,18 +81,18 @@ Lighthouse
 ======
 
 All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
-<img src="../testing/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="65%" height="65%"><br>
+<img src="../testing/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="70%" height="70%"><br>
 and these are the results for the mobile versions:<br>
-<img src="../testing/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="65%" height="65%"><br>
+<img src="../testing/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="70%" height="70%"><br>
 The results are satisfying, so at this moment there is no need for adjustments.
 
 GTmetrix
 ====== 
 
 The site was tested with [GTmetrix](https://gtmetrix.com/). The reports can be found here:<br>  
-[Homepage](https://gtmetrix.com/reports/daph1986.github.io/U38KwlAv/) <br>
-[Sample kit form](https://gtmetrix.com/reports/daph1986.github.io/rdM2WVhL/) <br>
-[Creator page](https://gtmetrix.com/reports/daph1986.github.io/3UQ7SPgv/)
+[Homepage](https://gtmetrix.com/reports/daph1986.github.io/1OKsvoY3/) <br>
+[Sample kit form](https://gtmetrix.com/reports/daph1986.github.io/iiv3HDsB/) <br>
+[Creator page](https://gtmetrix.com/reports/daph1986.github.io/nJoX5M9e/)
 
 Color blindness
 ======
