@@ -17,37 +17,37 @@ Manual testing
 
 The design goal is to make a clear, accessible, structured site so that visitors can easily design their own business cards. <br>
 When landing on the page there is an explanation on how things work: <br>
-<img src="testing/testing_images/explanation.png" alt="Explanation" width="25%" height="25%"> 
-<img src="testing/testing_images/modal.png" alt="Modal" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/explanation.png" alt="Explanation" width="25%" height="25%"> 
+<img src="../testing/testing_images/modal.png" alt="Modal" width="25%" height="25%"> <br>
 After reading it the user can either request a sample kit or start designing. When the user clicks the sample kit button they will be taken to a form, this form needs to be filled in to get the address to send the sample kit. <br>
-<img src="testing/testing_images/sample_form1.png" alt="Sample form 1" width="25%" height="25%">
-<img src="testing/testing_images/sample_form2.png" alt="Sample form 3" width="25%" height="25%">
-<img src="testing/testing_images/sample_form3.png" alt="Sample form 3" width="24%" height="24%"> <br> 
+<img src="../testing/testing_images/sample_form1.png" alt="Sample form 1" width="25%" height="25%">
+<img src="../testing/testing_images/sample_form2.png" alt="Sample form 3" width="25%" height="25%">
+<img src="../testing/testing_images/sample_form3.png" alt="Sample form 3" width="24%" height="24%"> <br> 
 After everything is filled out an email is sent to, in this case me, with the data needed to send the sample kit through mail. <br>
-<img src="testing/testing_images/sample_form_emailjs_mail.png" alt="Form emailJS mail" width="40%" height="40%"> <br>
+<img src="../testing/testing_images/sample_form_emailjs_mail.png" alt="Form emailJS mail" width="40%" height="40%"> <br>
 When the user feels ready to start designing they can click the start design button, which will take them to the creator.html page. <br>
-<img src="testing/testing_images/creator_page.png" alt="Creator page" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/creator_page.png" alt="Creator page" width="25%" height="25%"> <br>
 As a visitor there were multiple steps you would like to take, in the manual tests it was checked if these were achieved.
 - Choose out of three different sizes of business cards.
 - Choose a background color. <br>
 This can be done in step 1 and 2.<br>
-<img src="testing/testing_images/step1_2.png" alt="Step 1 & 2" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/step1_2.png" alt="Step 1 & 2" width="25%" height="25%"> <br>
 - Choose the paper type.
 - Choose the quantity. <br>
 This can be done in step 3 and 4.<br>
-<img src="testing/testing_images/step3_4.png" alt="Step 3 & 4" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/step3_4.png" alt="Step 3 & 4" width="25%" height="25%"> <br>
 - Upload an own photo or logo.
 - Edit text content.
 - Download the designed card as a low-res jpeg file. <br>
-<img src="testing/testing_images/buttons.png" alt="Buttons" width="25%" height="25%">
-<img src="testing/testing_images/preview.png" alt="Preview" width="25%" height="25%"> <br>
-<img src="testing/testing_images/preview_testing.jpeg" alt="Download preview" width="18%" height="18%"> <br>
+<img src="../testing/testing_images/buttons.png" alt="Buttons" width="25%" height="25%">
+<img src="../testing/testing_images/preview.png" alt="Preview" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/preview_testing.jpeg" alt="Download preview" width="18%" height="18%"> <br>
 The user can click the buttons to achieve this, also the selections made with steps 1 and 2 are visible on this preview.<br>
 - Send a request for a quotation for the designed business cards.<br>
-<img src="testing/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
-<img src="testing/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%"> <br>
-<img src="testing/testing_images/request_form3.png" alt="Request form 3" width="25%" height="25%"> <br>
-<img src="testing/testing_images/quotation_form_emailjs_mail.png" alt="Quotation form emailJS mail" width="40%" height="40%"> <br>
+<img src="../testing/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
+<img src="../testing/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/request_form3.png" alt="Request form 3" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/quotation_form_emailjs_mail.png" alt="Quotation form emailJS mail" width="40%" height="40%"> <br>
 As with the sample kit form after everything is filled out the send button can be clicked and the user will be informed the request is send successfully and will be redirected to the homepage and the email with the values that are needed to make a quotation is send through EmailJS, to in this case me.
 
 It can be concluded that all goals have been achieved. <br>
@@ -58,7 +58,7 @@ HTML
 ======
 
 HTML code was tested with a [HTML](https://validator.w3.org/#validate_by_input) validator, all the pages were checked. <br>
-<img src="testing/testing_images/html_check.png" alt="HTML check" width="55%" height="55%"> <br>
+<img src="../testing/testing_images/html_check.png" alt="HTML check" width="55%" height="55%"> <br>
 No errors or warnings were found.
 
 CSS
@@ -72,18 +72,18 @@ JavaScript
 ======
 
 JavaScript was tested with a [JavaScript](https://jshint.com/) linter. <br>
-<img src="testing/testing_images/js_check1.png" alt="JS check 1" width="55%" height="55%">
-<img src="testing/testing_images/js_check2.png" alt="JS check 2" width="55%" height="55%"><br>
-<img src="testing/testing_images/js_check3.png" alt="JS check 3" width="55%" height="55%"><br>
+<img src="../testing/testing_images/js_check1.png" alt="JS check 1" width="55%" height="55%">
+<img src="../testing/testing_images/js_check2.png" alt="JS check 2" width="55%" height="55%"><br>
+<img src="../testing/testing_images/js_check3.png" alt="JS check 3" width="55%" height="55%"><br>
 Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 
 Lighthouse
 ======
 
 All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
-<img src="testing/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="65%" height="65%"><br>
+<img src="../testing/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="65%" height="65%"><br>
 and these are the results for the mobile versions:<br>
-<img src="testing/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="65%" height="65%"><br>
+<img src="../testing/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="65%" height="65%"><br>
 The results are satisfying, so at this moment there is no need for adjustments.
 
 GTmetrix
@@ -98,10 +98,10 @@ Color blindness
 ======
 
 Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find a screenshot off the homepage test, but of course all pages were tested. <br>
-<img src="testing/testing_images/protanopia.png" alt="Protanopia" width="25%" height="25%"/>
-<img src="testing/testing_images/deutanopia.png" alt="Deutanopia" width="25%" height="25%"/>
-<img src="testing/testing_images/tritanopia.png" alt="Tritanopia" width="25%" height="25%"/>
-<img src="testing/testing_images/greyscale_achromatopsia.png" alt="Greyscale / Achromatopsia" width="25%" height="25%"/>
+<img src="../testing/testing_images/protanopia.png" alt="Protanopia" width="25%" height="25%"/>
+<img src="../testing/testing_images/deutanopia.png" alt="Deutanopia" width="25%" height="25%"/>
+<img src="../testing/testing_images/tritanopia.png" alt="Tritanopia" width="25%" height="25%"/>
+<img src="../testing/testing_images/greyscale_achromatopsia.png" alt="Greyscale / Achromatopsia" width="25%" height="25%"/>
 
 Other tests
 ======
@@ -130,7 +130,7 @@ The following CSS code was used to set the preview to center:
 ```
 
 As a result when downloading the preview file the prewiew was cut off. <br>
-<img src="testing/testing_images/preview_bug1.jpeg" alt="Preview bug 1" width="20%" height="20%"> <br>
+<img src="../testing/testing_images/preview_bug1.jpeg" alt="Preview bug 1" width="20%" height="20%"> <br>
 This was solved by changing the row into a container and giving it this CSS code:
 
 ```
@@ -147,8 +147,8 @@ This was solved by changing the row into a container and giving it this CSS code
 ```
 
 But then a strip of the background color on the bottom of preview got visible. <br>
-<img src="testing/testing_images/preview_bug2.jpeg" alt="Preview bug 2" width="20%" height="20%">
-<img src="testing/testing_images/preview_bug3.jpeg" alt="Preview bug 3" width="20%" height="20%"> <br>
+<img src="../testing/testing_images/preview_bug2.jpeg" alt="Preview bug 2" width="20%" height="20%">
+<img src="../testing/testing_images/preview_bug3.jpeg" alt="Preview bug 3" width="20%" height="20%"> <br>
 This was first fixed by combining the existing JavaScript functions for selectSize, setDimensions and makeCanvasLarge into the selectSize function. 
 
 ```
@@ -336,13 +336,13 @@ function selectSize(element) {
 
 This ensures that for size the user selects, on the screen size the user is on, the right div and canvas size  selected.
 The preview is good now: <br>
-<img src="testing/testing_images/preview_bug_fixed.jpeg" alt="Preview bug fixed" width="25%" height="25%"> <br>
+<img src="../testing/testing_images/preview_bug_fixed.jpeg" alt="Preview bug fixed" width="25%" height="25%"> <br>
 One thing remains to be said, when a size selection is made switching from screen size does not resizes the canvas. Only when a new selection is made the proper size will be shown. Of course, this can been seen as a bug, but with normal usage this will not happen.
 
 #### Safari button bug
 
 The site was tested on Safari web browser among others and there appeared to be something wrong with the add text, download & reset buttons section. <br>
-<img src="testing/testing_images/safari_button_bug1.jpeg" alt="Safari button bug 1" width="35%" height="35%"> <br>
+<img src="../testing/testing_images/safari_button_bug1.jpeg" alt="Safari button bug 1" width="35%" height="35%"> <br>
 The buttons were colorless, the following code was tried to fix it: <br>
 HTML creator.html:
 
@@ -363,7 +363,7 @@ button {
 ```
 
 This resulted in the following: <br>
-<img src="testing/testing_images/safari_button_bug2.jpeg" alt="Safari button bug 2" width="35%" height="35%"> <br>
+<img src="../testing/testing_images/safari_button_bug2.jpeg" alt="Safari button bug 2" width="35%" height="35%"> <br>
 After inspecting the type and value seemed to be the problem, so the CSS styling was removed again and the code for the reset button in creator.html was changed to:
 
 ```
@@ -371,7 +371,7 @@ After inspecting the type and value seemed to be the problem, so the CSS styling
 ```
 
 That fixed the problem.<br>
-<img src="testing/testing_images/safari_button_bug_fixed.jpeg" alt="Safari button bug fixed" width="35%" height="35%"> 
+<img src="../testing/testing_images/safari_button_bug_fixed.jpeg" alt="Safari button bug fixed" width="35%" height="35%"> 
 
 #### Text bug
 
