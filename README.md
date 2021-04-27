@@ -307,5 +307,5 @@ All content has been written by me.
 - My husband, thank you Django for taking care of our son more so I can work on my education, thank you for your patience, thank you for your extra explanation about JavaScript and thank you for checking my project!
 - My colleague Bart Lauwaert for helping with the translation of the correct English names for the paper types.
 - Aukje (byIlsa_lead) thank you for hosting a "Preparing for your Second Milestone Project" call on zoom, it was really helpful! Also thank you for your time and effort to go through my code in order to help me with my question about my form.
-- Cormac from Code Institute tutor assistance, thank you for your fresh pair of eyes on my JavaScript function and through that explaining my error.
+- Cormac, Johann and Scott from Code Institute tutor assistance, thank you for helping me with my questions.
 - Special thanks to my colleagues, friends and family for their support, tips and for testing my site.
