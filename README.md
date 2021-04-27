@@ -19,12 +19,19 @@ Table of Contents
 ======
 
 - [User Experience (UX)](#user-experience--ux-)
-    - [Visitor Goals](#visitor-goals)
-    - [Site Owners Goals](#site-owners-goals)
+    - [User stories](#user-stories)
+    - [Strategy](#strategy)
+    - [Scope](#scope)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Testing and Bugs](#testing-and-bugs)
 - [Deployment](#deployment)
+    - [Live version](#live-version)
+    - [GitHub Pages](#github-pages)
+    - [Run local](#run-local)
+    - [Setting EmailJS up](#setting-emailjs-up)
 - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
@@ -57,7 +64,7 @@ The design goal is to make a clear, accessible, structured site so that visitors
 
 ### Scope
 
-The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to choose the paper type, to choose the quantity, to upload an own photo or logo, to choose a background color, to edit text content, to download the designed card as a low-res jpeg file, to send a request for a quotation for the designed business cards.
+The site shows a homepage with an explanation, there the user can either first request a sample kit for the paper types or start designing. On the creator site it allows the user to choose out of three different sizes of business cards, to choose a background color, to choose the paper type, to choose the quantity, to upload an own photo or logo, to edit text content, to download the designed card as a low-res jpeg file, to send a request for a quotation for the designed business cards.
 
 ### Structure
 
@@ -104,7 +111,7 @@ What was changed is:
 
 [Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was chosen because this is already in use on the existing POSTFLY site and it fits the corporate identity.
 
-For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used and for the creator page the icons of [Materialize](https://materializecss.com/icons.html) were used.
+For the icons on the homepage [Font Awesome](https://fontawesome.com/) was used and for the other two pages the icons of [Materialize](https://materializecss.com/icons.html) were used.
 
 Features
 ======
@@ -271,7 +278,7 @@ All content has been written by me.
 #### Code:
 
 1. [Autoprefixer CSS](https://autoprefixer.github.io/) to optimize the use of vendor extensions in the CSS code.
-2. Adding the defer attribute to the scripts in html was a tip given by my mentor Narender, this ensures that the script files are executed when the page has finished loading.
+2. Adding the defer attribute to the script files in html was a tip given by my mentor Narender, this ensures that the script files are executed when the page has finished loading.
 3. [Codegrepper](https://www.codegrepper.com/code-examples/javascript/getting+value+from+radio+button+javascript) for getting the value of the checked radio buttons instead of using for loops.
 4. [W3schools](https://www.w3schools.com/howto/howto_js_media_queries.asp) to get an idea of how to do a media query in JavaScript.
 5. [Code Institute LMS Sending Emails Using EmailJS](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/) to get understanding on how to EmailJS works, the used EmailJS are based on what waslearned in the course material.
