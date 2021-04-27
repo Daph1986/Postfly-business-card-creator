@@ -215,7 +215,8 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 10px;
+  margin-top: 10px;
+  position: relative;
 }
 
 /* --------------- Creator page content --------------- */
@@ -230,32 +231,14 @@ label {
 
 .cutting-edge {
   color: #292d30;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.cutting-edge.material-icons {
-  font-size: 17px;
 }
 
 .bleed {
   color: #e02a51;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.bleed.material-icons {
-  font-size: 17px;
 }
 
 .safety-zone {
   color: #949494;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.safety-zone.material-icons {
-  font-size: 17px;
 }
 
 #checkbox {
