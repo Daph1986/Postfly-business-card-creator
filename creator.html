@@ -252,67 +252,67 @@
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="250" type="radio" required />
-                        <span><strong>250 pc</strong></span>
+                        <span><strong>250 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="500" type="radio" />
-                        <span><strong>500 pc</strong></span>
+                        <span><strong>500 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="1000" type="radio" />
-                        <span><strong>1.000 pc</strong></span>
+                        <span><strong>1.000 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="1500" type="radio" />
-                        <span><strong>1.500 pc</strong></span>
+                        <span><strong>1.500 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="2000" type="radio" />
-                        <span><strong>2.000 pc</strong></span>
+                        <span><strong>2.000 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="2500" type="radio" />
-                        <span><strong>2.500 pc</strong></span>
+                        <span><strong>2.500 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="3000" type="radio" />
-                        <span><strong>3.000 pc</strong></span>
+                        <span><strong>3.000 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="3500" type="radio" />
-                        <span><strong>3.500 pc</strong></span>
+                        <span><strong>3.500 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="4000" type="radio" />
-                        <span><strong>4.000 pc</strong></span>
+                        <span><strong>4.000 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="4500" type="radio" />
-                        <span><strong>4.500 pc</strong></span>
+                        <span><strong>4.500 pcs</strong></span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input class="with-gap" name="quantity" value="5000" type="radio" />
-                        <span><strong>5.000 pc</strong></span>
+                        <span><strong>5.000 pcs</strong></span>
                       </label>
                     </p>
                   </div>
@@ -353,7 +353,6 @@
       <div class="container">
         <div class="row">
           <div class="col s12 center-align">
-            <div class="input-field">
               <button class="waves-effect btn-large btn-custom-red btn-custom-size-extra-large" type="button"
                 name="action" onclick="addTextField()">Add text field
               </button>
@@ -361,7 +360,6 @@
                 onclick="downloadPreview()">Download your preview
               </button>
               <a class="waves-effect btn-large btn-custom-red btn-custom-size-extra-large" href="creator.html">Reset</a>
-            </div>
           </div>
         </div>
       </div>
@@ -374,29 +372,37 @@
           <div class="col s12">
             <h5 class="red-header flow-text">Legend:</h5>
           </div>
-          <div class="row">
-            <div class="col s12 center-align">
-              <div class="cutting-edge">
-                <i class="material-icons cutting-edge">remove</i> 
-                <i class="material-icons cutting-edge">arrow_back</i> 
-                Your design will be cut on these marks. (Cutting edge)
-              </div>
-              <div class="bleed">
-                - - - 
-                <i class="material-icons bleed">arrow_back</i> 
-                Provide 3mm extra bleed to your design so that we can cut accurately. (Bleed)
-              </div>
-              <div class="safety-zone">
-                - - - 
-                <i class="material-icons safety-zone">arrow_back</i> 
-                Make sure that your texts are not too close to the edge. Stay about 3mm within the cutting edge. (Safety zone)
-              </div>
-              <div>
-                ..........
-                <i class="material-icons cutting-edge">arrow_back</i> 
-                The dotted line in the double portrait and double landscape cards indicate the fold line. 
-              </div>
-            </div>
+        </div>  
+        <div class="row">
+          <div class="col l4 s2 right-align">
+            <i class="material-icons cutting-edge">remove</i> 
+          </div>
+          <div class="col l8 s10">  
+            Your design will be cut on these marks. (Cutting edge)
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col l4 s2 right-align bleed">
+            - - - 
+          </div>  
+          <div class="col l8 s10 bleed"> 
+            Provide 3mm extra bleed to your design so that we can cut accurately. (Bleed)
+          </div>
+        </div>  
+        <div class="row"> 
+          <div class="col l4 s2 right-align safety-zone">
+            - - - 
+          </div>  
+          <div class="col l8 s10 safety-zone">  
+            Make sure that your texts are not too close to the edge. Stay about 3mm within the cutting edge. (Safety zone)
+          </div>
+        </div>   
+        <div class="row"> 
+          <div class="col l4 s2 right-align">
+            .....
+          </div>
+          <div class="col l8 s10"> 
+            The dotted line in the double portrait and double landscape cards indicate the fold line. 
           </div>
         </div>
         <!-- Legend end -->
