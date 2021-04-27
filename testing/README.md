@@ -1,7 +1,7 @@
 Table of Contents
 ======
 
-  - [General](#general)
+  - [Manual testing](#manual-testing)
   - [HTML](#html)
   - [CSS](#css)
   - [JavaScript](#javascript)
@@ -12,7 +12,7 @@ Table of Contents
   - [Bugs](#bugs)
 
 
-General
+Manual testing
 ======
 
 The design goal is to make a clear, accessible, structured site so that visitors can easily design their own business cards. <br>
@@ -30,19 +30,19 @@ When the user feels ready to start designing they can click the start design but
 As a visitor there were multiple steps you would like to take, in the manual tests it was checked if these were achieved.
 - Choose out of three different sizes of business cards.
 - Choose a background color. <br>
+This can be done in step 1 and 2.<br>
 <img src="assets/images/testing_images/step1_2.png" alt="Step 1 & 2" width="25%" height="25%"> <br>
-This can be done in step 1 and 2.
 - Choose the paper type.
 - Choose the quantity. <br>
+This can be done in step 3 and 4.<br>
 <img src="assets/images/testing_images/step3_4.png" alt="Step 3 & 4" width="25%" height="25%"> <br>
-This can be done in step 3 and 4.
 - Upload an own photo or logo.
 - Edit text content.
 - Download the designed card as a low-res jpeg file. <br>
 <img src="assets/images/testing_images/buttons.png" alt="Buttons" width="25%" height="25%">
 <img src="assets/images/testing_images/preview.png" alt="Preview" width="25%" height="25%"> <br>
 <img src="assets/images/testing_images/preview_testing.jpeg" alt="Download preview" width="18%" height="18%"> <br>
-The user can click the buttons to achieve this, also the selections made with steps 1 and 2 are visible on this preview.
+The user can click the buttons to achieve this, also the selections made with steps 1 and 2 are visible on this preview.<br>
 - Send a request for a quotation for the designed business cards.<br>
 <img src="assets/images/testing_images/request_form1.png" alt="Request form 1" width="25%" height="25%">
 <img src="assets/images/testing_images/request_form2.png" alt="Request form 2" width="25%" height="25%"> <br>
@@ -51,8 +51,8 @@ The user can click the buttons to achieve this, also the selections made with st
 As with the sample kit form after everything is filled out the send button can be clicked and the user will be informed the request is send successfully and will be redirected to the homepage and the email with the values that are needed to make a quotation is send through EmailJS, to in this case me.
 
 It can be concluded that all goals have been achieved. <br>
-The site has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. <br>
-The site was also tested on multiple devices among others an OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should.
+<br>
+The project has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. It was also tested on multiple devices among others an OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should.
 
 HTML
 ======
@@ -71,7 +71,7 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 JavaScript
 ======
 
-JavaScript was tested with a [JavaScript](https://jshint.com/) validator. <br>
+JavaScript was tested with a [JavaScript](https://jshint.com/) linter. <br>
 <img src="assets/images/testing_images/js_check1.png" alt="JS check 1" width="55%" height="55%">
 <img src="assets/images/testing_images/js_check2.png" alt="JS check 2" width="55%" height="55%"><br>
 <img src="assets/images/testing_images/js_check3.png" alt="JS check 3" width="55%" height="55%"><br>
@@ -106,7 +106,7 @@ Color blindness was tested on this [site](https://www.toptal.com/designers/color
 Other tests
 ======
 
-A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola G5 and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. No bugs were found.
+A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola G5 and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. One bug was found and fixed, please see Bugs section for the found text bug.
 
 #### Advices given after testing which were followed
 
