@@ -18,7 +18,7 @@ By clicking this [link](https://daph1986.github.io/Postfly-business-card-creator
 Table of Contents
 ======
 
-- [User Experience (UX)](#user-experience--ux-)
+- [UX](#ux)
     - [User stories](#user-stories)
     - [Strategy](#strategy)
     - [Scope](#scope)
@@ -38,7 +38,7 @@ Table of Contents
     - [Other](#other)
     - [Acknowledgements](#acknowledgements)
 
-User Experience (UX)
+User Experience
 ======
 
 This is meant to be a B2B site which targets visitors  who are in need of business cards and want to design it themselves.
@@ -50,7 +50,7 @@ This is meant to be a B2B site which targets visitors  who are in need of busine
 - Create / design your own business card.
 - Be able to choose the paper type and quantity.
 - Request a sample kit with papers for if you are not familiar with the paper types.
-- Request quotation and download the designed card.
+- Request a quotation and download the designed card.
 
 ##### Site Owners Goals
 
@@ -68,7 +68,7 @@ The site shows a homepage with an explanation, there the user can either first r
 
 ### Structure
 
-This site is structured as clear as possible, it is easy to see what can be done on the page, on all screen sizes it is clear should be done on each part of the site. The design of the card is visible on all screen sizes. This all ensures that the user knows what to do and what to expect.
+This site is structured as clear as possible, it is easy to see what can be done on the page, on all screen sizes it is clear what should be done on each part of the site. The design of the card is visible on all screen sizes. This all ensures that the user knows what to do and what to expect.
 
 ### Skeleton
 
@@ -107,7 +107,7 @@ What was changed is:
 9. On the bottom of the page above the input fields for name and email address a small explanation was added to create a more UX friendly experience.
 10. After testing the user-friendliness was experienced as not good enough, because only the logo could be used to return to the homepage. That is why on the page for requesting the sample kit and for designing the business card, 2 buttons have been added at the top to switch between the other pages. Cancel buttons have also been added to the bottom of the forms and the request quotation button was changed to send. This increases user-friendliness.
 
-### Fonts & icons
+### Fonts and icons
 
 [Google Fonts](https://fonts.google.com/) was used to embed the Roboto font in the code. Roboto was chosen because this is already in use on the existing POSTFLY site and it fits the corporate identity.
 
@@ -167,8 +167,8 @@ Technologies
 Testing and Bugs
 ======
 
-The testing has been done on multiple devices and browsers, eventually everything works as intended. Due to the fact that this subject contained more content as expected a separate page has been created.
-For more details on testing and bugs please view this [file](TESTING.md).
+The tests have been done on multiple devices and browsers, in the end everything works as intended. Because this topic contained more content than expected, a separate page was created.
+For more details about testing and bugs please view this [file](testing/README.md).
 
 Deployment
 ======
