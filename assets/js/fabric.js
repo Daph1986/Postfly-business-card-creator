@@ -237,6 +237,7 @@ reader.addEventListener("load", () => {
   fabric.Image.fromURL(reader.result, img => {
     img.scaleToHeight(100);
     img.scaleToWidth(100);
+    canvas.sendToBack(img);
     canvas.add(img);
     canvas.requestRenderAll();
   });
