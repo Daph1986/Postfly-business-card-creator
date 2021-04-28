@@ -248,7 +248,9 @@ reader.addEventListener("load", () => {
 function addTextField() {
   let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
   text.setCoords();
+  canvas.bringToFront(text);
   canvas.add(text);
+  canvas.requestRenderAll();
 }
 
 // -------------------- Download preview -------------------- 
