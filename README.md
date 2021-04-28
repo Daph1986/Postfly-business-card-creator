@@ -38,7 +38,7 @@ Table of Contents
     - [Other](#other)
     - [Acknowledgements](#acknowledgements)
 
-User Experience
+UX
 ======
 
 This is meant to be a B2B site which targets visitors  who are in need of business cards and want to design it themselves.
