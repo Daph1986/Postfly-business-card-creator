@@ -86,9 +86,8 @@ and these are the results for the mobile versions:<br>
 <img src="../testing/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="70%" height="70%"><br>
 After doing the Lighthouse checks one warning became visible, namely: <br>
 <img src="../testing/testing_images/warning_after_lighthouse.png" alt="Lighthouse warning" width="70%" height="70%"><br>
-This has to do with changes in Google's privacy policies, tutor support has been contacted about it and this warning can be ignored.
-The results of the Lighthouse tests are satisfying, so at this moment there is no need for adjustments.
-
+This was not there in previous testing and is likely due to changes to Google's privacy policy, tutor assistance has been contacted and this warning can be ignored.
+The results of the Lighthouse tests are satisfactory, so no adjustments are needed at this time.
 
 GTmetrix
 ====== 
@@ -101,7 +100,7 @@ The site was tested with [GTmetrix](https://gtmetrix.com/). The reports can be f
 Color blindness
 ======
 
-Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find a screenshot off the homepage test, but of course all pages were tested. <br>
+Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find screenshots off the homepage tests, but of course all pages were tested. <br>
 <img src="../testing/testing_images/protanopia.png" alt="Protanopia" width="25%" height="25%"/>
 <img src="../testing/testing_images/deutanopia.png" alt="Deutanopia" width="25%" height="25%"/>
 <img src="../testing/testing_images/tritanopia.png" alt="Tritanopia" width="25%" height="25%"/>
