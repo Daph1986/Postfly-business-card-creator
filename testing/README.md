@@ -22,7 +22,7 @@ When landing on the page there is an explanation on how things work: <br>
 After reading it the user can either request a sample kit or start designing. When the user clicks the sample kit button they will be taken to a form, this form needs to be filled in to get the address to send the sample kit. <br>
 <img src="../testing/testing_images/sample_form1.png" alt="Sample form 1" width="25%" height="25%">
 <img src="../testing/testing_images/sample_form2.png" alt="Sample form 3" width="25%" height="25%">
-<img src="../testing/testing_images/sample_form3.png" alt="Sample form 3" width="24%" height="24%"> <br> 
+<img src="../testing/testing_images/sample_form3.png" alt="Sample form 3" width="25%" height="25%"> <br> 
 After everything is filled out an email is sent to, in this case me, with the data needed to send the sample kit through mail. <br>
 <img src="../testing/testing_images/sample_form_emailjs_mail.png" alt="Form emailJS mail" width="40%" height="40%"> <br>
 When the user feels ready to start designing they can click the start design button, which will take them to the creator.html page. <br>
@@ -84,7 +84,11 @@ All pages have passed through Lighthouse in Chrome DevTools, the results for des
 <img src="../testing/testing_images/lighthouse_desktop.png" alt="Lighthouse desktop" width="70%" height="70%"><br>
 and these are the results for the mobile versions:<br>
 <img src="../testing/testing_images/lighthouse_mobile.png" alt="Lighthouse mobile" width="70%" height="70%"><br>
-The results are satisfying, so at this moment there is no need for adjustments.
+After doing the Lighthouse checks one warning became visible, namely: <br>
+<img src="../testing/testing_images/warning_after_lighthouse.png" alt="Lighthouse warning" width="70%" height="70%"><br>
+This has to do with changes in Google's privacy policies, tutor support has been contacted about it and this warning can be ignored.
+The results of the Lighthouse tests are satisfying, so at this moment there is no need for adjustments.
+
 
 GTmetrix
 ====== 
@@ -375,9 +379,18 @@ That fixed the problem.<br>
 
 #### Text bug
 
-During testing, it emerged that when you upload an image and put text over it, the text disappears under the image. This can be prevented by changing the JavaScript code from:
+During testing, it emerged that when you upload an image and put text over it, the text disappears under the image. This can be prevented by changing the JavaScript code for adding an image and adding text from:
 
 ```
+reader.addEventListener("load", () => {
+  fabric.Image.fromURL(reader.result, img => {
+    img.scaleToHeight(100);
+    img.scaleToWidth(100);
+    canvas.add(img);
+    canvas.requestRenderAll();
+  });
+}); 
+
 function addTextField() {
   let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
   canvas.add(text);
@@ -387,9 +400,24 @@ function addTextField() {
 to:
 
 ```
+reader.addEventListener("load", () => {
+  fabric.Image.fromURL(reader.result, img => {
+    img.scaleToHeight(100);
+    img.scaleToWidth(100);
+    canvas.sendToBack(img);
+    canvas.add(img);
+    canvas.requestRenderAll();
+  });
+}); 
+
 function addTextField() {
   let text = new fabric.Textbox('Change your text by clicking here', { fontFamily: 'Roboto', fontSize: 16, left: 100, top: 100, selectable: true, });
   text.setCoords();
+  canvas.bringToFront(text);
   canvas.add(text);
+  canvas.requestRenderAll();
 }
 ```
+
+Now when you upload an image, deselect it and place the text over it, it shows no problems.
+<img src="../testing/testing_images/preview_with_text_over_image.jpeg" alt="Text bug fixed" width="35%" height="35%"> 
