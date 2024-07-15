@@ -139,7 +139,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer-copyright">
-      <span>© Copyright 2021 - POSTFLY</span>
+      <span>© <span id="currentYear"></span> - POSTFLY</span>
     </div>
   </footer>
   <!-- Footer end -->
@@ -161,6 +161,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script>
+    var currentYear = new Date().getFullYear();
+    var yearSpan = document.getElementById('currentYear');
+    yearSpan.textContent = currentYear;
+  </script>
   <!-- JavaScript end -->
 
 </body>
